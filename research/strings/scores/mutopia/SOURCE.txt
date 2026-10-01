@@ -1,0 +1,4 @@
+Tárrega, Capricho Árabe (Valencia: Antich y Tena, 1892), Mutopia Project edition by
+Glen Larsen and Franck Decrock, Mutopia-2020/01/20-1951, CC BY-SA 4.0.
+https://www.mutopiaproject.org/ — LilyPond source, MIDI and A4 PDF.
+The MIDI plays harmonics at the touched-fret (written) pitch, not the sounding pitch.
