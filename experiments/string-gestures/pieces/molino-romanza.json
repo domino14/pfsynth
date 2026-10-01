@@ -1,0 +1,60 @@
+{
+ "notes": 302,
+ "duration": 89.34,
+ "tuning": [
+  64,
+  59,
+  55,
+  50,
+  45,
+  40
+ ],
+ "slurs": 0,
+ "harmonics": 0,
+ "sustain": {
+  "same string played": 235,
+  "finger needed elsewhere": 23,
+  "damped against a clash": 39,
+  "rings to the end": 5
+ },
+ "room": {
+  "rt_low": 4.0,
+  "rt_high": 0.24,
+  "ratio": 0.7,
+  "loss": 0.470608170097651
+ },
+ "clipped": 0,
+ "dynamics": {
+  "exponent": 0.7,
+  "constant_db": 5.741581142205349,
+  "fitted_db": 5.261367160430435
+ },
+ "bodies": [
+  {
+   "id": "g32",
+   "ltas_db": 4.37,
+   "frames_db": 10.86
+  },
+  {
+   "id": "g33",
+   "ltas_db": 4.78,
+   "frames_db": 10.59
+  },
+  {
+   "id": "g23",
+   "ltas_db": 4.92,
+   "frames_db": 11.09
+  },
+  {
+   "id": "g17",
+   "ltas_db": 5.09,
+   "frames_db": 10.93
+  },
+  {
+   "id": "g40",
+   "ltas_db": 5.1,
+   "frames_db": 11.18
+  }
+ ],
+ "engraved": "302/302"
+}

@@ -4,6 +4,7 @@ Run: build/body-venv/bin/python tools/stringlab_audition.py
 Local audition: build/stringlab/index.html (serve build/stringlab over HTTP).
 No production patch or existing audition audio is overwritten.
 """
+import os
 from pathlib import Path
 import ctypes as ct
 import hashlib, json, subprocess, time
@@ -21,7 +22,13 @@ def rms(x): return float(np.sqrt(np.mean(np.asarray(x,dtype=float)**2)))
 
 def library():
     sources=['src/host/stringlab.c','src/host/midi.c']+[f'src/core/pf_{s}.c' for s in ['partial','attack','resonance','motion','pluck','bow','radiation']]
-    subprocess.run(['cc','-O2','-std=c99','-Wall','-Wextra','-dynamiclib',*sources,'-o','build/stringlab.dylib'],cwd=ROOT,check=True)
+    # Several tools may start at once: rebuild only when a source (or header) is newer, and
+    # compile to a private file first so another process never loads a half-written library.
+    target=ROOT/'build/stringlab.dylib';deps=[ROOT/x for x in sources]+list((ROOT/'src').rglob('*.h'))+[ROOT/'experiments/string-motion/motion_patch.h']
+    if not target.exists() or max(x.stat().st_mtime for x in deps)>target.stat().st_mtime:
+        tmp=ROOT/f'build/stringlab.{os.getpid()}.dylib'
+        subprocess.run(['cc','-O2','-std=c99','-Wall','-Wextra','-dynamiclib',*sources,'-o',str(tmp)],cwd=ROOT,check=True)
+        os.replace(tmp,target)
     lib=ct.CDLL(str(ROOT/'build/stringlab.dylib'))
     lib.pf_lab_piano.argtypes=[ct.c_char_p,P,ct.c_int,ct.c_double,ct.c_int]
     lib.pf_lab_pluck.argtypes=[P,ct.c_int,ct.c_double,ct.c_double,ct.c_int,ct.c_int,ct.c_int]

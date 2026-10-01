@@ -1,0 +1,93 @@
+{
+ "notes": 887,
+ "duration": 178.42,
+ "tuning": [
+  64,
+  59,
+  55,
+  50,
+  45,
+  40
+ ],
+ "arpeggios": [
+  {
+   "time": 0.286,
+   "applied": false,
+   "found": 1
+  },
+  {
+   "time": 0.409,
+   "applied": false,
+   "found": 1
+  },
+  {
+   "time": 2.207,
+   "applied": false,
+   "found": 1
+  },
+  {
+   "time": 2.268,
+   "applied": false,
+   "found": 1
+  },
+  {
+   "time": 3.22,
+   "applied": false,
+   "found": 1
+  },
+  {
+   "time": 3.28,
+   "applied": false,
+   "found": 1
+  }
+ ],
+ "slurs": 0,
+ "harmonics": 0,
+ "sustain": {
+  "same string played": 705,
+  "hand moved": 27,
+  "damped against a clash": 132,
+  "finger needed elsewhere": 17,
+  "rings to the end": 6
+ },
+ "room": {
+  "rt_low": 5.0,
+  "rt_high": 0.24,
+  "ratio": 0.35,
+  "loss": 0.4376661024391884
+ },
+ "clipped": 0,
+ "dynamics": {
+  "exponent": 0.5,
+  "constant_db": 3.950806095562397,
+  "fitted_db": 3.649551297118927
+ },
+ "bodies": [
+  {
+   "id": "g34",
+   "ltas_db": 4.52,
+   "frames_db": 11.38
+  },
+  {
+   "id": "g28",
+   "ltas_db": 4.67,
+   "frames_db": 11.19
+  },
+  {
+   "id": "g25",
+   "ltas_db": 4.92,
+   "frames_db": 11.7
+  },
+  {
+   "id": "g50",
+   "ltas_db": 4.92,
+   "frames_db": 11.3
+  },
+  {
+   "id": "g32",
+   "ltas_db": 4.93,
+   "frames_db": 11.77
+  }
+ ],
+ "engraved": "817/887"
+}

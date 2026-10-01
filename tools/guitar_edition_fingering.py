@@ -34,6 +34,7 @@ def part_notes(part,transpose=0,order=None):
     """Notes in performance order when `order` (measure indices) is given; `written_tick`
     always keeps the position in the score as printed."""
     ms=part.findall('measure');lengths=[];written=[]
+    element={id(x):k for k,x in enumerate(part.iter('note'))}   # document order, for ids in exports
     for measure in ms:
         cursor=0;end=0;previous=0
         for node in measure:
@@ -62,7 +63,11 @@ def part_notes(part,transpose=0,order=None):
                 diatonic=7*int(pitch.findtext('octave'))+'CDEFGAB'.index(pitch.findtext('step'))
                 out.append(dict(tick=base+onset,written_tick=written[index]+onset,pitch=midi,finger=node.findtext('.//fingering'),string=node.findtext('.//string'),fret=node.findtext('.//fret'),measure=measure.get('number'),diatonic=diatonic,words=words,
                     tied=any(t.get('type')=='stop' for t in node.findall('tie')),   # continuation: no new onset
-                    arpeggiate=node.find('.//arpeggiate') is not None))
+                    arpeggiate=node.find('.//arpeggiate') is not None,xml_index=element[id(node)],
+                    # slurs (and explicit hammer-on/pull-off marks) that start or end here: a
+                    # slur between consecutive notes on one string is a left-hand ligado
+                    slur_start=[x.get('number','1') for x in node.findall('.//slur') if x.get('type')=='start']+(['ho'] if node.find('.//hammer-on[@type="start"]') is not None or node.find('.//pull-off[@type="start"]') is not None else []),
+                    slur_stop=[x.get('number','1') for x in node.findall('.//slur') if x.get('type')=='stop']+(['ho'] if node.find('.//hammer-on[@type="stop"]') is not None or node.find('.//pull-off[@type="stop"]') is not None else [])))
                 words=None   # a text direction (e.g. "Harm XII") belongs to the note after it
             if node.find('chord') is None:cursor+=duration;previous=duration
             end=max(end,cursor)
@@ -83,7 +88,7 @@ def apply_edition(notes,source=SOURCE,edition='Apke edition'):
     entries=[]
     for a,b in zip(staff,tab):
         assert (a['tick'],a['pitch'])==(b['tick'],b['pitch'])
-        entries.append(dict(a,string=int(b['string']),fret=int(b['fret'])))
+        entries.append(dict(a,string=int(b['string']),fret=int(b['fret']),tab_xml_index=b['xml_index']))
     # One sounding note written in two voices (same beat, pitch, string and fret)
     # appears once in the performance MIDI: keep a single entry.
     entries=[e for e in entries if not e['tied']]   # tied continuations are not new onsets
@@ -99,6 +104,9 @@ def apply_edition(notes,source=SOURCE,edition='Apke edition'):
         if e['written_tick']!=e['tick']:note['score_written_tick']=e['written_tick']   # repeated passage
         if e.get('words'):note['score_words']=e['words']
         if e.get('arpeggiate'):note['score_arpeggiate']=True
+        note['score_xml_index']=e['xml_index'];note['score_tab_xml_index']=e['tab_xml_index']
+        if e.get('slur_start'):note['score_slur_start']=e['slur_start']
+        if e.get('slur_stop'):note['score_slur_stop']=e['slur_stop']
         note.pop('hand_position',None);note.pop('finger',None)
         if e['finger'] is not None:note['finger']=int(e['finger']);note['finger_source']=edition
         elif e['fret']==0:note['finger']=0;note['finger_source']='open string'
