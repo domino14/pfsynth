@@ -40,3 +40,21 @@ Licenses: performances and scores are from the ASAP / nASAP datasets (CC BY-NC-S
 non-commercial; referenced by their dataset paths in `pieces.json`). Verovio is LGPL-3.0
 (loaded from jsDelivr). The synth is MIT. Pianoteq was used only as a black-box listening /
 measurement reference while fitting; nothing from it is included.
+
+## Classical guitar (`guitar/`)
+
+A second page, `guitar/index.html`, plays the physically modelled guitar live: `pfi.wasm` (the
+instrument API, `pfiw_*` exports; built by `tools/build_wasm.sh` with `pfsynth.wasm`) runs in
+`guitar-worklet.js`; the page applies the measured guitar body and a room as WebAudio
+convolutions. Performances (`guitar/pieces/<slug>/score.json` + `score.musicxml.gz`, listed in
+`guitar/pieces.json`) come from `tools/guitar_piece_build.py` and `tools/guitar_web_export.py`:
+GAPS timing, strings and frets; velocities fitted to each recording with its room; the room's
+three fitted numbers, regenerated in the browser as a stereo impulse response; the closest
+measured body. Verovio engraves notation and tab one system at a time (one system per page,
+tab rhythm symbols hidden); notes light in a hue for pluck strength, offset by the audio
+output latency so they light when heard; right-hand fingers (p i m a) are drawn by the page.
+`guitar/import.js` reads MusicXML (tab staff or `<technical>` strings/frets, repeats, ties,
+slurs as hammer-ons/pull-offs, harmonics, dynamics, arpeggios, tempo; the guitar's octave
+convention) and MIDI (strings from one channel per string, else chosen by the instrument).
+The header shows the audio thread's CPU share. Licences: GAPS-derived data CC BY-NC-SA 4.0;
+body responses CC BY 4.0 (R. Mores); no recordings.

@@ -1,0 +1,2895 @@
+[
+  {
+    "id": "guitar-bach-performance",
+    "note": "Guitar \u00b7 Bach, real performance",
+    "dynamic": "Mateusz Kowalski \u00b7 aligned recording",
+    "split": "music",
+    "duration": 18.0,
+    "audio": {
+      "current": "audio/guitar-bach-performance-current.mp3",
+      "fitted": "audio/guitar-bach-performance-fitted.mp3",
+      "ref": "audio/guitar-bach-performance-ref.mp3"
+    },
+    "labels": {
+      "current": "Aligned timing, fixed character",
+      "fitted": "Aligned timing, varying character",
+      "ref": "Real performance \u00b7 Mateusz Kowalski"
+    },
+    "experiment": "Experiment 05 \u00b7 strings",
+    "description": "Bach Prelude, BWV 1006a on guitar / BWV 1006 on violin. Real recording: Mateusz Kowalski. The synth follows published aligned note timing; B varies attack and tone. No recorded vibrato, slides or bow controls are inferred from note-only alignments. String/finger choices are inferred and audited under a conservative hand model. Local research audition; recording rights remain with its source.",
+    "thirdLabel": "Real recording",
+    "question": "Which synth is closer to the real performance?",
+    "metrics": {
+      "current": {
+        "peak_dbfs": -4.193939047454194,
+        "rms_dbfs": -18.423012785129462,
+        "sha256": "255becd121cd054ed921feb05c33ad95abbd4984d63ce7648c67b9e99913d6a6"
+      },
+      "fitted": {
+        "peak_dbfs": -4.056240626913058,
+        "rms_dbfs": -18.422924210764855,
+        "sha256": "5cd0627fca78d513a5a3c006b53f0dfd8b69f5372af1490797f5f2a5d3048bde"
+      },
+      "ref": {
+        "peak_dbfs": -1.9838155489859646,
+        "rms_dbfs": -18.419594914584035,
+        "sha256": "6a070b521c658a4fc35e3e0dd7cd52109eb5dd80e6d3e0fd5d68509579f757f9"
+      }
+    },
+    "score": {
+      "kind": "guitar",
+      "title": "Bach \u00b7 Prelude, BWV 1006a",
+      "quarter": null,
+      "meter": null,
+      "pickup": 0,
+      "measures": [
+        0,
+        0.0897272727272731,
+        1.8677272727272731,
+        3.617727272727273,
+        5.357727272727273,
+        6.947727272727272,
+        8.577727272727271,
+        10.177727272727271,
+        11.717727272727268,
+        13.307727272727268,
+        15.007727272727267,
+        16.647727272727273,
+        18
+      ],
+      "inferred": true,
+      "source": "https://aim-qmul.github.io/GAPS/",
+      "audit": {
+        "passed": true,
+        "violations": [],
+        "max_longitudinal_span_mm": 0,
+        "rolled_chord_times": [],
+        "scale_length_mm": 650,
+        "max_shift_mm": 325.0,
+        "assumptions": "Four left-hand fingers; pairwise reach limits in mm; held fingers retained; no duration truncation. Guitar index barres cannot cross lower/open held notes. Violin adjacent-string finger stops allowed. Designed adult-hand limits, not player-specific biomechanics."
+      },
+      "notes": [
+        {
+          "start": 0.0,
+          "end": 0.7113636363636364,
+          "pitch": 40,
+          "string": 6,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 0.456818181818182,
+          "end": 0.5636363636363639,
+          "pitch": 76,
+          "string": 1,
+          "fret": 12,
+          "finger": 1
+        },
+        {
+          "start": 0.581818181818182,
+          "end": 0.7113636363636364,
+          "pitch": 75,
+          "string": 1,
+          "fret": 11,
+          "finger": 1
+        },
+        {
+          "start": 0.7386363636363638,
+          "end": 1.0181818181818185,
+          "pitch": 76,
+          "string": 1,
+          "fret": 12,
+          "finger": 1
+        },
+        {
+          "start": 1.0477272727272733,
+          "end": 1.3159090909090914,
+          "pitch": 71,
+          "string": 2,
+          "fret": 12,
+          "finger": 1
+        },
+        {
+          "start": 1.329545454545455,
+          "end": 1.581818181818182,
+          "pitch": 68,
+          "string": 3,
+          "fret": 13,
+          "finger": 1
+        },
+        {
+          "start": 1.6022727272727275,
+          "end": 1.8681818181818182,
+          "pitch": 71,
+          "string": 2,
+          "fret": 12,
+          "finger": 1
+        },
+        {
+          "start": 1.8840909090909088,
+          "end": 1.9840909090909085,
+          "pitch": 64,
+          "string": 1,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 1.9909090909090903,
+          "end": 2.1090909090909085,
+          "pitch": 66,
+          "string": 3,
+          "fret": 11,
+          "finger": 1
+        },
+        {
+          "start": 2.136363636363636,
+          "end": 2.2249999999999996,
+          "pitch": 64,
+          "string": 1,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 2.2386363636363633,
+          "end": 2.370454545454545,
+          "pitch": 63,
+          "string": 4,
+          "fret": 13,
+          "finger": 1
+        },
+        {
+          "start": 2.3909090909090907,
+          "end": 2.6431818181818176,
+          "pitch": 64,
+          "string": 1,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 2.670454545454545,
+          "end": 2.9340909090909086,
+          "pitch": 59,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 2.956818181818181,
+          "end": 3.2249999999999996,
+          "pitch": 56,
+          "string": 5,
+          "fret": 11,
+          "finger": 1
+        },
+        {
+          "start": 3.243181818181818,
+          "end": 3.618181818181818,
+          "pitch": 59,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 3.4272727272727277,
+          "end": 4.297727272727272,
+          "pitch": 40,
+          "string": 6,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 3.661363636363636,
+          "end": 3.8227272727272723,
+          "pitch": 52,
+          "string": 5,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 3.886363636363636,
+          "end": 4.006818181818181,
+          "pitch": 59,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 4.045454545454545,
+          "end": 4.1522727272727264,
+          "pitch": 54,
+          "string": 5,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 4.184090909090909,
+          "end": 4.297727272727272,
+          "pitch": 59,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 4.320454545454544,
+          "end": 4.413636363636362,
+          "pitch": 56,
+          "string": 5,
+          "fret": 11,
+          "finger": 1
+        },
+        {
+          "start": 4.438636363636363,
+          "end": 4.556818181818181,
+          "pitch": 59,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 4.572727272727271,
+          "end": 4.681818181818181,
+          "pitch": 57,
+          "string": 5,
+          "fret": 12,
+          "finger": 1
+        },
+        {
+          "start": 4.709090909090908,
+          "end": 4.8181818181818175,
+          "pitch": 59,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 4.84090909090909,
+          "end": 4.952272727272726,
+          "pitch": 56,
+          "string": 5,
+          "fret": 11,
+          "finger": 1
+        },
+        {
+          "start": 4.963636363636363,
+          "end": 5.097727272727272,
+          "pitch": 59,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 5.106818181818181,
+          "end": 5.213636363636362,
+          "pitch": 54,
+          "string": 5,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 5.224999999999999,
+          "end": 5.356818181818181,
+          "pitch": 59,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 5.368181818181817,
+          "end": 5.49090909090909,
+          "pitch": 52,
+          "string": 5,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 5.515909090909091,
+          "end": 5.622727272727273,
+          "pitch": 64,
+          "string": 1,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 5.647727272727273,
+          "end": 5.754545454545456,
+          "pitch": 63,
+          "string": 3,
+          "fret": 8,
+          "finger": 1
+        },
+        {
+          "start": 5.781818181818183,
+          "end": 5.8886363636363654,
+          "pitch": 61,
+          "string": 3,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 5.893181818181819,
+          "end": 6.020454545454546,
+          "pitch": 59,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 6.036363636363637,
+          "end": 6.152272727272727,
+          "pitch": 64,
+          "string": 1,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 6.184090909090909,
+          "end": 6.275,
+          "pitch": 63,
+          "string": 2,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 6.297727272727274,
+          "end": 6.406818181818183,
+          "pitch": 61,
+          "string": 2,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 6.4295454545454565,
+          "end": 6.540909090909093,
+          "pitch": 59,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 6.556818181818183,
+          "end": 6.672727272727274,
+          "pitch": 57,
+          "string": 3,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 6.672727272727274,
+          "end": 6.804545454545455,
+          "pitch": 56,
+          "string": 3,
+          "fret": 1,
+          "finger": 1
+        },
+        {
+          "start": 6.827272727272728,
+          "end": 6.947727272727274,
+          "pitch": 54,
+          "string": 4,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 6.963636363636365,
+          "end": 7.084090909090911,
+          "pitch": 52,
+          "string": 4,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 7.0136363636363654,
+          "end": 7.500000000000002,
+          "pitch": 40,
+          "string": 6,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 7.090909090909092,
+          "end": 7.229545454545455,
+          "pitch": 59,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 7.275,
+          "end": 7.365909090909092,
+          "pitch": 54,
+          "string": 4,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 7.402272727272729,
+          "end": 7.500000000000002,
+          "pitch": 59,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 7.53409090909091,
+          "end": 7.645454545454546,
+          "pitch": 56,
+          "string": 4,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 7.675000000000001,
+          "end": 7.781818181818183,
+          "pitch": 59,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 7.80909090909091,
+          "end": 7.90909090909091,
+          "pitch": 57,
+          "string": 4,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 7.927272727272728,
+          "end": 8.045454545454547,
+          "pitch": 59,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 8.072727272727274,
+          "end": 8.170454545454547,
+          "pitch": 56,
+          "string": 4,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 8.195454545454547,
+          "end": 8.306818181818183,
+          "pitch": 59,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 8.327272727272728,
+          "end": 8.440909090909091,
+          "pitch": 54,
+          "string": 4,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 8.450000000000001,
+          "end": 8.577272727272728,
+          "pitch": 59,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 8.600000000000001,
+          "end": 8.690909090909091,
+          "pitch": 52,
+          "string": 4,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 8.686363636363637,
+          "end": 8.834090909090909,
+          "pitch": 64,
+          "string": 1,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 8.870454545454546,
+          "end": 8.968181818181819,
+          "pitch": 63,
+          "string": 2,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 8.988636363636363,
+          "end": 9.1,
+          "pitch": 61,
+          "string": 2,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 9.118181818181817,
+          "end": 9.245454545454544,
+          "pitch": 59,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 9.261363636363635,
+          "end": 9.377272727272725,
+          "pitch": 64,
+          "string": 1,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 9.402272727272726,
+          "end": 9.511363636363635,
+          "pitch": 63,
+          "string": 2,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 9.536363636363635,
+          "end": 9.634090909090908,
+          "pitch": 61,
+          "string": 2,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 9.649999999999999,
+          "end": 9.768181818181818,
+          "pitch": 59,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 9.781818181818181,
+          "end": 9.881818181818181,
+          "pitch": 57,
+          "string": 3,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 9.884090909090908,
+          "end": 10.024999999999999,
+          "pitch": 56,
+          "string": 3,
+          "fret": 1,
+          "finger": 1
+        },
+        {
+          "start": 10.045454545454543,
+          "end": 10.177272727272724,
+          "pitch": 54,
+          "string": 4,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 10.186363636363634,
+          "end": 10.306818181818178,
+          "pitch": 52,
+          "string": 4,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 10.190909090909088,
+          "end": 10.690909090909086,
+          "pitch": 40,
+          "string": 6,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 10.311363636363632,
+          "end": 10.434090909090905,
+          "pitch": 54,
+          "string": 4,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 10.447727272727269,
+          "end": 10.563636363636359,
+          "pitch": 56,
+          "string": 4,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 10.57954545454545,
+          "end": 10.690909090909086,
+          "pitch": 57,
+          "string": 4,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 10.71363636363636,
+          "end": 10.820454545454542,
+          "pitch": 59,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 10.83863636363636,
+          "end": 10.947727272727269,
+          "pitch": 61,
+          "string": 3,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 10.970454545454542,
+          "end": 11.074999999999998,
+          "pitch": 63,
+          "string": 2,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 11.090909090909088,
+          "end": 11.204545454545451,
+          "pitch": 64,
+          "string": 1,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 11.220454545454542,
+          "end": 11.331818181818178,
+          "pitch": 66,
+          "string": 2,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 11.345454545454542,
+          "end": 11.461363636363632,
+          "pitch": 68,
+          "string": 2,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 11.481818181818177,
+          "end": 11.58863636363636,
+          "pitch": 69,
+          "string": 2,
+          "fret": 10,
+          "finger": 1
+        },
+        {
+          "start": 11.606818181818177,
+          "end": 11.718181818181813,
+          "pitch": 66,
+          "string": 3,
+          "fret": 11,
+          "finger": 1
+        },
+        {
+          "start": 11.736363636363631,
+          "end": 11.849999999999994,
+          "pitch": 68,
+          "string": 3,
+          "fret": 13,
+          "finger": 1
+        },
+        {
+          "start": 11.870454545454539,
+          "end": 11.972727272727266,
+          "pitch": 71,
+          "string": 2,
+          "fret": 12,
+          "finger": 1
+        },
+        {
+          "start": 11.988636363636356,
+          "end": 12.095454545454539,
+          "pitch": 64,
+          "string": 1,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 12.106818181818175,
+          "end": 12.227272727272721,
+          "pitch": 66,
+          "string": 3,
+          "fret": 11,
+          "finger": 1
+        },
+        {
+          "start": 12.243181818181812,
+          "end": 12.349999999999994,
+          "pitch": 68,
+          "string": 2,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 12.372727272727268,
+          "end": 12.481818181818177,
+          "pitch": 69,
+          "string": 2,
+          "fret": 10,
+          "finger": 1
+        },
+        {
+          "start": 12.506818181818177,
+          "end": 12.615909090909087,
+          "pitch": 71,
+          "string": 2,
+          "fret": 12,
+          "finger": 1
+        },
+        {
+          "start": 12.62954545454545,
+          "end": 12.74772727272727,
+          "pitch": 73,
+          "string": 2,
+          "fret": 14,
+          "finger": 1
+        },
+        {
+          "start": 12.761363636363633,
+          "end": 12.879545454545452,
+          "pitch": 75,
+          "string": 1,
+          "fret": 11,
+          "finger": 1
+        },
+        {
+          "start": 12.904545454545453,
+          "end": 13.002272727272725,
+          "pitch": 76,
+          "string": 1,
+          "fret": 12,
+          "finger": 1
+        },
+        {
+          "start": 13.024999999999999,
+          "end": 13.145454545454545,
+          "pitch": 73,
+          "string": 2,
+          "fret": 14,
+          "finger": 1
+        },
+        {
+          "start": 13.16590909090909,
+          "end": 13.30681818181818,
+          "pitch": 75,
+          "string": 1,
+          "fret": 11,
+          "finger": 1
+        },
+        {
+          "start": 13.329545454545453,
+          "end": 13.974999999999996,
+          "pitch": 40,
+          "string": 6,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 13.329545454545453,
+          "end": 13.559090909090907,
+          "pitch": 76,
+          "string": 1,
+          "fret": 12,
+          "finger": 1
+        },
+        {
+          "start": 13.59772727272727,
+          "end": 13.699999999999998,
+          "pitch": 71,
+          "string": 2,
+          "fret": 12,
+          "finger": 1
+        },
+        {
+          "start": 13.743181818181816,
+          "end": 13.843181818181817,
+          "pitch": 69,
+          "string": 2,
+          "fret": 10,
+          "finger": 1
+        },
+        {
+          "start": 13.879545454545452,
+          "end": 13.974999999999996,
+          "pitch": 71,
+          "string": 2,
+          "fret": 12,
+          "finger": 1
+        },
+        {
+          "start": 13.993181818181816,
+          "end": 14.086363636363634,
+          "pitch": 68,
+          "string": 3,
+          "fret": 13,
+          "finger": 1
+        },
+        {
+          "start": 14.111363636363633,
+          "end": 14.227272727272725,
+          "pitch": 71,
+          "string": 2,
+          "fret": 12,
+          "finger": 1
+        },
+        {
+          "start": 14.249999999999998,
+          "end": 14.35,
+          "pitch": 69,
+          "string": 2,
+          "fret": 10,
+          "finger": 1
+        },
+        {
+          "start": 14.374999999999998,
+          "end": 14.49090909090909,
+          "pitch": 71,
+          "string": 2,
+          "fret": 12,
+          "finger": 1
+        },
+        {
+          "start": 14.504545454545452,
+          "end": 14.602272727272725,
+          "pitch": 68,
+          "string": 2,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 14.629545454545452,
+          "end": 14.745454545454544,
+          "pitch": 71,
+          "string": 1,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 14.754545454545452,
+          "end": 14.86590909090909,
+          "pitch": 66,
+          "string": 2,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 14.879545454545452,
+          "end": 15.006818181818181,
+          "pitch": 71,
+          "string": 1,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 15.025,
+          "end": 15.13409090909091,
+          "pitch": 64,
+          "string": 1,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 15.156818181818183,
+          "end": 15.261363636363638,
+          "pitch": 76,
+          "string": 1,
+          "fret": 12,
+          "finger": 1
+        },
+        {
+          "start": 15.286363636363637,
+          "end": 15.388636363636364,
+          "pitch": 75,
+          "string": 1,
+          "fret": 11,
+          "finger": 1
+        },
+        {
+          "start": 15.411363636363637,
+          "end": 15.525,
+          "pitch": 73,
+          "string": 1,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 15.538636363636362,
+          "end": 15.661363636363633,
+          "pitch": 71,
+          "string": 1,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 15.674999999999995,
+          "end": 15.788636363636359,
+          "pitch": 64,
+          "string": 1,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 15.795454545454541,
+          "end": 15.924999999999995,
+          "pitch": 73,
+          "string": 1,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 15.936363636363632,
+          "end": 16.06136363636363,
+          "pitch": 64,
+          "string": 1,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 16.079545454545453,
+          "end": 16.19772727272727,
+          "pitch": 71,
+          "string": 1,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 16.20227272727272,
+          "end": 16.345454545454544,
+          "pitch": 64,
+          "string": 1,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 16.361363636363635,
+          "end": 16.5,
+          "pitch": 69,
+          "string": 2,
+          "fret": 10,
+          "finger": 1
+        },
+        {
+          "start": 16.438636363636363,
+          "end": 16.647727272727273,
+          "pitch": 64,
+          "string": 1,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 16.659090909090907,
+          "end": 16.799999999999997,
+          "pitch": 68,
+          "string": 2,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 16.68181818181818,
+          "end": 17.197727272727278,
+          "pitch": 40,
+          "string": 6,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 16.815909090909088,
+          "end": 16.93181818181818,
+          "pitch": 71,
+          "string": 1,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 16.961363636363636,
+          "end": 17.065909090909095,
+          "pitch": 66,
+          "string": 2,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 17.086363636363636,
+          "end": 17.197727272727278,
+          "pitch": 71,
+          "string": 1,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 17.21363636363637,
+          "end": 17.32954545454546,
+          "pitch": 68,
+          "string": 2,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 17.35454545454546,
+          "end": 17.46363636363637,
+          "pitch": 71,
+          "string": 1,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 17.48409090909091,
+          "end": 17.58409090909091,
+          "pitch": 69,
+          "string": 1,
+          "fret": 5,
+          "finger": 1
+        },
+        {
+          "start": 17.6,
+          "end": 17.71818181818182,
+          "pitch": 71,
+          "string": 1,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 17.740909090909092,
+          "end": 17.82954545454546,
+          "pitch": 68,
+          "string": 2,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 17.859090909090916,
+          "end": 17.96363636363637,
+          "pitch": 71,
+          "string": 1,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 17.988636363636367,
+          "end": 18,
+          "pitch": 66,
+          "string": 2,
+          "fret": 7,
+          "finger": 1
+        }
+      ]
+    },
+    "downloads": [
+      {
+        "label": "Aligned excerpt MIDI",
+        "url": "guitar-bach-performance.mid"
+      },
+      {
+        "label": "String / finger assignments",
+        "url": "guitar-bach-performance-events.json"
+      }
+    ],
+    "alignment": {
+      "source_audio_offset_seconds": 2.502272727272727,
+      "method": "Published fine-aligned MIDI",
+      "source": "https://aim-qmul.github.io/GAPS/",
+      "recording_performer": "Mateusz Kowalski",
+      "source_sha256": "7dc852a99d78d12a46a944071234f46430d89e9c746d74affb9f5a01e1e2ee48"
+    }
+  },
+  {
+    "id": "violin-bach-performance",
+    "note": "Violin \u00b7 Bach, real performance",
+    "dynamic": "Karen Gomyo \u00b7 aligned recording",
+    "split": "music",
+    "duration": 28.0,
+    "audio": {
+      "current": "audio/violin-bach-performance-current.mp3",
+      "fitted": "audio/violin-bach-performance-fitted.mp3",
+      "ref": "audio/violin-bach-performance-ref.mp3"
+    },
+    "labels": {
+      "current": "Aligned timing, fixed character",
+      "fitted": "Aligned timing, varying character",
+      "ref": "Real performance \u00b7 Karen Gomyo"
+    },
+    "experiment": "Experiment 05 \u00b7 strings",
+    "description": "Bach Prelude, BWV 1006a on guitar / BWV 1006 on violin. Real recording: Karen Gomyo. The synth follows published aligned note timing; B varies attack and tone. No recorded vibrato, slides or bow controls are inferred from note-only alignments. String/finger choices are inferred and audited under a conservative hand model. Local research audition; recording rights remain with its source.",
+    "thirdLabel": "Real recording",
+    "question": "Which synth is closer to the real performance?",
+    "metrics": {
+      "current": {
+        "peak_dbfs": -7.778896159360463,
+        "rms_dbfs": -20.555259038395043,
+        "sha256": "0261f140d048438d71017da54e2d951cf88d13a3b58b5250a5f4e0c7753c1ab0"
+      },
+      "fitted": {
+        "peak_dbfs": -7.5101615656950536,
+        "rms_dbfs": -20.554606413569182,
+        "sha256": "6f3b5e03293e56ac085138f61186989d1152d4278e151680c4e4a08c3cf44388"
+      },
+      "ref": {
+        "peak_dbfs": -1.0121998670919838,
+        "rms_dbfs": -20.550900884300468,
+        "sha256": "be20b8035ccbf3bf43700590c3d555c30ea67426a0fe9ddd2d656effff8eb03a"
+      }
+    },
+    "score": {
+      "kind": "violin",
+      "title": "Bach \u00b7 Prelude, BWV 1006",
+      "quarter": null,
+      "meter": null,
+      "pickup": 0,
+      "measures": [
+        0,
+        6,
+        12,
+        18,
+        24,
+        28.0
+      ],
+      "inferred": true,
+      "source": "https://hermandong.com/bach-violin-dataset/",
+      "audit": {
+        "passed": true,
+        "violations": [],
+        "max_longitudinal_span_mm": 0,
+        "rolled_chord_times": [],
+        "scale_length_mm": 328,
+        "max_shift_mm": 73.30104346614564,
+        "assumptions": "Four left-hand fingers; pairwise reach limits in mm; held fingers retained; no duration truncation. Guitar index barres cannot cross lower/open held notes. Violin adjacent-string finger stops allowed. Designed adult-hand limits, not player-specific biomechanics."
+      },
+      "notes": [
+        {
+          "start": 0.0,
+          "end": 0.09600000000000009,
+          "pitch": 88,
+          "string": 3,
+          "fret": 12,
+          "finger": 1
+        },
+        {
+          "start": 0.128,
+          "end": 0.2240000000000001,
+          "pitch": 87,
+          "string": 3,
+          "fret": 11,
+          "finger": 1
+        },
+        {
+          "start": 0.256,
+          "end": 0.4800000000000001,
+          "pitch": 88,
+          "string": 3,
+          "fret": 12,
+          "finger": 1
+        },
+        {
+          "start": 0.5120000000000001,
+          "end": 0.7680000000000001,
+          "pitch": 83,
+          "string": 2,
+          "fret": 14,
+          "finger": 1
+        },
+        {
+          "start": 0.7999999999999999,
+          "end": 0.9920000000000001,
+          "pitch": 80,
+          "string": 2,
+          "fret": 11,
+          "finger": 1
+        },
+        {
+          "start": 1.024,
+          "end": 1.2480000000000002,
+          "pitch": 83,
+          "string": 3,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 1.2800000000000002,
+          "end": 1.408,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 1.44,
+          "end": 1.536,
+          "pitch": 78,
+          "string": 2,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 1.568,
+          "end": 1.6640000000000001,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 1.6959999999999997,
+          "end": 1.7279999999999998,
+          "pitch": 75,
+          "string": 2,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 1.7599999999999998,
+          "end": 1.984,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 2.016,
+          "end": 2.272,
+          "pitch": 71,
+          "string": 1,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 2.304,
+          "end": 2.528,
+          "pitch": 68,
+          "string": 1,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 2.56,
+          "end": 2.784,
+          "pitch": 71,
+          "string": 2,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 2.816,
+          "end": 2.912,
+          "pitch": 64,
+          "string": 1,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 2.944,
+          "end": 3.072,
+          "pitch": 71,
+          "string": 2,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 3.104,
+          "end": 3.1999999999999997,
+          "pitch": 66,
+          "string": 1,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 3.2319999999999998,
+          "end": 3.328,
+          "pitch": 71,
+          "string": 2,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 3.36,
+          "end": 3.456,
+          "pitch": 68,
+          "string": 1,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 3.488,
+          "end": 3.552,
+          "pitch": 71,
+          "string": 1,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 3.584,
+          "end": 3.648,
+          "pitch": 69,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 3.68,
+          "end": 3.8080000000000003,
+          "pitch": 71,
+          "string": 1,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 3.8400000000000003,
+          "end": 3.9359999999999995,
+          "pitch": 68,
+          "string": 1,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 3.9679999999999995,
+          "end": 4.064,
+          "pitch": 71,
+          "string": 2,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 4.096,
+          "end": 4.192,
+          "pitch": 66,
+          "string": 1,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 4.224,
+          "end": 4.32,
+          "pitch": 71,
+          "string": 2,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 4.352,
+          "end": 4.448,
+          "pitch": 64,
+          "string": 1,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 4.48,
+          "end": 4.5760000000000005,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 4.6080000000000005,
+          "end": 4.736000000000001,
+          "pitch": 75,
+          "string": 2,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 4.768000000000001,
+          "end": 4.864000000000001,
+          "pitch": 73,
+          "string": 2,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 4.896000000000001,
+          "end": 4.992,
+          "pitch": 71,
+          "string": 2,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 5.024,
+          "end": 5.088,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 5.12,
+          "end": 5.216,
+          "pitch": 75,
+          "string": 2,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 5.248,
+          "end": 5.344,
+          "pitch": 73,
+          "string": 2,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 5.376,
+          "end": 5.5040000000000004,
+          "pitch": 71,
+          "string": 2,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 5.5360000000000005,
+          "end": 5.6000000000000005,
+          "pitch": 69,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 5.632000000000001,
+          "end": 5.696000000000001,
+          "pitch": 68,
+          "string": 1,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 5.728000000000001,
+          "end": 5.824000000000001,
+          "pitch": 66,
+          "string": 1,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 5.856000000000001,
+          "end": 5.920000000000001,
+          "pitch": 64,
+          "string": 1,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 5.952,
+          "end": 6.048,
+          "pitch": 71,
+          "string": 2,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 6.08,
+          "end": 6.208,
+          "pitch": 66,
+          "string": 1,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 6.24,
+          "end": 6.336,
+          "pitch": 71,
+          "string": 2,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 6.368,
+          "end": 6.432,
+          "pitch": 68,
+          "string": 1,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 6.464,
+          "end": 6.5600000000000005,
+          "pitch": 71,
+          "string": 1,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 6.5920000000000005,
+          "end": 6.688000000000001,
+          "pitch": 69,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 6.720000000000001,
+          "end": 6.816000000000001,
+          "pitch": 71,
+          "string": 1,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 6.848000000000001,
+          "end": 6.944,
+          "pitch": 68,
+          "string": 1,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 6.976,
+          "end": 7.104,
+          "pitch": 71,
+          "string": 2,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 7.136,
+          "end": 7.2,
+          "pitch": 66,
+          "string": 1,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 7.232,
+          "end": 7.328,
+          "pitch": 71,
+          "string": 2,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 7.36,
+          "end": 7.456,
+          "pitch": 64,
+          "string": 1,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 7.488,
+          "end": 7.5840000000000005,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 7.6160000000000005,
+          "end": 7.712000000000001,
+          "pitch": 75,
+          "string": 2,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 7.744000000000001,
+          "end": 7.872000000000001,
+          "pitch": 73,
+          "string": 2,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 7.904000000000001,
+          "end": 7.936000000000001,
+          "pitch": 71,
+          "string": 2,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 7.968000000000001,
+          "end": 8.064,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 8.096,
+          "end": 8.192,
+          "pitch": 75,
+          "string": 2,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 8.224,
+          "end": 8.32,
+          "pitch": 73,
+          "string": 2,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 8.352,
+          "end": 8.447999999999999,
+          "pitch": 71,
+          "string": 2,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 8.479999999999999,
+          "end": 8.607999999999999,
+          "pitch": 69,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 8.639999999999999,
+          "end": 8.735999999999999,
+          "pitch": 68,
+          "string": 1,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 8.767999999999999,
+          "end": 8.863999999999999,
+          "pitch": 66,
+          "string": 1,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 8.895999999999999,
+          "end": 8.991999999999999,
+          "pitch": 64,
+          "string": 1,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 9.024,
+          "end": 9.12,
+          "pitch": 66,
+          "string": 1,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 9.152,
+          "end": 9.248,
+          "pitch": 68,
+          "string": 1,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 9.28,
+          "end": 9.376,
+          "pitch": 69,
+          "string": 2,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 9.408,
+          "end": 9.536,
+          "pitch": 71,
+          "string": 2,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 9.568,
+          "end": 9.664,
+          "pitch": 73,
+          "string": 2,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 9.696,
+          "end": 9.792,
+          "pitch": 75,
+          "string": 2,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 9.824,
+          "end": 9.888,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 9.92,
+          "end": 10.016,
+          "pitch": 78,
+          "string": 3,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 10.048,
+          "end": 10.144,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 10.176,
+          "end": 10.304,
+          "pitch": 81,
+          "string": 3,
+          "fret": 5,
+          "finger": 1
+        },
+        {
+          "start": 10.336,
+          "end": 10.431999999999999,
+          "pitch": 78,
+          "string": 3,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 10.463999999999999,
+          "end": 10.559999999999999,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 10.591999999999999,
+          "end": 10.687999999999999,
+          "pitch": 83,
+          "string": 3,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 10.719999999999999,
+          "end": 10.815999999999999,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 10.847999999999999,
+          "end": 10.943999999999999,
+          "pitch": 78,
+          "string": 3,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 10.975999999999999,
+          "end": 11.072,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 11.104,
+          "end": 11.232,
+          "pitch": 81,
+          "string": 3,
+          "fret": 5,
+          "finger": 1
+        },
+        {
+          "start": 11.264,
+          "end": 11.328,
+          "pitch": 83,
+          "string": 3,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 11.36,
+          "end": 11.456,
+          "pitch": 85,
+          "string": 3,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 11.488,
+          "end": 11.584,
+          "pitch": 87,
+          "string": 3,
+          "fret": 11,
+          "finger": 1
+        },
+        {
+          "start": 11.616,
+          "end": 11.712,
+          "pitch": 88,
+          "string": 3,
+          "fret": 12,
+          "finger": 1
+        },
+        {
+          "start": 11.744,
+          "end": 11.84,
+          "pitch": 85,
+          "string": 3,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 11.872,
+          "end": 12.0,
+          "pitch": 87,
+          "string": 3,
+          "fret": 11,
+          "finger": 1
+        },
+        {
+          "start": 12.032,
+          "end": 12.128,
+          "pitch": 88,
+          "string": 3,
+          "fret": 12,
+          "finger": 1
+        },
+        {
+          "start": 12.16,
+          "end": 12.256,
+          "pitch": 83,
+          "string": 3,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 12.288,
+          "end": 12.384,
+          "pitch": 81,
+          "string": 3,
+          "fret": 5,
+          "finger": 1
+        },
+        {
+          "start": 12.416,
+          "end": 12.511999999999999,
+          "pitch": 83,
+          "string": 3,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 12.543999999999999,
+          "end": 12.639999999999999,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 12.671999999999999,
+          "end": 12.799999999999999,
+          "pitch": 83,
+          "string": 3,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 12.831999999999999,
+          "end": 12.895999999999999,
+          "pitch": 81,
+          "string": 3,
+          "fret": 5,
+          "finger": 1
+        },
+        {
+          "start": 12.927999999999999,
+          "end": 13.024,
+          "pitch": 83,
+          "string": 3,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 13.056,
+          "end": 13.152,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 13.184,
+          "end": 13.28,
+          "pitch": 83,
+          "string": 3,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 13.312,
+          "end": 13.408,
+          "pitch": 78,
+          "string": 2,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 13.44,
+          "end": 13.536,
+          "pitch": 83,
+          "string": 3,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 13.568,
+          "end": 13.696,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 13.728,
+          "end": 13.824,
+          "pitch": 88,
+          "string": 3,
+          "fret": 12,
+          "finger": 1
+        },
+        {
+          "start": 13.856,
+          "end": 13.92,
+          "pitch": 87,
+          "string": 3,
+          "fret": 11,
+          "finger": 1
+        },
+        {
+          "start": 13.952,
+          "end": 14.048,
+          "pitch": 85,
+          "string": 3,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 14.08,
+          "end": 14.176,
+          "pitch": 83,
+          "string": 3,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 14.208,
+          "end": 14.304,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 14.336,
+          "end": 14.463999999999999,
+          "pitch": 85,
+          "string": 3,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 14.495999999999999,
+          "end": 14.559999999999999,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 14.591999999999999,
+          "end": 14.687999999999999,
+          "pitch": 83,
+          "string": 3,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 14.719999999999999,
+          "end": 14.783999999999999,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 14.815999999999999,
+          "end": 14.879999999999999,
+          "pitch": 81,
+          "string": 3,
+          "fret": 5,
+          "finger": 1
+        },
+        {
+          "start": 14.911999999999999,
+          "end": 15.008,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 15.04,
+          "end": 15.168,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 15.2,
+          "end": 15.296,
+          "pitch": 83,
+          "string": 3,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 15.328,
+          "end": 15.36,
+          "pitch": 78,
+          "string": 2,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 15.392,
+          "end": 15.488,
+          "pitch": 83,
+          "string": 3,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 15.52,
+          "end": 15.616,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 15.648,
+          "end": 15.744,
+          "pitch": 83,
+          "string": 3,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 15.776,
+          "end": 15.872,
+          "pitch": 81,
+          "string": 3,
+          "fret": 5,
+          "finger": 1
+        },
+        {
+          "start": 15.904,
+          "end": 16.032,
+          "pitch": 83,
+          "string": 3,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 16.064,
+          "end": 16.16,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 16.192,
+          "end": 16.288,
+          "pitch": 83,
+          "string": 3,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 16.32,
+          "end": 16.416,
+          "pitch": 78,
+          "string": 2,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 16.448,
+          "end": 16.544,
+          "pitch": 83,
+          "string": 3,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 16.576,
+          "end": 16.672,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 16.704,
+          "end": 16.832,
+          "pitch": 88,
+          "string": 3,
+          "fret": 12,
+          "finger": 1
+        },
+        {
+          "start": 16.864,
+          "end": 16.96,
+          "pitch": 87,
+          "string": 3,
+          "fret": 11,
+          "finger": 1
+        },
+        {
+          "start": 16.992,
+          "end": 17.088,
+          "pitch": 85,
+          "string": 3,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 17.12,
+          "end": 17.216,
+          "pitch": 83,
+          "string": 3,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 17.248,
+          "end": 17.28,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 17.312,
+          "end": 17.408,
+          "pitch": 85,
+          "string": 3,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 17.439999999999998,
+          "end": 17.567999999999998,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 17.599999999999998,
+          "end": 17.695999999999998,
+          "pitch": 83,
+          "string": 3,
+          "fret": 7,
+          "finger": 1
+        },
+        {
+          "start": 17.727999999999998,
+          "end": 17.823999999999998,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 17.855999999999998,
+          "end": 17.951999999999998,
+          "pitch": 81,
+          "string": 3,
+          "fret": 5,
+          "finger": 1
+        },
+        {
+          "start": 17.983999999999998,
+          "end": 18.08,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 18.112,
+          "end": 18.208,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 18.24,
+          "end": 18.336,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 18.368,
+          "end": 18.496,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 18.528,
+          "end": 18.624,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 18.656,
+          "end": 18.752,
+          "pitch": 75,
+          "string": 2,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 18.784,
+          "end": 18.816,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 18.848,
+          "end": 18.944,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 18.976,
+          "end": 19.072,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 19.104,
+          "end": 19.232,
+          "pitch": 78,
+          "string": 2,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 19.264,
+          "end": 19.36,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 19.392,
+          "end": 19.456,
+          "pitch": 75,
+          "string": 2,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 19.488,
+          "end": 19.584,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 19.616,
+          "end": 19.712,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 19.744,
+          "end": 19.84,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 19.872,
+          "end": 19.968,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 20.0,
+          "end": 20.096,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 20.128,
+          "end": 20.224,
+          "pitch": 78,
+          "string": 3,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 20.256,
+          "end": 20.352,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 20.384,
+          "end": 20.48,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 20.512,
+          "end": 20.608,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 20.64,
+          "end": 20.672,
+          "pitch": 81,
+          "string": 3,
+          "fret": 5,
+          "finger": 1
+        },
+        {
+          "start": 20.704,
+          "end": 20.832,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 20.864,
+          "end": 20.96,
+          "pitch": 78,
+          "string": 3,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 20.992,
+          "end": 21.024,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 21.024,
+          "end": 21.088,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 21.12,
+          "end": 21.216,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 21.248,
+          "end": 21.344,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 21.376,
+          "end": 21.503999999999998,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 21.535999999999998,
+          "end": 21.631999999999998,
+          "pitch": 75,
+          "string": 2,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 21.663999999999998,
+          "end": 21.759999999999998,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 21.791999999999998,
+          "end": 21.887999999999998,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 21.919999999999998,
+          "end": 22.016,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 22.048,
+          "end": 22.144,
+          "pitch": 78,
+          "string": 2,
+          "fret": 9,
+          "finger": 1
+        },
+        {
+          "start": 22.176,
+          "end": 22.272,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 22.304,
+          "end": 22.432,
+          "pitch": 75,
+          "string": 2,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 22.464,
+          "end": 22.56,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 22.592,
+          "end": 22.688,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 22.72,
+          "end": 22.816,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 22.848,
+          "end": 22.944,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 22.976,
+          "end": 23.072,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 23.104,
+          "end": 23.232,
+          "pitch": 78,
+          "string": 3,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 23.264,
+          "end": 23.296,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 23.328,
+          "end": 23.424,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 23.456,
+          "end": 23.552,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 23.584,
+          "end": 23.68,
+          "pitch": 81,
+          "string": 3,
+          "fret": 5,
+          "finger": 1
+        },
+        {
+          "start": 23.712,
+          "end": 23.808,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 23.84,
+          "end": 23.968,
+          "pitch": 78,
+          "string": 3,
+          "fret": 2,
+          "finger": 1
+        },
+        {
+          "start": 24.0,
+          "end": 24.096,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 24.128,
+          "end": 24.224,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 24.256,
+          "end": 24.352,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 24.384,
+          "end": 24.48,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 24.512,
+          "end": 24.576,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 24.608,
+          "end": 24.704,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 24.736,
+          "end": 24.864,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 24.896,
+          "end": 24.992,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 25.024,
+          "end": 25.12,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 25.152,
+          "end": 25.248,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 25.28,
+          "end": 25.344,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 25.376,
+          "end": 25.471999999999998,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 25.503999999999998,
+          "end": 25.631999999999998,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 25.663999999999998,
+          "end": 25.759999999999998,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 25.791999999999998,
+          "end": 25.887999999999998,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 25.919999999999998,
+          "end": 26.016,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 26.048,
+          "end": 26.144,
+          "pitch": 75,
+          "string": 2,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 26.176,
+          "end": 26.272,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 26.272,
+          "end": 26.4,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 26.432,
+          "end": 26.528,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 26.528,
+          "end": 26.624,
+          "pitch": 75,
+          "string": 2,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 26.656,
+          "end": 26.752,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 26.784,
+          "end": 26.88,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 26.912,
+          "end": 27.008,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 27.04,
+          "end": 27.104,
+          "pitch": 75,
+          "string": 2,
+          "fret": 6,
+          "finger": 1
+        },
+        {
+          "start": 27.136,
+          "end": 27.264,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 27.296,
+          "end": 27.392,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 27.424,
+          "end": 27.52,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 27.552,
+          "end": 27.616,
+          "pitch": 74,
+          "string": 2,
+          "fret": 5,
+          "finger": 1
+        },
+        {
+          "start": 27.616,
+          "end": 27.712,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        },
+        {
+          "start": 27.744,
+          "end": 27.84,
+          "pitch": 76,
+          "string": 3,
+          "fret": 0,
+          "finger": 0
+        },
+        {
+          "start": 27.872,
+          "end": 28.0,
+          "pitch": 80,
+          "string": 3,
+          "fret": 4,
+          "finger": 1
+        }
+      ]
+    },
+    "downloads": [
+      {
+        "label": "Aligned excerpt MIDI",
+        "url": "violin-bach-performance.mid"
+      },
+      {
+        "label": "String / finger assignments",
+        "url": "violin-bach-performance-events.json"
+      }
+    ],
+    "alignment": {
+      "source_audio_offset_seconds": 0.576,
+      "method": "MIDI derived from published estimated note alignments",
+      "source": "https://hermandong.com/bach-violin-dataset/",
+      "recording_performer": "Karen Gomyo",
+      "source_sha256": "314aa3a2ff2fd9ef206747a4f512ac94b99d89de6dceb10d24d55c102034d643"
+    }
+  }
+]

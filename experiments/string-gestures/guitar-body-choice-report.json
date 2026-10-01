@@ -1,0 +1,102 @@
+{
+  "options": 65,
+  "excluded": [
+    "g07",
+    "g30"
+  ],
+  "clips": {
+    "guitar-bach-dynamics": {
+      "headroom": 0.8864,
+      "peak": 1.072,
+      "closest": [
+        {
+          "id": "g27",
+          "ltas_db": 3.62,
+          "frames_db": 12.43
+        },
+        {
+          "id": "g28",
+          "ltas_db": 4.01,
+          "frames_db": 12.34
+        },
+        {
+          "id": "g49",
+          "ltas_db": 4.09,
+          "frames_db": 12.79
+        },
+        {
+          "id": "g18",
+          "ltas_db": 4.54,
+          "frames_db": 12.95
+        },
+        {
+          "id": "g34",
+          "ltas_db": 4.55,
+          "frames_db": 13.27
+        }
+      ]
+    },
+    "guitar-sonatina-harmonics": {
+      "headroom": 0.9745,
+      "peak": 0.975,
+      "closest": [
+        {
+          "id": "g54",
+          "ltas_db": 3.62,
+          "frames_db": 10.57
+        },
+        {
+          "id": "g36",
+          "ltas_db": 3.87,
+          "frames_db": 10.64
+        },
+        {
+          "id": "g21",
+          "ltas_db": 3.88,
+          "frames_db": 10.69
+        },
+        {
+          "id": "g45",
+          "ltas_db": 3.88,
+          "frames_db": 10.14
+        },
+        {
+          "id": "g40",
+          "ltas_db": 4.06,
+          "frames_db": 10.44
+        }
+      ]
+    },
+    "guitar-bach-full": {
+      "headroom": 0.9511,
+      "peak": 0.999,
+      "closest": [
+        {
+          "id": "designed",
+          "ltas_db": 3.06,
+          "frames_db": 10.57
+        },
+        {
+          "id": "g34",
+          "ltas_db": 3.54,
+          "frames_db": 11.53
+        },
+        {
+          "id": "g27",
+          "ltas_db": 3.57,
+          "frames_db": 11.19
+        },
+        {
+          "id": "g19",
+          "ltas_db": 3.7,
+          "frames_db": 11.44
+        },
+        {
+          "id": "g28",
+          "ltas_db": 3.71,
+          "frames_db": 11.27
+        }
+      ]
+    }
+  }
+}

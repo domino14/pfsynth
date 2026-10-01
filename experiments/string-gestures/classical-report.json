@@ -1,0 +1,2937 @@
+{
+  "sources": {
+    "research/strings/midi/classical/carcassi-op60-01.mid": "aa3adb9ed15077fab5663a440335fefce3c0b04f95dbe9c89dc6ee7a66c707ef",
+    "research/strings/midi/classical/bach/violin-2.mid": "60f879c7cbdc95a9a25e60e633bd7cbcfa2c2ba3120547d277eefc5e45e019ed"
+  },
+  "checks": [
+    "All string assignments reproduce MIDI pitches. Simultaneous notes use distinct strings. Outputs finite; varied takes differ."
+  ],
+  "clips": [
+    {
+      "id": "guitar-carcassi",
+      "note": "Guitar \u00b7 Carcassi \u00c9tude No. 1",
+      "dynamic": "Op. 60 \u00b7 first 24 bars",
+      "split": "music",
+      "duration": 37.0,
+      "audio": {
+        "current": "audio/guitar-carcassi-current.mp3",
+        "fitted": "audio/guitar-carcassi-fitted.mp3",
+        "ref": "audio/guitar-carcassi-ref.mp3"
+      },
+      "labels": {
+        "current": "Fixed pluck character",
+        "fitted": "Varying pluck character",
+        "ref": "Another varied take"
+      },
+      "experiment": "Experiment 05 \u00b7 strings",
+      "description": "Carcassi Op.60 No.1, first 24 bars, source MIDI timing at 160 BPM. B adds small pluck-position and excitation variation. The tab displays the inferred string/fret choices actually used by the renderer. No slides or bends were invented.",
+      "thirdLabel": "Another take",
+      "question": "Which guitar interpretation do you prefer?",
+      "metrics": {
+        "current": {
+          "peak_dbfs": -4.0157527892989044,
+          "rms_dbfs": -18.416375078975122,
+          "sha256": "1d21e3c3ff5a777d2482f3643a11c2332e56e2bcfea2c6785e352067879b3ad2"
+        },
+        "fitted": {
+          "peak_dbfs": -4.088247462169078,
+          "rms_dbfs": -18.416375078975122,
+          "sha256": "d64474bcbb2cc8b07f3536ed17df1cdbaeaeb6ae0ca496a8dbfa57bf38b91149"
+        },
+        "ref": {
+          "peak_dbfs": -4.089767182318139,
+          "rms_dbfs": -18.416375078975122,
+          "sha256": "4c50770ec6a3dbf147a255838b2c83e28dc56e3a9d7777f9e4aa362150f2dee5"
+        }
+      },
+      "score": {
+        "kind": "guitar",
+        "title": "Carcassi \u00b7 Op. 60 No. 1",
+        "quarter": 0.375,
+        "meter": 4,
+        "pickup": 0,
+        "measures": [
+          0,
+          1.5,
+          3.0,
+          4.5,
+          6.0,
+          7.5,
+          9.0,
+          10.5,
+          12.0,
+          13.5,
+          15.0,
+          16.5,
+          18.0,
+          19.5,
+          21.0,
+          22.5,
+          24.0,
+          25.5,
+          27.0,
+          28.5,
+          30.0,
+          31.5,
+          33.0,
+          34.5,
+          36.0
+        ],
+        "inferred": true,
+        "source": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=13",
+        "audit": {
+          "passed": true,
+          "violations": [],
+          "max_longitudinal_span_mm": 92.13436680629903,
+          "rolled_chord_times": [],
+          "scale_length_mm": 650,
+          "max_shift_mm": 86.96326214365851,
+          "assumptions": "Four left-hand fingers; pairwise reach limits in mm; held fingers retained; no duration truncation. Guitar index barres cannot cross lower/open held notes. Violin adjacent-string finger stops allowed. Designed adult-hand limits, not player-specific biomechanics."
+        },
+        "notes": [
+          {
+            "start": 0,
+            "end": 0.375,
+            "pitch": 48,
+            "string": 5,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 0.1875,
+            "end": 0.375,
+            "pitch": 60,
+            "string": 3,
+            "fret": 5,
+            "finger": 3
+          },
+          {
+            "start": 0.375,
+            "end": 0.5625,
+            "pitch": 59,
+            "string": 2,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 0.5625,
+            "end": 0.75,
+            "pitch": 57,
+            "string": 3,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 0.75,
+            "end": 0.9375,
+            "pitch": 55,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 0.9375,
+            "end": 1.125,
+            "pitch": 53,
+            "string": 4,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 1.125,
+            "end": 1.3125,
+            "pitch": 52,
+            "string": 4,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 1.3125,
+            "end": 1.5,
+            "pitch": 50,
+            "string": 4,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 1.5,
+            "end": 1.875,
+            "pitch": 48,
+            "string": 5,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 1.6875,
+            "end": 1.875,
+            "pitch": 64,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 1.875,
+            "end": 2.0625,
+            "pitch": 62,
+            "string": 2,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 2.0625,
+            "end": 2.25,
+            "pitch": 60,
+            "string": 2,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 2.25,
+            "end": 2.4375,
+            "pitch": 59,
+            "string": 2,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 2.4375,
+            "end": 2.625,
+            "pitch": 57,
+            "string": 3,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 2.625,
+            "end": 2.8125,
+            "pitch": 55,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 2.8125,
+            "end": 3.0,
+            "pitch": 53,
+            "string": 4,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 3.0,
+            "end": 3.375,
+            "pitch": 52,
+            "string": 4,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 3.1875,
+            "end": 3.375,
+            "pitch": 67,
+            "string": 1,
+            "fret": 3,
+            "finger": 2
+          },
+          {
+            "start": 3.375,
+            "end": 3.5625,
+            "pitch": 65,
+            "string": 1,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 3.5625,
+            "end": 3.75,
+            "pitch": 64,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 3.75,
+            "end": 3.9375,
+            "pitch": 62,
+            "string": 2,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 3.9375,
+            "end": 4.125,
+            "pitch": 60,
+            "string": 2,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 4.125,
+            "end": 4.3125,
+            "pitch": 59,
+            "string": 2,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 4.3125,
+            "end": 4.5,
+            "pitch": 57,
+            "string": 3,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 4.5,
+            "end": 4.6875,
+            "pitch": 55,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 4.6875,
+            "end": 4.875,
+            "pitch": 54,
+            "string": 4,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 4.875,
+            "end": 5.0625,
+            "pitch": 52,
+            "string": 4,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 5.0625,
+            "end": 5.25,
+            "pitch": 50,
+            "string": 4,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 5.25,
+            "end": 5.4375,
+            "pitch": 48,
+            "string": 5,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 5.4375,
+            "end": 5.625,
+            "pitch": 47,
+            "string": 5,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 5.625,
+            "end": 5.8125,
+            "pitch": 45,
+            "string": 5,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 5.8125,
+            "end": 6.0,
+            "pitch": 50,
+            "string": 4,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 6.0,
+            "end": 6.375,
+            "pitch": 43,
+            "string": 6,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 6.1875,
+            "end": 6.375,
+            "pitch": 55,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 6.375,
+            "end": 6.5625,
+            "pitch": 54,
+            "string": 4,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 6.5625,
+            "end": 6.75,
+            "pitch": 52,
+            "string": 4,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 6.75,
+            "end": 6.9375,
+            "pitch": 50,
+            "string": 4,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 6.9375,
+            "end": 7.125,
+            "pitch": 48,
+            "string": 5,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 7.125,
+            "end": 7.3125,
+            "pitch": 47,
+            "string": 5,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 7.3125,
+            "end": 7.5,
+            "pitch": 45,
+            "string": 5,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 7.5,
+            "end": 7.875,
+            "pitch": 43,
+            "string": 6,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 7.6875,
+            "end": 7.875,
+            "pitch": 59,
+            "string": 2,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 7.875,
+            "end": 8.0625,
+            "pitch": 57,
+            "string": 3,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 8.0625,
+            "end": 8.25,
+            "pitch": 55,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 8.25,
+            "end": 8.4375,
+            "pitch": 54,
+            "string": 4,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 8.4375,
+            "end": 8.625,
+            "pitch": 52,
+            "string": 4,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 8.625,
+            "end": 8.8125,
+            "pitch": 50,
+            "string": 4,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 8.8125,
+            "end": 9.0,
+            "pitch": 48,
+            "string": 5,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 9.0,
+            "end": 9.375,
+            "pitch": 47,
+            "string": 5,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 9.1875,
+            "end": 9.375,
+            "pitch": 62,
+            "string": 2,
+            "fret": 3,
+            "finger": 2
+          },
+          {
+            "start": 9.375,
+            "end": 9.5625,
+            "pitch": 60,
+            "string": 2,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 9.5625,
+            "end": 9.75,
+            "pitch": 59,
+            "string": 2,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 9.75,
+            "end": 9.9375,
+            "pitch": 57,
+            "string": 3,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 9.9375,
+            "end": 10.125,
+            "pitch": 55,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 10.125,
+            "end": 10.3125,
+            "pitch": 53,
+            "string": 4,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 10.3125,
+            "end": 10.5,
+            "pitch": 52,
+            "string": 4,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 10.5,
+            "end": 10.6875,
+            "pitch": 50,
+            "string": 4,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 10.6875,
+            "end": 10.875,
+            "pitch": 48,
+            "string": 5,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 10.875,
+            "end": 11.0625,
+            "pitch": 47,
+            "string": 5,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 11.0625,
+            "end": 11.25,
+            "pitch": 45,
+            "string": 5,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 11.25,
+            "end": 11.4375,
+            "pitch": 43,
+            "string": 6,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 11.4375,
+            "end": 11.625,
+            "pitch": 53,
+            "string": 4,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 11.625,
+            "end": 11.8125,
+            "pitch": 52,
+            "string": 4,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 11.8125,
+            "end": 12.0,
+            "pitch": 50,
+            "string": 4,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 12.0,
+            "end": 12.375,
+            "pitch": 48,
+            "string": 5,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 12.1875,
+            "end": 12.375,
+            "pitch": 60,
+            "string": 3,
+            "fret": 5,
+            "finger": 3
+          },
+          {
+            "start": 12.375,
+            "end": 12.5625,
+            "pitch": 62,
+            "string": 2,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 12.5625,
+            "end": 12.75,
+            "pitch": 64,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 12.75,
+            "end": 12.9375,
+            "pitch": 65,
+            "string": 1,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 12.9375,
+            "end": 13.125,
+            "pitch": 67,
+            "string": 1,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 13.125,
+            "end": 13.3125,
+            "pitch": 69,
+            "string": 1,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 13.3125,
+            "end": 13.5,
+            "pitch": 71,
+            "string": 1,
+            "fret": 7,
+            "finger": 1
+          },
+          {
+            "start": 13.5,
+            "end": 13.6875,
+            "pitch": 72,
+            "string": 1,
+            "fret": 8,
+            "finger": 1
+          },
+          {
+            "start": 13.6875,
+            "end": 13.875,
+            "pitch": 71,
+            "string": 1,
+            "fret": 7,
+            "finger": 1
+          },
+          {
+            "start": 13.875,
+            "end": 14.0625,
+            "pitch": 69,
+            "string": 1,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 14.0625,
+            "end": 14.25,
+            "pitch": 67,
+            "string": 1,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 14.25,
+            "end": 14.4375,
+            "pitch": 65,
+            "string": 1,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 14.4375,
+            "end": 14.625,
+            "pitch": 64,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 14.625,
+            "end": 14.8125,
+            "pitch": 62,
+            "string": 2,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 14.8125,
+            "end": 15.0,
+            "pitch": 60,
+            "string": 2,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 15.0,
+            "end": 15.1875,
+            "pitch": 59,
+            "string": 2,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 15.1875,
+            "end": 15.375,
+            "pitch": 40,
+            "string": 6,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 15.375,
+            "end": 15.5625,
+            "pitch": 42,
+            "string": 6,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 15.5625,
+            "end": 15.75,
+            "pitch": 44,
+            "string": 6,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 15.75,
+            "end": 15.9375,
+            "pitch": 45,
+            "string": 5,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 15.9375,
+            "end": 16.125,
+            "pitch": 47,
+            "string": 5,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 16.125,
+            "end": 16.3125,
+            "pitch": 48,
+            "string": 5,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 16.3125,
+            "end": 16.5,
+            "pitch": 50,
+            "string": 4,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 16.5,
+            "end": 16.6875,
+            "pitch": 52,
+            "string": 4,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 16.6875,
+            "end": 16.875,
+            "pitch": 51,
+            "string": 4,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 16.875,
+            "end": 17.0625,
+            "pitch": 52,
+            "string": 4,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 17.0625,
+            "end": 17.25,
+            "pitch": 53,
+            "string": 4,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 17.25,
+            "end": 17.4375,
+            "pitch": 52,
+            "string": 4,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 17.4375,
+            "end": 17.625,
+            "pitch": 50,
+            "string": 4,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 17.625,
+            "end": 17.8125,
+            "pitch": 48,
+            "string": 5,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 17.8125,
+            "end": 18.0,
+            "pitch": 47,
+            "string": 5,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 18.0,
+            "end": 18.375,
+            "pitch": 45,
+            "string": 5,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 18.1875,
+            "end": 18.375,
+            "pitch": 57,
+            "string": 3,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 18.375,
+            "end": 18.5625,
+            "pitch": 59,
+            "string": 2,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 18.5625,
+            "end": 18.75,
+            "pitch": 60,
+            "string": 2,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 18.75,
+            "end": 18.9375,
+            "pitch": 62,
+            "string": 2,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 18.9375,
+            "end": 19.125,
+            "pitch": 64,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 19.125,
+            "end": 19.3125,
+            "pitch": 66,
+            "string": 1,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 19.3125,
+            "end": 19.5,
+            "pitch": 68,
+            "string": 1,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 19.5,
+            "end": 19.6875,
+            "pitch": 69,
+            "string": 1,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 19.6875,
+            "end": 19.875,
+            "pitch": 67,
+            "string": 1,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 19.875,
+            "end": 20.0625,
+            "pitch": 65,
+            "string": 1,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 20.0625,
+            "end": 20.25,
+            "pitch": 64,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 20.25,
+            "end": 20.4375,
+            "pitch": 65,
+            "string": 1,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 20.4375,
+            "end": 20.625,
+            "pitch": 64,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 20.625,
+            "end": 20.8125,
+            "pitch": 62,
+            "string": 2,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 20.8125,
+            "end": 21.0,
+            "pitch": 60,
+            "string": 2,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 21.0,
+            "end": 21.1875,
+            "pitch": 59,
+            "string": 2,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 21.1875,
+            "end": 21.375,
+            "pitch": 43,
+            "string": 6,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 21.375,
+            "end": 21.5625,
+            "pitch": 45,
+            "string": 5,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 21.5625,
+            "end": 21.75,
+            "pitch": 47,
+            "string": 5,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 21.75,
+            "end": 21.9375,
+            "pitch": 48,
+            "string": 5,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 21.9375,
+            "end": 22.125,
+            "pitch": 50,
+            "string": 4,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 22.125,
+            "end": 22.3125,
+            "pitch": 52,
+            "string": 4,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 22.3125,
+            "end": 22.5,
+            "pitch": 54,
+            "string": 4,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 22.5,
+            "end": 22.6875,
+            "pitch": 55,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 22.6875,
+            "end": 22.875,
+            "pitch": 54,
+            "string": 4,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 22.875,
+            "end": 23.0625,
+            "pitch": 55,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 23.0625,
+            "end": 23.25,
+            "pitch": 57,
+            "string": 3,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 23.25,
+            "end": 23.4375,
+            "pitch": 55,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 23.4375,
+            "end": 23.625,
+            "pitch": 53,
+            "string": 4,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 23.625,
+            "end": 23.8125,
+            "pitch": 52,
+            "string": 4,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 23.8125,
+            "end": 24.0,
+            "pitch": 50,
+            "string": 4,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 24.0,
+            "end": 24.375,
+            "pitch": 48,
+            "string": 5,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 24.1875,
+            "end": 24.375,
+            "pitch": 60,
+            "string": 3,
+            "fret": 5,
+            "finger": 3
+          },
+          {
+            "start": 24.375,
+            "end": 24.5625,
+            "pitch": 62,
+            "string": 2,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 24.5625,
+            "end": 24.75,
+            "pitch": 64,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 24.75,
+            "end": 24.9375,
+            "pitch": 65,
+            "string": 1,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 24.9375,
+            "end": 25.125,
+            "pitch": 64,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 25.125,
+            "end": 25.3125,
+            "pitch": 62,
+            "string": 2,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 25.3125,
+            "end": 25.5,
+            "pitch": 60,
+            "string": 2,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 25.5,
+            "end": 25.6875,
+            "pitch": 59,
+            "string": 2,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 25.6875,
+            "end": 25.875,
+            "pitch": 43,
+            "string": 6,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 25.875,
+            "end": 26.0625,
+            "pitch": 47,
+            "string": 5,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 26.0625,
+            "end": 26.25,
+            "pitch": 50,
+            "string": 4,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 26.25,
+            "end": 26.4375,
+            "pitch": 55,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 26.4375,
+            "end": 26.625,
+            "pitch": 53,
+            "string": 4,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 26.625,
+            "end": 26.8125,
+            "pitch": 52,
+            "string": 4,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 26.8125,
+            "end": 27.0,
+            "pitch": 50,
+            "string": 4,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 27.0,
+            "end": 27.375,
+            "pitch": 48,
+            "string": 5,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 27.1875,
+            "end": 27.375,
+            "pitch": 64,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 27.375,
+            "end": 27.5625,
+            "pitch": 66,
+            "string": 1,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 27.5625,
+            "end": 27.75,
+            "pitch": 67,
+            "string": 1,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 27.75,
+            "end": 27.9375,
+            "pitch": 69,
+            "string": 1,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 27.9375,
+            "end": 28.125,
+            "pitch": 67,
+            "string": 1,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 28.125,
+            "end": 28.3125,
+            "pitch": 66,
+            "string": 1,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 28.3125,
+            "end": 28.5,
+            "pitch": 64,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 28.5,
+            "end": 28.6875,
+            "pitch": 63,
+            "string": 2,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 28.6875,
+            "end": 28.875,
+            "pitch": 47,
+            "string": 6,
+            "fret": 7,
+            "finger": 1
+          },
+          {
+            "start": 28.875,
+            "end": 29.0625,
+            "pitch": 51,
+            "string": 5,
+            "fret": 6,
+            "finger": 1
+          },
+          {
+            "start": 29.0625,
+            "end": 29.25,
+            "pitch": 54,
+            "string": 4,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 29.25,
+            "end": 29.4375,
+            "pitch": 59,
+            "string": 2,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 29.4375,
+            "end": 29.625,
+            "pitch": 57,
+            "string": 3,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 29.625,
+            "end": 29.8125,
+            "pitch": 55,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 29.8125,
+            "end": 30.0,
+            "pitch": 54,
+            "string": 4,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 30.0,
+            "end": 30.75,
+            "pitch": 52,
+            "string": 4,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 30.1875,
+            "end": 30.375,
+            "pitch": 55,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 30.375,
+            "end": 30.5625,
+            "pitch": 59,
+            "string": 2,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 30.5625,
+            "end": 30.75,
+            "pitch": 64,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 30.75,
+            "end": 30.9375,
+            "pitch": 63,
+            "string": 2,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 30.9375,
+            "end": 31.125,
+            "pitch": 64,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 31.125,
+            "end": 31.3125,
+            "pitch": 63,
+            "string": 2,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 31.3125,
+            "end": 31.5,
+            "pitch": 64,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 31.5,
+            "end": 32.25,
+            "pitch": 50,
+            "string": 5,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 31.6875,
+            "end": 31.875,
+            "pitch": 55,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 31.875,
+            "end": 32.0625,
+            "pitch": 59,
+            "string": 2,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 32.0625,
+            "end": 32.25,
+            "pitch": 65,
+            "string": 2,
+            "fret": 6,
+            "finger": 2
+          },
+          {
+            "start": 32.25,
+            "end": 32.4375,
+            "pitch": 64,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 32.4375,
+            "end": 32.625,
+            "pitch": 65,
+            "string": 2,
+            "fret": 6,
+            "finger": 1
+          },
+          {
+            "start": 32.625,
+            "end": 32.8125,
+            "pitch": 64,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 32.8125,
+            "end": 33.0,
+            "pitch": 65,
+            "string": 2,
+            "fret": 6,
+            "finger": 1
+          },
+          {
+            "start": 33.0,
+            "end": 33.75,
+            "pitch": 48,
+            "string": 5,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 33.0,
+            "end": 33.1875,
+            "pitch": 64,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 33.1875,
+            "end": 33.375,
+            "pitch": 67,
+            "string": 1,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 33.375,
+            "end": 33.5625,
+            "pitch": 65,
+            "string": 2,
+            "fret": 6,
+            "finger": 4
+          },
+          {
+            "start": 33.5625,
+            "end": 33.75,
+            "pitch": 64,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 33.75,
+            "end": 34.5,
+            "pitch": 55,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 33.75,
+            "end": 33.9375,
+            "pitch": 62,
+            "string": 2,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 33.9375,
+            "end": 34.125,
+            "pitch": 65,
+            "string": 1,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 34.125,
+            "end": 34.3125,
+            "pitch": 64,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 34.3125,
+            "end": 34.5,
+            "pitch": 62,
+            "string": 2,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 34.5,
+            "end": 35.25,
+            "pitch": 57,
+            "string": 3,
+            "fret": 2,
+            "finger": 2
+          },
+          {
+            "start": 34.5,
+            "end": 34.6875,
+            "pitch": 60,
+            "string": 2,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 34.6875,
+            "end": 34.875,
+            "pitch": 64,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 34.875,
+            "end": 35.0625,
+            "pitch": 62,
+            "string": 2,
+            "fret": 3,
+            "finger": 3
+          },
+          {
+            "start": 35.0625,
+            "end": 35.25,
+            "pitch": 60,
+            "string": 2,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 35.25,
+            "end": 36.0,
+            "pitch": 52,
+            "string": 4,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 35.25,
+            "end": 35.4375,
+            "pitch": 59,
+            "string": 2,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 35.4375,
+            "end": 35.625,
+            "pitch": 62,
+            "string": 2,
+            "fret": 3,
+            "finger": 2
+          },
+          {
+            "start": 35.625,
+            "end": 35.8125,
+            "pitch": 60,
+            "string": 3,
+            "fret": 5,
+            "finger": 4
+          },
+          {
+            "start": 35.8125,
+            "end": 36.0,
+            "pitch": 59,
+            "string": 2,
+            "fret": 0,
+            "finger": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "violin-bach-corrente",
+      "note": "Violin \u00b7 Bach Corrente",
+      "dynamic": "Partita No. 1 \u00b7 BWV 1002",
+      "split": "music",
+      "duration": 34.46154195011338,
+      "audio": {
+        "current": "audio/violin-bach-corrente-current.mp3",
+        "fitted": "audio/violin-bach-corrente-fitted.mp3",
+        "ref": "audio/violin-bach-corrente-ref.mp3"
+      },
+      "labels": {
+        "current": "Steady bow, fixed character",
+        "fitted": "Steady bow, varying character",
+        "ref": "Expressive interpretation"
+      },
+      "experiment": "Experiment 05 \u00b7 strings",
+      "description": "Bach Corrente from Partita No.1 BWV1002, first 24 bars plus pickup, source score MIDI at 130 BPM. B varies attack and tone with steady pitch. The third version adds designed mild vibrato on sustained stopped notes. Fingering is inferred; bowing and expression are synth interpretations, not captured performance.",
+      "thirdLabel": "Expressive take",
+      "question": "Which violin interpretation do you prefer?",
+      "metrics": {
+        "current": {
+          "peak_dbfs": -6.2015867017405055,
+          "rms_dbfs": -18.416375078976674,
+          "sha256": "e2152ffc150d4ed9799beab337442780ee7bffaddc23c4ce6069f6a24109697b"
+        },
+        "fitted": {
+          "peak_dbfs": -5.847069042308982,
+          "rms_dbfs": -18.41637507897641,
+          "sha256": "06fae52b75888a6da2cb9fa911a7b960c953ea616b29c133429a7dd5f40c74ad"
+        },
+        "ref": {
+          "peak_dbfs": -5.847069042308982,
+          "rms_dbfs": -18.41637507897641,
+          "sha256": "06fae52b75888a6da2cb9fa911a7b960c953ea616b29c133429a7dd5f40c74ad"
+        }
+      },
+      "score": {
+        "kind": "violin",
+        "title": "Bach \u00b7 Corrente, BWV 1002",
+        "quarter": 0.461538,
+        "meter": 3,
+        "pickup": 0.5,
+        "measures": [
+          0,
+          0.230769,
+          1.615383,
+          2.999997,
+          4.384611,
+          5.769225,
+          7.153839,
+          8.538453,
+          9.923067,
+          11.307680999999999,
+          12.692294999999998,
+          14.076908999999997,
+          15.461522999999996,
+          16.846136999999995,
+          18.230750999999994,
+          19.615364999999994,
+          20.999978999999993,
+          22.38459299999999,
+          23.76920699999999,
+          25.15382099999999,
+          26.53843499999999,
+          27.92304899999999,
+          29.307662999999987,
+          30.692276999999986,
+          32.07689099999999,
+          33.46150499999999,
+          33.46153846153846
+        ],
+        "inferred": true,
+        "source": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=180",
+        "audit": {
+          "passed": true,
+          "violations": [],
+          "max_longitudinal_span_mm": 0,
+          "rolled_chord_times": [
+            11.769219000000014
+          ],
+          "scale_length_mm": 328,
+          "max_shift_mm": 77.65975033040787,
+          "assumptions": "Four left-hand fingers; pairwise reach limits in mm; held fingers retained; no duration truncation. Guitar index barres cannot cross lower/open held notes. Violin adjacent-string finger stops allowed. Designed adult-hand limits, not player-specific biomechanics."
+        },
+        "notes": [
+          {
+            "start": 0,
+            "end": 0.230769,
+            "pitch": 71,
+            "string": 2,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 0.230769,
+            "end": 0.461538,
+            "pitch": 71,
+            "string": 2,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 0.461538,
+            "end": 0.692307,
+            "pitch": 59,
+            "string": 0,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 0.692307,
+            "end": 0.923076,
+            "pitch": 62,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 0.923076,
+            "end": 1.153845,
+            "pitch": 66,
+            "string": 1,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 1.153845,
+            "end": 1.384614,
+            "pitch": 71,
+            "string": 2,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 1.384614,
+            "end": 1.615383,
+            "pitch": 74,
+            "string": 2,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 1.615383,
+            "end": 1.846152,
+            "pitch": 73,
+            "string": 2,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 1.846152,
+            "end": 2.076921,
+            "pitch": 66,
+            "string": 1,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 2.076921,
+            "end": 2.30769,
+            "pitch": 58,
+            "string": 0,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 2.30769,
+            "end": 2.538459,
+            "pitch": 64,
+            "string": 1,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 2.538459,
+            "end": 2.769228,
+            "pitch": 62,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 2.769228,
+            "end": 2.999997,
+            "pitch": 61,
+            "string": 0,
+            "fret": 6,
+            "finger": 1
+          },
+          {
+            "start": 2.999997,
+            "end": 3.230766,
+            "pitch": 59,
+            "string": 0,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 3.230766,
+            "end": 3.461535,
+            "pitch": 62,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 3.461535,
+            "end": 3.692304,
+            "pitch": 66,
+            "string": 1,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 3.692304,
+            "end": 3.923073,
+            "pitch": 71,
+            "string": 2,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 3.923073,
+            "end": 4.153842,
+            "pitch": 74,
+            "string": 2,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 4.153842,
+            "end": 4.384611,
+            "pitch": 78,
+            "string": 3,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 4.384611,
+            "end": 4.61538,
+            "pitch": 76,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 4.61538,
+            "end": 4.8461490000000005,
+            "pitch": 69,
+            "string": 2,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 4.8461490000000005,
+            "end": 5.076918000000001,
+            "pitch": 61,
+            "string": 0,
+            "fret": 6,
+            "finger": 1
+          },
+          {
+            "start": 5.076918000000001,
+            "end": 5.307687000000001,
+            "pitch": 67,
+            "string": 1,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 5.307687000000001,
+            "end": 5.538456000000002,
+            "pitch": 66,
+            "string": 1,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 5.538456000000002,
+            "end": 5.769225000000002,
+            "pitch": 64,
+            "string": 1,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 5.769225000000002,
+            "end": 5.999994000000003,
+            "pitch": 62,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 5.999994000000003,
+            "end": 6.230763000000003,
+            "pitch": 66,
+            "string": 1,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 6.230763000000003,
+            "end": 6.461532000000004,
+            "pitch": 69,
+            "string": 2,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 6.461532000000004,
+            "end": 6.692301000000004,
+            "pitch": 74,
+            "string": 2,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 6.692301000000004,
+            "end": 6.9230700000000045,
+            "pitch": 78,
+            "string": 3,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 6.9230700000000045,
+            "end": 7.153839000000005,
+            "pitch": 81,
+            "string": 3,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 7.153839000000005,
+            "end": 7.384608000000005,
+            "pitch": 79,
+            "string": 3,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 7.384608000000005,
+            "end": 7.615377000000006,
+            "pitch": 71,
+            "string": 2,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 7.615377000000006,
+            "end": 7.846146000000006,
+            "pitch": 64,
+            "string": 1,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 7.846146000000006,
+            "end": 8.076915000000007,
+            "pitch": 74,
+            "string": 2,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 8.076915000000007,
+            "end": 8.307684000000007,
+            "pitch": 73,
+            "string": 2,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 8.307684000000007,
+            "end": 8.538453000000008,
+            "pitch": 71,
+            "string": 2,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 8.538453000000008,
+            "end": 8.769222000000008,
+            "pitch": 70,
+            "string": 2,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 8.769222000000008,
+            "end": 8.999991000000009,
+            "pitch": 79,
+            "string": 3,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 8.999991000000009,
+            "end": 9.230760000000009,
+            "pitch": 78,
+            "string": 3,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 9.230760000000009,
+            "end": 9.46152900000001,
+            "pitch": 64,
+            "string": 1,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 9.46152900000001,
+            "end": 9.69229800000001,
+            "pitch": 63,
+            "string": 1,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 9.69229800000001,
+            "end": 9.92306700000001,
+            "pitch": 69,
+            "string": 2,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 9.92306700000001,
+            "end": 10.15383600000001,
+            "pitch": 68,
+            "string": 1,
+            "fret": 6,
+            "finger": 1
+          },
+          {
+            "start": 10.15383600000001,
+            "end": 10.384605000000011,
+            "pitch": 78,
+            "string": 2,
+            "fret": 9,
+            "finger": 1
+          },
+          {
+            "start": 10.384605000000011,
+            "end": 10.615374000000012,
+            "pitch": 76,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 10.615374000000012,
+            "end": 10.846143000000012,
+            "pitch": 62,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 10.846143000000012,
+            "end": 11.076912000000013,
+            "pitch": 61,
+            "string": 0,
+            "fret": 6,
+            "finger": 1
+          },
+          {
+            "start": 11.076912000000013,
+            "end": 11.307681000000013,
+            "pitch": 64,
+            "string": 1,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 11.307681000000013,
+            "end": 11.538450000000013,
+            "pitch": 70,
+            "string": 2,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 11.538450000000013,
+            "end": 11.769219000000014,
+            "pitch": 76,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 11.769219000000014,
+            "end": 11.999988000000014,
+            "pitch": 59,
+            "string": 0,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 11.769219000000014,
+            "end": 11.999988000000014,
+            "pitch": 66,
+            "string": 1,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 11.769219000000014,
+            "end": 11.999988000000014,
+            "pitch": 76,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 11.999988000000014,
+            "end": 12.230757000000015,
+            "pitch": 74,
+            "string": 2,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 12.230757000000015,
+            "end": 12.461526000000015,
+            "pitch": 73,
+            "string": 2,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 12.461526000000015,
+            "end": 12.692295000000016,
+            "pitch": 74,
+            "string": 2,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 12.692295000000016,
+            "end": 12.923064000000016,
+            "pitch": 73,
+            "string": 2,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 12.923064000000016,
+            "end": 13.153833000000017,
+            "pitch": 66,
+            "string": 1,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 13.153833000000017,
+            "end": 13.384602000000017,
+            "pitch": 58,
+            "string": 0,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 13.384602000000017,
+            "end": 13.615371000000017,
+            "pitch": 67,
+            "string": 1,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 13.615371000000017,
+            "end": 13.846140000000018,
+            "pitch": 66,
+            "string": 1,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 13.846140000000018,
+            "end": 14.076909000000018,
+            "pitch": 64,
+            "string": 1,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 14.076909000000018,
+            "end": 14.307678000000019,
+            "pitch": 62,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 14.307678000000019,
+            "end": 14.53844700000002,
+            "pitch": 66,
+            "string": 1,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 14.53844700000002,
+            "end": 14.76921600000002,
+            "pitch": 71,
+            "string": 2,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 14.76921600000002,
+            "end": 14.99998500000002,
+            "pitch": 74,
+            "string": 2,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 14.99998500000002,
+            "end": 15.23075400000002,
+            "pitch": 78,
+            "string": 2,
+            "fret": 9,
+            "finger": 1
+          },
+          {
+            "start": 15.23075400000002,
+            "end": 15.461523000000021,
+            "pitch": 83,
+            "string": 3,
+            "fret": 7,
+            "finger": 1
+          },
+          {
+            "start": 15.461523000000021,
+            "end": 15.692292000000021,
+            "pitch": 79,
+            "string": 3,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 15.692292000000021,
+            "end": 15.923061000000022,
+            "pitch": 71,
+            "string": 2,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 15.923061000000022,
+            "end": 16.15383000000002,
+            "pitch": 64,
+            "string": 1,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 16.15383000000002,
+            "end": 16.38459900000002,
+            "pitch": 67,
+            "string": 1,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 16.38459900000002,
+            "end": 16.615368000000018,
+            "pitch": 71,
+            "string": 2,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 16.615368000000018,
+            "end": 16.846137000000017,
+            "pitch": 74,
+            "string": 2,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 16.846137000000017,
+            "end": 17.076906000000015,
+            "pitch": 73,
+            "string": 2,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 17.076906000000015,
+            "end": 17.307675000000014,
+            "pitch": 64,
+            "string": 1,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 17.307675000000014,
+            "end": 17.538444000000013,
+            "pitch": 57,
+            "string": 0,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 17.538444000000013,
+            "end": 17.76921300000001,
+            "pitch": 61,
+            "string": 0,
+            "fret": 6,
+            "finger": 1
+          },
+          {
+            "start": 17.76921300000001,
+            "end": 17.99998200000001,
+            "pitch": 64,
+            "string": 0,
+            "fret": 9,
+            "finger": 1
+          },
+          {
+            "start": 17.99998200000001,
+            "end": 18.23075100000001,
+            "pitch": 67,
+            "string": 1,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 18.23075100000001,
+            "end": 18.461520000000007,
+            "pitch": 66,
+            "string": 1,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 18.461520000000007,
+            "end": 18.692289000000006,
+            "pitch": 74,
+            "string": 2,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 18.692289000000006,
+            "end": 18.923058000000005,
+            "pitch": 81,
+            "string": 3,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 18.923058000000005,
+            "end": 19.153827000000003,
+            "pitch": 76,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 19.153827000000003,
+            "end": 19.384596000000002,
+            "pitch": 74,
+            "string": 2,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 19.384596000000002,
+            "end": 19.615365,
+            "pitch": 72,
+            "string": 2,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 19.615365,
+            "end": 19.846134,
+            "pitch": 71,
+            "string": 2,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 19.846134,
+            "end": 20.076902999999998,
+            "pitch": 67,
+            "string": 1,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 20.076902999999998,
+            "end": 20.307671999999997,
+            "pitch": 71,
+            "string": 2,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 20.307671999999997,
+            "end": 20.538440999999995,
+            "pitch": 74,
+            "string": 2,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 20.538440999999995,
+            "end": 20.769209999999994,
+            "pitch": 79,
+            "string": 3,
+            "fret": 3,
+            "finger": 1
+          },
+          {
+            "start": 20.769209999999994,
+            "end": 20.999978999999993,
+            "pitch": 83,
+            "string": 3,
+            "fret": 7,
+            "finger": 1
+          },
+          {
+            "start": 20.999978999999993,
+            "end": 21.23074799999999,
+            "pitch": 85,
+            "string": 3,
+            "fret": 9,
+            "finger": 1
+          },
+          {
+            "start": 21.23074799999999,
+            "end": 21.46151699999999,
+            "pitch": 76,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 21.46151699999999,
+            "end": 21.69228599999999,
+            "pitch": 67,
+            "string": 0,
+            "fret": 12,
+            "finger": 1
+          },
+          {
+            "start": 21.69228599999999,
+            "end": 21.923054999999987,
+            "pitch": 76,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 21.923054999999987,
+            "end": 22.153823999999986,
+            "pitch": 81,
+            "string": 2,
+            "fret": 12,
+            "finger": 1
+          },
+          {
+            "start": 22.153823999999986,
+            "end": 22.384592999999985,
+            "pitch": 85,
+            "string": 3,
+            "fret": 9,
+            "finger": 1
+          },
+          {
+            "start": 22.384592999999985,
+            "end": 22.615361999999983,
+            "pitch": 86,
+            "string": 3,
+            "fret": 10,
+            "finger": 1
+          },
+          {
+            "start": 22.615361999999983,
+            "end": 22.846130999999982,
+            "pitch": 81,
+            "string": 2,
+            "fret": 12,
+            "finger": 1
+          },
+          {
+            "start": 22.846130999999982,
+            "end": 23.07689999999998,
+            "pitch": 78,
+            "string": 2,
+            "fret": 9,
+            "finger": 1
+          },
+          {
+            "start": 23.07689999999998,
+            "end": 23.30766899999998,
+            "pitch": 74,
+            "string": 1,
+            "fret": 12,
+            "finger": 1
+          },
+          {
+            "start": 23.30766899999998,
+            "end": 23.538437999999978,
+            "pitch": 69,
+            "string": 2,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 23.538437999999978,
+            "end": 23.769206999999977,
+            "pitch": 85,
+            "string": 3,
+            "fret": 9,
+            "finger": 1
+          },
+          {
+            "start": 23.769206999999977,
+            "end": 23.999975999999975,
+            "pitch": 62,
+            "string": 1,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 23.999975999999975,
+            "end": 24.230744999999974,
+            "pitch": 86,
+            "string": 3,
+            "fret": 10,
+            "finger": 1
+          },
+          {
+            "start": 24.230744999999974,
+            "end": 24.461513999999973,
+            "pitch": 85,
+            "string": 3,
+            "fret": 9,
+            "finger": 1
+          },
+          {
+            "start": 24.461513999999973,
+            "end": 24.69228299999997,
+            "pitch": 83,
+            "string": 3,
+            "fret": 7,
+            "finger": 1
+          },
+          {
+            "start": 24.69228299999997,
+            "end": 24.92305199999997,
+            "pitch": 82,
+            "string": 3,
+            "fret": 6,
+            "finger": 1
+          },
+          {
+            "start": 24.92305199999997,
+            "end": 25.15382099999997,
+            "pitch": 83,
+            "string": 3,
+            "fret": 7,
+            "finger": 1
+          },
+          {
+            "start": 25.15382099999997,
+            "end": 25.384589999999967,
+            "pitch": 85,
+            "string": 3,
+            "fret": 9,
+            "finger": 1
+          },
+          {
+            "start": 25.384589999999967,
+            "end": 25.615358999999966,
+            "pitch": 76,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 25.615358999999966,
+            "end": 25.846127999999965,
+            "pitch": 70,
+            "string": 1,
+            "fret": 8,
+            "finger": 1
+          },
+          {
+            "start": 25.846127999999965,
+            "end": 26.076896999999963,
+            "pitch": 79,
+            "string": 2,
+            "fret": 10,
+            "finger": 1
+          },
+          {
+            "start": 26.076896999999963,
+            "end": 26.307665999999962,
+            "pitch": 78,
+            "string": 2,
+            "fret": 9,
+            "finger": 1
+          },
+          {
+            "start": 26.307665999999962,
+            "end": 26.53843499999996,
+            "pitch": 76,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 26.53843499999996,
+            "end": 26.76920399999996,
+            "pitch": 74,
+            "string": 1,
+            "fret": 12,
+            "finger": 1
+          },
+          {
+            "start": 26.76920399999996,
+            "end": 26.999972999999958,
+            "pitch": 78,
+            "string": 2,
+            "fret": 9,
+            "finger": 1
+          },
+          {
+            "start": 26.999972999999958,
+            "end": 27.230741999999957,
+            "pitch": 83,
+            "string": 3,
+            "fret": 7,
+            "finger": 1
+          },
+          {
+            "start": 27.230741999999957,
+            "end": 27.461510999999955,
+            "pitch": 80,
+            "string": 3,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 27.461510999999955,
+            "end": 27.692279999999954,
+            "pitch": 81,
+            "string": 3,
+            "fret": 5,
+            "finger": 1
+          },
+          {
+            "start": 27.692279999999954,
+            "end": 27.923048999999953,
+            "pitch": 78,
+            "string": 3,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 27.923048999999953,
+            "end": 28.15381799999995,
+            "pitch": 77,
+            "string": 3,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 28.15381799999995,
+            "end": 28.38458699999995,
+            "pitch": 80,
+            "string": 3,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 28.38458699999995,
+            "end": 28.61535599999995,
+            "pitch": 83,
+            "string": 3,
+            "fret": 7,
+            "finger": 1
+          },
+          {
+            "start": 28.61535599999995,
+            "end": 28.846124999999947,
+            "pitch": 86,
+            "string": 3,
+            "fret": 10,
+            "finger": 1
+          },
+          {
+            "start": 28.846124999999947,
+            "end": 29.076893999999946,
+            "pitch": 85,
+            "string": 3,
+            "fret": 9,
+            "finger": 1
+          },
+          {
+            "start": 29.076893999999946,
+            "end": 29.307662999999945,
+            "pitch": 71,
+            "string": 1,
+            "fret": 9,
+            "finger": 1
+          },
+          {
+            "start": 29.307662999999945,
+            "end": 29.538431999999943,
+            "pitch": 69,
+            "string": 2,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 29.538431999999943,
+            "end": 29.769200999999942,
+            "pitch": 73,
+            "string": 1,
+            "fret": 11,
+            "finger": 1
+          },
+          {
+            "start": 29.769200999999942,
+            "end": 29.99996999999994,
+            "pitch": 78,
+            "string": 2,
+            "fret": 9,
+            "finger": 1
+          },
+          {
+            "start": 29.99996999999994,
+            "end": 30.23073899999994,
+            "pitch": 81,
+            "string": 2,
+            "fret": 12,
+            "finger": 1
+          },
+          {
+            "start": 30.23073899999994,
+            "end": 30.461507999999938,
+            "pitch": 85,
+            "string": 3,
+            "fret": 9,
+            "finger": 1
+          },
+          {
+            "start": 30.461507999999938,
+            "end": 30.692276999999937,
+            "pitch": 76,
+            "string": 3,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 30.692276999999937,
+            "end": 30.923045999999935,
+            "pitch": 75,
+            "string": 2,
+            "fret": 6,
+            "finger": 1
+          },
+          {
+            "start": 30.923045999999935,
+            "end": 31.153814999999934,
+            "pitch": 78,
+            "string": 2,
+            "fret": 9,
+            "finger": 1
+          },
+          {
+            "start": 31.153814999999934,
+            "end": 31.384583999999933,
+            "pitch": 81,
+            "string": 2,
+            "fret": 12,
+            "finger": 1
+          },
+          {
+            "start": 31.384583999999933,
+            "end": 31.61535299999993,
+            "pitch": 85,
+            "string": 3,
+            "fret": 9,
+            "finger": 1
+          },
+          {
+            "start": 31.61535299999993,
+            "end": 31.84612199999993,
+            "pitch": 83,
+            "string": 3,
+            "fret": 7,
+            "finger": 1
+          },
+          {
+            "start": 31.84612199999993,
+            "end": 32.07689099999993,
+            "pitch": 69,
+            "string": 2,
+            "fret": 0,
+            "finger": 0
+          },
+          {
+            "start": 32.07689099999993,
+            "end": 32.307659999999935,
+            "pitch": 68,
+            "string": 1,
+            "fret": 6,
+            "finger": 1
+          },
+          {
+            "start": 32.307659999999935,
+            "end": 32.53842899999994,
+            "pitch": 71,
+            "string": 2,
+            "fret": 2,
+            "finger": 1
+          },
+          {
+            "start": 32.53842899999994,
+            "end": 32.76919799999994,
+            "pitch": 77,
+            "string": 3,
+            "fret": 1,
+            "finger": 1
+          },
+          {
+            "start": 32.76919799999994,
+            "end": 32.99996699999994,
+            "pitch": 80,
+            "string": 3,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 32.99996699999994,
+            "end": 33.23073599999994,
+            "pitch": 83,
+            "string": 3,
+            "fret": 7,
+            "finger": 1
+          },
+          {
+            "start": 33.23073599999994,
+            "end": 33.461504999999946,
+            "pitch": 66,
+            "string": 1,
+            "fret": 4,
+            "finger": 1
+          },
+          {
+            "start": 33.461504999999946,
+            "end": 33.46153846153846,
+            "pitch": 65,
+            "string": 1,
+            "fret": 3,
+            "finger": 1
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "created": "2026-09-30",
+  "checks": [
+    "Piano frequency-motion output is finite and bit-identical across block sizes at keyboard/velocity extremes, 0/3/18 cents.",
+    "Linear/nonlinear plucked-string output is finite, block-identical, and total SAV energy decreases after one second at E2/A3/E5.",
+    "Bowed-string output is finite and block-identical at G3/A4/E6, with/without expressive controls.",
+    "Zero-motion Beethoven render matches the production pfrender PCM exactly (same events, 512-frame blocks)."
+  ],
+  "sources": {
+    "src/host/stringlab.c": "3bdec2a7fa9af94c39a278a7a9a7032f7eef82f9b4010be31fa308fdc7177b88",
+    "src/host/midi.c": "7be636a6d2f1c6138fbc6ac9e7692ea466b629650d581be4fd1a3a9b6b817114",
+    "src/core/pf_partial.c": "d5d776fdc824481d491843e604db24f78aa28da91fa6b8eabd9a07a4644ff32c",
+    "src/core/pf_attack.c": "450fff22cf231ec0431cb32aa480af320f12ef82d69d40c0fa779fe2296a5b5d",
+    "src/core/pf_resonance.c": "1af08a682b69e52e0e69df1e818dacd388a031027e8c62587bf553751bcee79b",
+    "src/core/pf_motion.c": "e131f735a3dd6b4686cd578a2fa97ec5804b14d5b2e81895d129828cd350dbdd",
+    "src/core/pf_pluck.c": "dd7b1b80c54c81e15d20593bcdf6aed06f51e9cf2042f30cb99ffac19e352756",
+    "src/core/pf_bow.c": "ad0092586e9ac048a7fc171b00f782d8ffdaa95541f4a8da0be1d1a40764e788",
+    "src/core/pf_radiation.c": "935ba0b1f9dca7a33b16117bb982042ca2a04af18e2fd1222acb20e68fbb4096"
+  },
+  "motion_patch_sha256": "d67f1e621ad6ab72b08a2100c74cccb3fd2317eec0f2fb4f38341787556a6efc",
+  "clips": [
+    {
+      "id": "motion-beethoven",
+      "note": "Beethoven \u00b7 Sonata No. 1",
+      "dynamic": "I. Allegro",
+      "split": "music",
+      "duration": 23.0,
+      "audio": {
+        "current": "audio/motion-beethoven-current.mp3",
+        "fitted": "audio/motion-beethoven-fitted.mp3",
+        "ref": "audio/motion-beethoven-ref.mp3"
+      },
+      "labels": {
+        "current": "Current piano",
+        "fitted": "Measured string motion",
+        "ref": "Pianoteq Steinway D"
+      },
+      "experiment": "Experiment 05 \u00b7 strings",
+      "description": "Same Beethoven events, fitted tone, attack, continuous pedals and sympathetic resonance. B adds a positive, exponentially decaying frequency offset fitted on C2/C3/C4/C5 at two velocities. This is a compact approximation, not the DAFx guitar solver.",
+      "thirdLabel": "Reference",
+      "question": "Which sounds more like the reference?",
+      "metrics": {
+        "current": {
+          "peak_dbfs": -1.012199867091985,
+          "rms_dbfs": -20.193254427681776,
+          "sha256": "16660e042fea121f0c3b44a5c559a778e76c4b3578055006711d9a20f01f2b59"
+        },
+        "fitted": {
+          "peak_dbfs": -1.0178827066433187,
+          "rms_dbfs": -20.193254427681776,
+          "sha256": "6c3239124088c4751c4fb9963daf07ecbcfe5cd56f45932e0bd638ed65e1a235"
+        },
+        "ref": {
+          "peak_dbfs": -1.3151433352048756,
+          "rms_dbfs": -20.193254429603694,
+          "sha256": "7030093fb226b6cec868ded65ff5613e51518a4e10a974f49b9fb9c6e56f67b6"
+        }
+      }
+    },
+    {
+      "id": "motion-holdout",
+      "note": "Piano \u00b7 exposed notes",
+      "dynamic": "Soft / loud",
+      "split": "music",
+      "duration": 13.0,
+      "audio": {
+        "current": "audio/motion-holdout-current.mp3",
+        "fitted": "audio/motion-holdout-fitted.mp3",
+        "ref": "audio/motion-holdout-ref.mp3"
+      },
+      "labels": {
+        "current": "Current piano",
+        "fitted": "Measured string motion",
+        "ref": "4\u00d7 motion diagnostic"
+      },
+      "experiment": "Experiment 05 \u00b7 strings",
+      "description": "A1, A2, A3 and A4. These pitches and velocity 75 were not used in the motion table. The third version exaggerates the effect; it is not a reference recording.",
+      "thirdLabel": "4\u00d7 diagnostic",
+      "question": "Which piano version do you prefer?",
+      "metrics": {
+        "current": {
+          "peak_dbfs": -1.1217732783975056,
+          "rms_dbfs": -21.32902644116381,
+          "sha256": "3a8c000feb866925865fce1624457976d62bb6a7997ae6dfb0cca38722d9e3e4"
+        },
+        "fitted": {
+          "peak_dbfs": -1.1489972249261913,
+          "rms_dbfs": -21.32902644116381,
+          "sha256": "d7622242c39c42affdc3b2e36c83604b3117fdbee881b4048e83ca921cb0f01a"
+        },
+        "ref": {
+          "peak_dbfs": -1.012199867091986,
+          "rms_dbfs": -21.32902644116381,
+          "sha256": "ccb96bdad6a1beb3e3dd7b7c78f144a9ff34340a656b78c613d05bb233f20f37"
+        }
+      }
+    },
+    {
+      "id": "guitar-study",
+      "note": "Guitar \u00b7 late afternoon",
+      "dynamic": "Fingerpicked nylon",
+      "split": "music",
+      "duration": 15.0,
+      "audio": {
+        "current": "audio/guitar-study-current.mp3",
+        "fitted": "audio/guitar-study-fitted.mp3",
+        "ref": "audio/guitar-study-ref.mp3"
+      },
+      "labels": {
+        "current": "Linear string + body",
+        "fitted": "Nonlinear string + body",
+        "ref": "Nonlinear string, dry"
+      },
+      "experiment": "Experiment 05 \u00b7 strings",
+      "description": "Original fingerpicked study. B adds energy-dependent tension using a SAV modal update. Both share the same analytic body resonances. Body parameters are designed, not fitted to a recorded guitar.",
+      "thirdLabel": "Dry string",
+      "question": "Which guitar version do you prefer?",
+      "metrics": {
+        "current": {
+          "peak_dbfs": -2.4238903873569364,
+          "rms_dbfs": -25.37153135862848,
+          "sha256": "cb78c580f76427bf1349f39d8ca023cc131d121bfe7c3910397b8e6caf4c92b9"
+        },
+        "fitted": {
+          "peak_dbfs": -2.461329400863301,
+          "rms_dbfs": -25.37153135862848,
+          "sha256": "210c12e6160233af68a2e8537c9b5e905633b318f8ff844b4088eba115ffc44a"
+        },
+        "ref": {
+          "peak_dbfs": -1.012199867091985,
+          "rms_dbfs": -25.37153135862848,
+          "sha256": "251e082c5ad0db3f36914b0b8fbe3963a527c7de1a835e38293fbbe47f4fda56"
+        }
+      }
+    },
+    {
+      "id": "guitar-dynamics",
+      "note": "Guitar \u00b7 pluck dynamics",
+      "dynamic": "E2 / A3 \u00b7 soft / hard",
+      "split": "music",
+      "duration": 12.0,
+      "audio": {
+        "current": "audio/guitar-dynamics-current.mp3",
+        "fitted": "audio/guitar-dynamics-fitted.mp3",
+        "ref": "audio/guitar-dynamics-ref.mp3"
+      },
+      "labels": {
+        "current": "Linear string + body",
+        "fitted": "Nonlinear string + body",
+        "ref": "Nonlinear string, dry"
+      },
+      "experiment": "Experiment 05 \u00b7 strings",
+      "description": "Same pluck shape and body. Listen for a stronger initial pitch rise on hard low notes, settling as string energy dissipates.",
+      "thirdLabel": "Dry string",
+      "question": "Which guitar version do you prefer?",
+      "metrics": {
+        "current": {
+          "peak_dbfs": -1.795131304117693,
+          "rms_dbfs": -26.00164926892504,
+          "sha256": "46696d5c368970e7f5382ffd27a51bb2035e777ee9433b8908a5214664720427"
+        },
+        "fitted": {
+          "peak_dbfs": -1.7948341115904154,
+          "rms_dbfs": -26.00164926892504,
+          "sha256": "834c4108b4aad60308b4e75c48a2aa01ef5283dd2cdb7f434cf320c0defd7601"
+        },
+        "ref": {
+          "peak_dbfs": -1.012199867091985,
+          "rms_dbfs": -26.00164926892504,
+          "sha256": "134d7386dbeb49681681566bc2c1560edf828dbd5d5b75a17a989273746b340e"
+        }
+      }
+    },
+    {
+      "id": "violin-study",
+      "note": "Violin \u00b7 evening line",
+      "dynamic": "Legato / vibrato",
+      "split": "music",
+      "duration": 13.0,
+      "audio": {
+        "current": "audio/violin-study-current.mp3",
+        "fitted": "audio/violin-study-fitted.mp3",
+        "ref": "audio/violin-study-ref.mp3"
+      },
+      "labels": {
+        "current": "Steady bow + body",
+        "fitted": "Expressive bow + body",
+        "ref": "Expressive bow, dry"
+      },
+      "experiment": "Experiment 05 \u00b7 strings",
+      "description": "Original melody, sustained by a nonlinear bow junction between travelling-wave string segments. B adds delayed vibrato and gentle bow-speed movement. The violin body is an analytic prototype, not a measured instrument.",
+      "thirdLabel": "Dry string",
+      "question": "Which violin version do you prefer?",
+      "metrics": {
+        "current": {
+          "peak_dbfs": -10.283077557217073,
+          "rms_dbfs": -18.416375078975122,
+          "sha256": "69c2da31d872e95c561812280163c7a17951a8fdf17cdf7d4e484e1271ba6be2"
+        },
+        "fitted": {
+          "peak_dbfs": -10.195435316538628,
+          "rms_dbfs": -18.416375078975122,
+          "sha256": "3b2dfb0e7714ef9a3cdfdc89fa422844e6c5357b8c9f8ede00f29274c3667ac6"
+        },
+        "ref": {
+          "peak_dbfs": -11.850151100588802,
+          "rms_dbfs": -18.416375078975122,
+          "sha256": "d87ffd41d0cd80df7bccc891a0eba54eb03c363334e18a452e8406b271419351"
+        }
+      }
+    },
+    {
+      "id": "violin-articulation",
+      "note": "Violin \u00b7 short bows",
+      "dynamic": "Detached notes",
+      "split": "music",
+      "duration": 8.0,
+      "audio": {
+        "current": "audio/violin-articulation-current.mp3",
+        "fitted": "audio/violin-articulation-fitted.mp3",
+        "ref": "audio/violin-articulation-ref.mp3"
+      },
+      "labels": {
+        "current": "Steady bow + body",
+        "fitted": "Expressive bow + body",
+        "ref": "Expressive bow, dry"
+      },
+      "experiment": "Experiment 05 \u00b7 strings",
+      "description": "Short bows test starting and stopping the self-sustained string rather than a prerecorded attack.",
+      "thirdLabel": "Dry string",
+      "question": "Which violin version do you prefer?",
+      "metrics": {
+        "current": {
+          "peak_dbfs": -5.021891509327576,
+          "rms_dbfs": -18.416375078975122,
+          "sha256": "da1e4a47474b8754c54a38a13799928171a3c81f4068db0e4fe334e1bc818a93"
+        },
+        "fitted": {
+          "peak_dbfs": -4.959486842916388,
+          "rms_dbfs": -18.416375078975122,
+          "sha256": "c0b6b601930c12a0b47c9311d22bd4afc28c9d0df9c2d861833a59522063d92b"
+        },
+        "ref": {
+          "peak_dbfs": -7.3398241561666655,
+          "rms_dbfs": -18.416375078975122,
+          "sha256": "c4f5fb4177cdbcc86852bf0959b828341ced5277cba34c163910648695213efd"
+        }
+      }
+    }
+  ]
+}

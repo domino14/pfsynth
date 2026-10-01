@@ -1,0 +1,21 @@
+# Copyrighted reference audio and derived media: local research only, never commit.
+*.wav
+*.mp3
+*.flac
+*.opus
+*.m4a
+*.aac
+*.ogg
+*.webm
+*.mp4
+*.mkv
+*.part
+*.ytdl
+*.info.json
+*.pdf
+stems/
+media/
+downloads/
+# Saved copies of third-party tabs/scores (copyrighted transcriptions): local only.
+tabs/
+scores/

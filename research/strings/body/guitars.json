@@ -1,0 +1,678 @@
+{
+ "source": "Robert Mores, list of guitars measured (guitars-description.pdf, March 2021); Zenodo 4604577, CC BY 4.0",
+ "guitars": [
+  {
+   "id": "g01",
+   "index": 1,
+   "maker": "Francisco Ortega",
+   "year": "1878",
+   "place": "Granada",
+   "category": "early romantic",
+   "wood": "spruce/maple",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g02",
+   "index": 2,
+   "maker": "Benito Campo",
+   "year": "1840",
+   "place": "Madrid",
+   "category": "early romantic",
+   "wood": "",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g03",
+   "index": 3,
+   "maker": "Bordones y cuerdas",
+   "year": "1952",
+   "place": "Valencia",
+   "category": "factory",
+   "wood": "",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g04",
+   "index": 4,
+   "maker": "German Pérez Barranco",
+   "year": "1973",
+   "place": "Granada",
+   "category": "flamenco",
+   "wood": "cypress",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g05",
+   "index": 5,
+   "maker": "Daniel Gil de Avalle",
+   "year": "2014",
+   "place": "Granada",
+   "category": "classical",
+   "wood": "spruce/maple",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g06",
+   "index": 6,
+   "maker": "Aaron Garcia",
+   "year": "2017",
+   "place": "Granada",
+   "category": "classical",
+   "wood": "spruce/rosewood",
+   "room": "semi-reverberant",
+   "remarks": "open side hole"
+  },
+  {
+   "id": "g07",
+   "index": 7,
+   "maker": "Aaron Garcia",
+   "year": "2017",
+   "place": "Granada",
+   "category": "classical",
+   "wood": "spruce/rosewood",
+   "room": "semi-reverberant",
+   "remarks": "closed side hole"
+  },
+  {
+   "id": "g08",
+   "index": 8,
+   "maker": "Manuel Bellido, Aurea",
+   "year": "2018",
+   "place": "Granada",
+   "category": "classical",
+   "wood": "rosewood",
+   "room": "semi-reverberant",
+   "remarks": "closed head"
+  },
+  {
+   "id": "g09",
+   "index": 9,
+   "maker": "Manuel Bellido, Aurea",
+   "year": "2018",
+   "place": "Granada",
+   "category": "classical",
+   "wood": "rosewood",
+   "room": "semi-reverberant",
+   "remarks": "open head"
+  },
+  {
+   "id": "g10",
+   "index": 10,
+   "maker": "Manuel Bellido",
+   "year": "1999",
+   "place": "Granada",
+   "category": "classical",
+   "wood": "rosewood",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g11",
+   "index": 11,
+   "maker": "Mauricio Bellido, no 14",
+   "year": "2018",
+   "place": "Granada",
+   "category": "flamenca blanca",
+   "wood": "cypress",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g12",
+   "index": 12,
+   "maker": "Manuel Bellido, prototype",
+   "year": "2018",
+   "place": "Granada",
+   "category": "flamenca blanca",
+   "wood": "cypress",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g13",
+   "index": 13,
+   "maker": "Jesu Bellido, op 41",
+   "year": "2018",
+   "place": "Granada",
+   "category": "flamenca blanca",
+   "wood": "cypress",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g14",
+   "index": 14,
+   "maker": "Faustino Conde",
+   "year": "1984",
+   "place": "Madrid",
+   "category": "flamenca negra",
+   "wood": "spruce/Indian palisander",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g15",
+   "index": 15,
+   "maker": "Josephus Bellido",
+   "year": "2009",
+   "place": "Sevilla",
+   "category": "flamenca blanca",
+   "wood": "spruce/cypress",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g16",
+   "index": 16,
+   "maker": "Francisco Barber",
+   "year": "2018",
+   "place": "Granada",
+   "category": "flamenca negra",
+   "wood": "spruce/Indian palisander",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g17",
+   "index": 17,
+   "maker": "Antonio Marin Montero, no 634",
+   "year": "2010",
+   "place": "Granada",
+   "category": "flamenca blanca",
+   "wood": "spruce/cypress",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g18",
+   "index": 18,
+   "maker": "Lester DeVoe",
+   "year": "2018",
+   "place": "Nipomo, CA",
+   "category": "flamenca blanca",
+   "wood": "spruce/cypress",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g19",
+   "index": 19,
+   "maker": "Quantanilla",
+   "year": "2018",
+   "place": "Malaga",
+   "category": "flamenca negra",
+   "wood": "spruce/Madagascar palisander",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g20",
+   "index": 20,
+   "maker": "Faustino Conde",
+   "year": "1964",
+   "place": "Madrid",
+   "category": "flamenca negra",
+   "wood": "spruce/Rio palisander",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g21",
+   "index": 21,
+   "maker": "Lester DeVoe",
+   "year": "2018",
+   "place": "Nipomo, CA",
+   "category": "flamenca blanca",
+   "wood": "spruce/cypress",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g22",
+   "index": 22,
+   "maker": "Manuel Reyes",
+   "year": "1989",
+   "place": "Córdoba",
+   "category": "flamenca blanca",
+   "wood": "spruce/cypress",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g23",
+   "index": 23,
+   "maker": "Arangel Fernandez",
+   "year": "1981",
+   "place": "Madrid",
+   "category": "flamenca negra",
+   "wood": "spruce/Indian palisander",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g24",
+   "index": 24,
+   "maker": "Graciliano Pérez",
+   "year": "2018",
+   "place": "Córdoba",
+   "category": "flamenca negra",
+   "wood": "spruce/Indian palisander",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g25",
+   "index": 25,
+   "maker": "HNOS Sandiz Lopez, 1F extra",
+   "year": "2018",
+   "place": "Valencia",
+   "category": "flamenca blanca",
+   "wood": "spruce/cypress",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g26",
+   "index": 26,
+   "maker": "Dominik Wurth",
+   "year": "2016",
+   "place": "Bad Krozingen",
+   "category": "flamenca blanca",
+   "wood": "spruce/cypress",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g27",
+   "index": 27,
+   "maker": "Do Santos DS120SG650",
+   "year": "",
+   "place": "Zofingen, Suisse",
+   "category": "classical",
+   "wood": "spruce/palisander",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g28",
+   "index": 28,
+   "maker": "Mundo Flamenco, 1F extra",
+   "year": "2015",
+   "place": "Andalusia",
+   "category": "flamenca negra",
+   "wood": "spruce/palisander",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g29",
+   "index": 29,
+   "maker": "Marcelo Bastien, 1945z",
+   "year": "2011",
+   "place": "",
+   "category": "flamenca negra",
+   "wood": "spruce/palisander",
+   "room": "semi-reverberant",
+   "remarks": "very thin bridge, extra sound hole"
+  },
+  {
+   "id": "g30",
+   "index": 30,
+   "maker": "Jose Ramirez, guitarras de estudio",
+   "year": "1986",
+   "place": "Madrid",
+   "category": "classical",
+   "wood": "cedar/palisander",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g31",
+   "index": 31,
+   "maker": "Masaru Matano, 400",
+   "year": "1979",
+   "place": "Kurume, Japan",
+   "category": "classical",
+   "wood": "cedar/palisander",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g32",
+   "index": 32,
+   "maker": "Francisco Vega Maria, 700P",
+   "year": "",
+   "place": "Valencia",
+   "category": "classical",
+   "wood": "cedar/palisander",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g33",
+   "index": 33,
+   "maker": "Antonio Lorca, Especial Concertio",
+   "year": "",
+   "place": "Valencia",
+   "category": "classical",
+   "wood": "cedar/palisander",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g34",
+   "index": 34,
+   "maker": "Manuel Contreras",
+   "year": "1971",
+   "place": "Madrid",
+   "category": "classical",
+   "wood": "cedar/Rio palisander",
+   "room": "anechoic"
+  },
+  {
+   "id": "g35",
+   "index": 35,
+   "maker": "Manuel Lopez Bellido, n.° 208",
+   "year": "1978",
+   "place": "Granada",
+   "category": "classical",
+   "wood": "cedar/Rio palisander",
+   "room": "anechoic"
+  },
+  {
+   "id": "g36",
+   "index": 36,
+   "maker": "Jose Lopez Bellido, M. C. 1~",
+   "year": "2001",
+   "place": "Granada",
+   "category": "classical",
+   "wood": "spruce/Indian palisander",
+   "room": "anechoic"
+  },
+  {
+   "id": "g37",
+   "index": 37,
+   "maker": "Manuel Contreras",
+   "year": "1981",
+   "place": "Madrid",
+   "category": "flamenca blanca",
+   "wood": "spruce/cypress",
+   "room": "anechoic"
+  },
+  {
+   "id": "g38",
+   "index": 38,
+   "maker": "Jose Lopez Bellido",
+   "year": "1970",
+   "place": "Granada",
+   "category": "flamenca blanca",
+   "wood": "cedar/cypress",
+   "room": "anechoic"
+  },
+  {
+   "id": "g39",
+   "index": 39,
+   "maker": "Germán Pérez Barranco, Nr. 11",
+   "year": "1971",
+   "place": "Granada",
+   "category": "flamenca blanca",
+   "wood": "cedar/cypress",
+   "room": "anechoic"
+  },
+  {
+   "id": "g40",
+   "index": 40,
+   "maker": "Faustino Conde",
+   "year": "1964",
+   "place": "Madrid",
+   "category": "flamenca negra",
+   "wood": "spruce/Rio palisander",
+   "room": "anechoic",
+   "remarks": "same guitar as g20"
+  },
+  {
+   "id": "g41",
+   "index": 41,
+   "maker": "Valeriano Bernal",
+   "year": "1987",
+   "place": "Cádiz",
+   "category": "flamenca blanca",
+   "wood": "spruce/cypress",
+   "room": "anechoic"
+  },
+  {
+   "id": "g42",
+   "index": 42,
+   "maker": "Antonio Ariza",
+   "year": "1989",
+   "place": "Granada",
+   "category": "flamenca blanca",
+   "wood": "spruce/cypress",
+   "room": "anechoic"
+  },
+  {
+   "id": "g43",
+   "index": 43,
+   "maker": "Jose Ramirez, Clase 1~, N.° 9051",
+   "year": "1975",
+   "place": "Madrid",
+   "category": "flamenca blanca",
+   "wood": "spruce/cypress",
+   "room": "anechoic"
+  },
+  {
+   "id": "g44",
+   "index": 44,
+   "maker": "Michal Wiechmann",
+   "year": "1989",
+   "place": "Hamburg, Germany",
+   "category": "flamenca negra",
+   "wood": "spruce/Rio palisander",
+   "room": "anechoic"
+  },
+  {
+   "id": "g45",
+   "index": 45,
+   "maker": "Vicento Carrillo, CV-MA/04",
+   "year": "2018",
+   "place": "Casasimarro, Spain",
+   "category": "hybrid (lattice)",
+   "wood": "palisander",
+   "room": "semi-reverberant",
+   "remarks": "lattice bracing, Cañizares model"
+  },
+  {
+   "id": "g46",
+   "index": 46,
+   "maker": "Vicente Arias",
+   "year": "1874",
+   "place": "Ciudad Real",
+   "category": "classical",
+   "wood": "Rio palisander",
+   "room": "semi-reverberant",
+   "remarks": "tuned to 415 Hz"
+  },
+  {
+   "id": "g47",
+   "index": 47,
+   "maker": "Antonio de Torres, FE09",
+   "year": "1859",
+   "place": "Sevilla",
+   "category": "Torres",
+   "wood": "palisander",
+   "room": "semi-reverberant",
+   "remarks": "tuned to 415 Hz"
+  },
+  {
+   "id": "g48",
+   "index": 48,
+   "maker": "Ignatio Fleta, No. 49",
+   "year": "1953",
+   "place": "Barcelona",
+   "category": "classical",
+   "wood": "cedar/palisander",
+   "room": "semi-reverberant",
+   "remarks": "tuned to 415 Hz"
+  },
+  {
+   "id": "g49",
+   "index": 49,
+   "maker": "Enrique Garcia, No. 146",
+   "year": "1913",
+   "place": "Barcelona",
+   "category": "classical",
+   "wood": "spruce/palisander",
+   "room": "semi-reverberant",
+   "remarks": "tuned to 415 Hz"
+  },
+  {
+   "id": "g50",
+   "index": 50,
+   "maker": "F. Simplicio (Garcia), Guitarra 36",
+   "year": "1924",
+   "place": "Barcelona",
+   "category": "classical",
+   "wood": "cedar/palisander",
+   "room": "semi-reverberant",
+   "remarks": "tuned to 415 Hz"
+  },
+  {
+   "id": "g51",
+   "index": 51,
+   "maker": "Antonio de Torres, FE14",
+   "year": "1862",
+   "place": "Sevilla",
+   "category": "Torres",
+   "wood": "spruce/papier-mâché",
+   "room": "semi-reverberant",
+   "remarks": "papier-mâché sides/back, tuned to 392 Hz"
+  },
+  {
+   "id": "g52",
+   "index": 52,
+   "maker": "Antonio de Torres, No. 126",
+   "year": "1889",
+   "place": "Almeria",
+   "category": "Torres",
+   "wood": "",
+   "room": "semi-reverberant",
+   "remarks": "tuned to 392 Hz"
+  },
+  {
+   "id": "g53",
+   "index": 53,
+   "maker": "Francisco Pages",
+   "year": "1837",
+   "place": "Havanna",
+   "category": "early romantic",
+   "wood": "cedar/palisander",
+   "room": "semi-reverberant",
+   "remarks": "tuned to 415 Hz"
+  },
+  {
+   "id": "g54",
+   "index": 54,
+   "maker": "Josef Pages",
+   "year": "1806",
+   "place": "Cadiz",
+   "category": "early romantic",
+   "wood": "cedar/palisander",
+   "room": "semi-reverberant",
+   "remarks": "tuned to 415 Hz"
+  },
+  {
+   "id": "g55",
+   "index": 55,
+   "maker": "Manuel Munoa",
+   "year": "1803",
+   "place": "Madrid",
+   "category": "early romantic",
+   "wood": "",
+   "room": "semi-reverberant",
+   "remarks": "6 x 2 strings"
+  },
+  {
+   "id": "g56",
+   "index": 56,
+   "maker": "Francisco Martinez",
+   "year": "1805",
+   "place": "Cartagena",
+   "category": "early romantic",
+   "wood": "",
+   "room": "semi-reverberant",
+   "remarks": "6 x 2 strings"
+  },
+  {
+   "id": "g57",
+   "index": 57,
+   "maker": "Jose Cardena",
+   "year": "18xx",
+   "place": "Cadiz",
+   "category": "early romantic",
+   "wood": "cedar",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g58",
+   "index": 58,
+   "maker": "Josef Pages",
+   "year": "1825",
+   "place": "Cadiz",
+   "category": "early romantic",
+   "wood": "cedar",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g59",
+   "index": 59,
+   "maker": "Francisco Gonzales",
+   "year": "1879",
+   "place": "Madrid",
+   "category": "early romantic",
+   "wood": "cedar",
+   "room": "semi-reverberant",
+   "remarks": "no strings, cracks and open top"
+  },
+  {
+   "id": "g60",
+   "index": 60,
+   "maker": "Jose Recio",
+   "year": "1851",
+   "place": "Cadiz",
+   "category": "early romantic",
+   "wood": "cedar",
+   "room": "semi-reverberant",
+   "remarks": "no strings"
+  },
+  {
+   "id": "g61",
+   "index": 61,
+   "maker": "Joseph Martinez",
+   "year": "1804",
+   "place": "Malaga",
+   "category": "early romantic",
+   "wood": "cedar",
+   "room": "semi-reverberant",
+   "remarks": "6 x 2 strings"
+  },
+  {
+   "id": "g62",
+   "index": 62,
+   "maker": "Josef Pages",
+   "year": "1818",
+   "place": "Cadiz",
+   "category": "early romantic",
+   "wood": "cedar",
+   "room": "semi-reverberant",
+   "remarks": "6 x 2 strings"
+  },
+  {
+   "id": "g63",
+   "index": 63,
+   "maker": "Valerio Licari, Albaicin",
+   "year": "2018",
+   "place": "Granada",
+   "category": "classical",
+   "wood": "German spruce/Indian palisander",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g64",
+   "index": 64,
+   "maker": "Antonio de Torres",
+   "year": "1867",
+   "place": "Sevilla",
+   "category": "Torres",
+   "wood": "spruce/maple",
+   "room": "semi-reverberant"
+  },
+  {
+   "id": "g65",
+   "index": 65,
+   "maker": "Antonio de Torres, No. 46",
+   "year": "1883",
+   "place": "Sevilla",
+   "category": "Torres",
+   "wood": "spruce/palisander",
+   "room": "semi-reverberant"
+  }
+ ],
+ "note": "Maker names and places as spelled in the source list."
+}

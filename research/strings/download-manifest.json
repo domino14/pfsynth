@@ -1,0 +1,20 @@
+[
+  {
+    "path": "research/strings/downloads/Capriccio-MIDI-v1.0.0.zip",
+    "bytes": 55316727,
+    "sha256": "bb7f03fa6a9dd5ce281d79b511dcfabf5ded723f35aba57336fd6361a3759c25",
+    "md5": "5195056e1b2bc402231684d724eb6e24"
+  },
+  {
+    "path": "research/strings/downloads/P1_techniques.zip",
+    "bytes": 326280863,
+    "sha256": "1e4b80a464182d345e129f3e1158b6c05690c60b5f9be4bde3fb26f23263236e",
+    "md5": "18634a41a6db5a8de10d07eb3122a872"
+  },
+  {
+    "path": "research/strings/downloads/violin_MIDI_dataset.zip",
+    "bytes": 51912255,
+    "sha256": "e9472dcb6f9c93386b2d29063464da301206d7488990befd4527dd65bd3a699e",
+    "md5": "d2483df547e7acae40d9ced1b8924363"
+  }
+]
