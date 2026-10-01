@@ -1,5 +1,6 @@
 #!/bin/sh
-# Build docs/pfsynth.wasm with wasi-sdk (build/wasi/wasi-sdk, see docs/README.md).
+# Build docs/pfsynth.wasm (piano page, pfw_* exports) and docs/pfi.wasm (instrument API,
+# pfiw_* exports: piano and guitar) with wasi-sdk (build/wasi/wasi-sdk, see docs/README.md).
 set -e
 cd "$(dirname "$0")/.."
 SDK=${WASI_SDK:-build/wasi/wasi-sdk}
@@ -9,3 +10,9 @@ test -x "$SDK/bin/clang" || { echo "wasi-sdk not found at $SDK (download from ht
   src/core/pf_partial.c src/core/pf_attack.c src/core/pf_resonance.c src/host/midi.c src/host/pfplayer.c src/host/pfwasm.c \
   -o docs/pfsynth.wasm
 ls -la docs/pfsynth.wasm
+"$SDK/bin/clang" --target=wasm32-wasip1 --sysroot="$SDK/share/wasi-sysroot" -O3 -std=c99 -Wall -Isrc -mexec-model=reactor \
+  -Wl,--initial-memory=67108864 -Wl,--max-memory=268435456 \
+  src/core/pf_partial.c src/core/pf_attack.c src/core/pf_resonance.c src/core/pf_pluck.c src/host/midi.c src/host/pfplayer.c \
+  src/host/pf_instrument.c src/host/pf_piano_instrument.c src/host/pf_guitar.c src/host/pfi.c src/host/pfiwasm.c \
+  -o docs/pfi.wasm
+ls -la docs/pfi.wasm
