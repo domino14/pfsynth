@@ -1,0 +1,1030 @@
+{
+  "reference": "Pianoteq 6 Steinway D Close Mic Classical; cached mono downmix",
+  "warning": "Frequency motion may include unison interference. No causal physical identification is claimed.",
+  "notes": [
+    {
+      "note": "A1",
+      "midi": 33,
+      "velocity": 48,
+      "source_sha256": "d791be052918151f0d21d7e34ed07911725f5ceb97e822283aa4777dabf5e657",
+      "initial_cents": 0.6034237850629689,
+      "tau": 0.12,
+      "accepted_partials": 3,
+      "partials": [
+        {
+          "partial": 1,
+          "initial_cents": -4.29265414459858,
+          "tau": 0.35,
+          "phase_error": 0.0408728987675684,
+          "flat_phase_error": 0.04524704167140767,
+          "gain": 0.09667246171816257
+        },
+        {
+          "partial": 2,
+          "initial_cents": 12.192846091664647,
+          "tau": 0.04,
+          "phase_error": 0.0358418238784976,
+          "flat_phase_error": 0.03638415808930184,
+          "gain": 0.014905778758797172
+        },
+        {
+          "partial": 3,
+          "initial_cents": -57.816294922397645,
+          "tau": 0.04,
+          "phase_error": 0.02977438944110256,
+          "flat_phase_error": 0.052816676346225486,
+          "gain": 0.43626915775758823
+        },
+        {
+          "partial": 4,
+          "initial_cents": 3.8244055104911583,
+          "tau": 0.12,
+          "phase_error": 0.019951576163895146,
+          "flat_phase_error": 0.03965210438544957,
+          "gain": 0.4968343679833441
+        },
+        {
+          "partial": 5,
+          "initial_cents": -13.65015974810772,
+          "tau": 0.07,
+          "phase_error": 0.01273421528431518,
+          "flat_phase_error": 0.06285360405767412,
+          "gain": 0.7973988051245187
+        },
+        {
+          "partial": 6,
+          "initial_cents": -6.805837077541682,
+          "tau": 0.04,
+          "phase_error": 0.053360487683472145,
+          "flat_phase_error": 0.05426860966010703,
+          "gain": 0.016733835311473655
+        },
+        {
+          "partial": 7,
+          "initial_cents": 0.6034237850629689,
+          "tau": 0.35,
+          "phase_error": 0.012791372588516309,
+          "flat_phase_error": 0.022730652745451326,
+          "gain": 0.4372632967578982
+        },
+        {
+          "partial": 8,
+          "initial_cents": -89.01994298111508,
+          "tau": 0.04,
+          "phase_error": 0.05483173070407597,
+          "flat_phase_error": 0.21309928190014804,
+          "gain": 0.7426939677358064
+        }
+      ]
+    },
+    {
+      "note": "A1",
+      "midi": 33,
+      "velocity": 100,
+      "source_sha256": "564ed08b05a120c1968c1539c2ab662b55bd7ab5fd9427c07a30a0d9b40bbc35",
+      "initial_cents": 2.759981213966153,
+      "tau": 0.35,
+      "accepted_partials": 4,
+      "partials": [
+        {
+          "partial": 1,
+          "initial_cents": 114.17148666939212,
+          "tau": 0.04,
+          "phase_error": 0.041604005738211186,
+          "flat_phase_error": 0.048153076380224875,
+          "gain": 0.1360052385916346
+        },
+        {
+          "partial": 2,
+          "initial_cents": 16.21580071125334,
+          "tau": 0.07,
+          "phase_error": 0.032059531639099074,
+          "flat_phase_error": 0.042370117751043254,
+          "gain": 0.24334570351035445
+        },
+        {
+          "partial": 3,
+          "initial_cents": 0.8366364388385574,
+          "tau": 0.35,
+          "phase_error": 0.042347869897942224,
+          "flat_phase_error": 0.044941129564364204,
+          "gain": 0.057703482123384164
+        },
+        {
+          "partial": 4,
+          "initial_cents": 3.13350597915811,
+          "tau": 0.35,
+          "phase_error": 0.020917891156426213,
+          "flat_phase_error": 0.08452924271399151,
+          "gain": 0.752536631290986
+        },
+        {
+          "partial": 5,
+          "initial_cents": 0.4695648566471416,
+          "tau": 0.35,
+          "phase_error": 0.031074401516895767,
+          "flat_phase_error": 0.03459420428774196,
+          "gain": 0.10174544676818575
+        },
+        {
+          "partial": 6,
+          "initial_cents": 1.8161048142838676,
+          "tau": 0.35,
+          "phase_error": 0.042928600954736065,
+          "flat_phase_error": 0.06849450031292914,
+          "gain": 0.37325477580522204
+        },
+        {
+          "partial": 7,
+          "initial_cents": 2.3864564487741964,
+          "tau": 0.35,
+          "phase_error": 0.011725810417094517,
+          "flat_phase_error": 0.08335144622573766,
+          "gain": 0.8593208522700622
+        },
+        {
+          "partial": 8,
+          "initial_cents": -81.79247505920199,
+          "tau": 0.04,
+          "phase_error": 0.06088841514085563,
+          "flat_phase_error": 0.19811962219560167,
+          "gain": 0.6926684269529797
+        }
+      ]
+    },
+    {
+      "note": "C2",
+      "midi": 36,
+      "velocity": 48,
+      "source_sha256": "49aa737c60674906b9f1f29a76e6360b7fd629493f872963fb3ea62f08f68184",
+      "initial_cents": 1.5558477582407013,
+      "tau": 0.12,
+      "accepted_partials": 3,
+      "partials": [
+        {
+          "partial": 1,
+          "initial_cents": -18.3053745549534,
+          "tau": 0.2,
+          "phase_error": 0.06633265778141205,
+          "flat_phase_error": 0.10106199173661655,
+          "gain": 0.3436438700487381
+        },
+        {
+          "partial": 2,
+          "initial_cents": 2.974817537969142,
+          "tau": 0.2,
+          "phase_error": 0.04644585475899834,
+          "flat_phase_error": 0.052598119229951716,
+          "gain": 0.11696738516555183
+        },
+        {
+          "partial": 3,
+          "initial_cents": -11.39782852939206,
+          "tau": 0.07,
+          "phase_error": 0.032297198692809254,
+          "flat_phase_error": 0.044328381820046246,
+          "gain": 0.27141038389531813
+        },
+        {
+          "partial": 4,
+          "initial_cents": -22.545362864510135,
+          "tau": 0.04,
+          "phase_error": 0.021121586203774925,
+          "flat_phase_error": 0.03202693777381881,
+          "gain": 0.34050559710265926
+        },
+        {
+          "partial": 5,
+          "initial_cents": -25.637631426392765,
+          "tau": 0.04,
+          "phase_error": 0.01626980937451911,
+          "flat_phase_error": 0.04109662321708952,
+          "gain": 0.6041083646075935
+        },
+        {
+          "partial": 6,
+          "initial_cents": 1.5558477582407013,
+          "tau": 0.12,
+          "phase_error": 0.016462740998772592,
+          "flat_phase_error": 0.027968979982667504,
+          "gain": 0.4113928713533842
+        },
+        {
+          "partial": 7,
+          "initial_cents": 4.61048630328601,
+          "tau": 0.12,
+          "phase_error": 0.019561571002429168,
+          "flat_phase_error": 0.07655523928898658,
+          "gain": 0.7444776976192753
+        },
+        {
+          "partial": 8,
+          "initial_cents": 18.885986861617766,
+          "tau": 0.04,
+          "phase_error": 0.05735551149939296,
+          "flat_phase_error": 0.07646121010208276,
+          "gain": 0.24987439483604734
+        }
+      ]
+    },
+    {
+      "note": "C2",
+      "midi": 36,
+      "velocity": 100,
+      "source_sha256": "77dc734b5d4464629c71fccf5cf99552ba9d3209e77562512ea293046f9b1745",
+      "initial_cents": 2.7616021590585786,
+      "tau": 0.275,
+      "accepted_partials": 6,
+      "partials": [
+        {
+          "partial": 1,
+          "initial_cents": -18.040897754560355,
+          "tau": 0.2,
+          "phase_error": 0.08021731354606014,
+          "flat_phase_error": 0.10644334173653132,
+          "gain": 0.24638486318276132
+        },
+        {
+          "partial": 2,
+          "initial_cents": 5.708003911422496,
+          "tau": 0.2,
+          "phase_error": 0.0421688175243666,
+          "flat_phase_error": 0.06362223483024525,
+          "gain": 0.33719999561662595
+        },
+        {
+          "partial": 3,
+          "initial_cents": -17.37233774920936,
+          "tau": 0.04,
+          "phase_error": 0.04010866404637433,
+          "flat_phase_error": 0.04267714150981672,
+          "gain": 0.06018391514932131
+        },
+        {
+          "partial": 4,
+          "initial_cents": 1.8758933763709387,
+          "tau": 0.35,
+          "phase_error": 0.030902006999542948,
+          "flat_phase_error": 0.0591505686481666,
+          "gain": 0.4775704155381646
+        },
+        {
+          "partial": 5,
+          "initial_cents": 0.6510516115425111,
+          "tau": 0.35,
+          "phase_error": 0.024251596224961848,
+          "flat_phase_error": 0.030377193724361012,
+          "gain": 0.2016511977696852
+        },
+        {
+          "partial": 6,
+          "initial_cents": 3.517497988310686,
+          "tau": 0.2,
+          "phase_error": 0.017878133130154704,
+          "flat_phase_error": 0.09945650941454141,
+          "gain": 0.8202416992573363
+        },
+        {
+          "partial": 7,
+          "initial_cents": 4.992367250205865,
+          "tau": 0.2,
+          "phase_error": 0.025010121712726947,
+          "flat_phase_error": 0.15798197401246897,
+          "gain": 0.8416900290741209
+        },
+        {
+          "partial": 8,
+          "initial_cents": 2.005706329806472,
+          "tau": 0.35,
+          "phase_error": 0.04204370117203432,
+          "flat_phase_error": 0.08105039168495937,
+          "gain": 0.48126467623429847
+        }
+      ]
+    },
+    {
+      "note": "A2",
+      "midi": 45,
+      "velocity": 48,
+      "source_sha256": "c551ffdc49921cc4964db2c6e18c7e41cad90a45760d7fd46c24dfb7423bd312",
+      "initial_cents": 0.0,
+      "tau": 0.12,
+      "accepted_partials": 0,
+      "partials": [
+        {
+          "partial": 1,
+          "initial_cents": -1.500965084426824,
+          "tau": 0.35,
+          "phase_error": 0.03751666592182175,
+          "flat_phase_error": 0.04056121098613179,
+          "gain": 0.0750605070778334
+        },
+        {
+          "partial": 2,
+          "initial_cents": -0.289616917010768,
+          "tau": 0.35,
+          "phase_error": 0.013481637958503188,
+          "flat_phase_error": 0.01499424893238123,
+          "gain": 0.10087940921211747
+        },
+        {
+          "partial": 3,
+          "initial_cents": 2.1081743722046062,
+          "tau": 0.07,
+          "phase_error": 0.030940998138715328,
+          "flat_phase_error": 0.032651461985294,
+          "gain": 0.05238552097143623
+        },
+        {
+          "partial": 4,
+          "initial_cents": 130.77950851185426,
+          "tau": 0.04,
+          "phase_error": 0.17903546573241338,
+          "flat_phase_error": 0.357428330385112,
+          "gain": 0.49910107702008066
+        },
+        {
+          "partial": 5,
+          "initial_cents": -3.783935258635689,
+          "tau": 0.04,
+          "phase_error": 0.02389849346539803,
+          "flat_phase_error": 0.025933993068100868,
+          "gain": 0.07848770520443027
+        },
+        {
+          "partial": 6,
+          "initial_cents": 2.805277330947972,
+          "tau": 0.04,
+          "phase_error": 0.01630079619820511,
+          "flat_phase_error": 0.01826921568014673,
+          "gain": 0.10774515536979024
+        },
+        {
+          "partial": 7,
+          "initial_cents": 0.09170487112396106,
+          "tau": 0.35,
+          "phase_error": 0.020126643888177295,
+          "flat_phase_error": 0.02102454043036302,
+          "gain": 0.04270707106106397
+        }
+      ]
+    },
+    {
+      "note": "A2",
+      "midi": 45,
+      "velocity": 100,
+      "source_sha256": "74a664246262f35c683913476e7bac925da18f45042d51b77818faa411e32e2f",
+      "initial_cents": 0.7473598511698722,
+      "tau": 0.2,
+      "accepted_partials": 5,
+      "partials": [
+        {
+          "partial": 1,
+          "initial_cents": 23.905744024642587,
+          "tau": 0.04,
+          "phase_error": 0.04231079511056669,
+          "flat_phase_error": 0.043914266749512654,
+          "gain": 0.03651368353915996
+        },
+        {
+          "partial": 2,
+          "initial_cents": 0.10456424700071126,
+          "tau": 0.35,
+          "phase_error": 0.013520477267405566,
+          "flat_phase_error": 0.013727362388584416,
+          "gain": 0.015071003104783931
+        },
+        {
+          "partial": 3,
+          "initial_cents": 1.6493756798031178,
+          "tau": 0.12,
+          "phase_error": 0.026497732060854155,
+          "flat_phase_error": 0.03274823763337164,
+          "gain": 0.19086540297203636
+        },
+        {
+          "partial": 4,
+          "initial_cents": 123.82145084170583,
+          "tau": 0.04,
+          "phase_error": 0.13103826769429092,
+          "flat_phase_error": 0.30966215055315166,
+          "gain": 0.5768347295263037
+        },
+        {
+          "partial": 5,
+          "initial_cents": 0.6320598805645465,
+          "tau": 0.35,
+          "phase_error": 0.02158661724339765,
+          "flat_phase_error": 0.033338512703729103,
+          "gain": 0.3525020916430065
+        },
+        {
+          "partial": 6,
+          "initial_cents": 3.231124491901635,
+          "tau": 0.07,
+          "phase_error": 0.016703921686498095,
+          "flat_phase_error": 0.03566025400439685,
+          "gain": 0.531581528150682
+        },
+        {
+          "partial": 7,
+          "initial_cents": 0.7473598511698722,
+          "tau": 0.2,
+          "phase_error": 0.024115376125371537,
+          "flat_phase_error": 0.04543681789645579,
+          "gain": 0.4692547312550114
+        },
+        {
+          "partial": 8,
+          "initial_cents": 0.6481083701635414,
+          "tau": 0.35,
+          "phase_error": 0.030298855803475654,
+          "flat_phase_error": 0.050064212187240206,
+          "gain": 0.39480010810600796
+        }
+      ]
+    },
+    {
+      "note": "C3",
+      "midi": 48,
+      "velocity": 48,
+      "source_sha256": "8de839bbcc150c2feab2bf50f903dd21e9f4b9cdf6ba1f9c2c68df251687f2a9",
+      "initial_cents": -0.68870460608246,
+      "tau": 0.235,
+      "accepted_partials": 4,
+      "partials": [
+        {
+          "partial": 1,
+          "initial_cents": 1.033872971951403,
+          "tau": 0.12,
+          "phase_error": 0.028252278002029604,
+          "flat_phase_error": 0.028591956651317467,
+          "gain": 0.01188021699355124
+        },
+        {
+          "partial": 2,
+          "initial_cents": 3.0332221948679066,
+          "tau": 0.12,
+          "phase_error": 0.018357635392885655,
+          "flat_phase_error": 0.03153833308120924,
+          "gain": 0.4179262630775099
+        },
+        {
+          "partial": 3,
+          "initial_cents": -0.6155061690457982,
+          "tau": 0.35,
+          "phase_error": 0.03035395409306184,
+          "flat_phase_error": 0.03421367548721747,
+          "gain": 0.1128122406959069
+        },
+        {
+          "partial": 4,
+          "initial_cents": -1.1007251269147984,
+          "tau": 0.35,
+          "phase_error": 0.018266520477897594,
+          "flat_phase_error": 0.05462298683268352,
+          "gain": 0.665589131296499
+        },
+        {
+          "partial": 5,
+          "initial_cents": -7.803146084018107,
+          "tau": 0.04,
+          "phase_error": 0.011249694772278024,
+          "flat_phase_error": 0.02674220431754103,
+          "gain": 0.5793280673987296
+        },
+        {
+          "partial": 6,
+          "initial_cents": -0.27668408525012167,
+          "tau": 0.35,
+          "phase_error": 0.020369507801376592,
+          "flat_phase_error": 0.028907900730490946,
+          "gain": 0.2953653746329765
+        },
+        {
+          "partial": 7,
+          "initial_cents": -0.292808282365379,
+          "tau": 0.07,
+          "phase_error": 0.012238875698658126,
+          "flat_phase_error": 0.012948463487756075,
+          "gain": 0.05480092597619235
+        }
+      ]
+    },
+    {
+      "note": "C3",
+      "midi": 48,
+      "velocity": 100,
+      "source_sha256": "1bfda7c37f81402283541c05cc42ed96d5f4de433e22e997cd64ff49f8e60ee3",
+      "initial_cents": 2.9083752414755715,
+      "tau": 0.2,
+      "accepted_partials": 5,
+      "partials": [
+        {
+          "partial": 1,
+          "initial_cents": 3.684073179136832,
+          "tau": 0.12,
+          "phase_error": 0.026678288675374636,
+          "flat_phase_error": 0.03108140374728596,
+          "gain": 0.1416639707688815
+        },
+        {
+          "partial": 2,
+          "initial_cents": 2.9083752414755715,
+          "tau": 0.2,
+          "phase_error": 0.0190457634255152,
+          "flat_phase_error": 0.048597155469661875,
+          "gain": 0.6080889253403927
+        },
+        {
+          "partial": 3,
+          "initial_cents": 0.5480631694872171,
+          "tau": 0.12,
+          "phase_error": 0.02917213812727912,
+          "flat_phase_error": 0.0299839329893551,
+          "gain": 0.027074328853529006
+        },
+        {
+          "partial": 4,
+          "initial_cents": -0.5020628449864251,
+          "tau": 0.35,
+          "phase_error": 0.017104695037884764,
+          "flat_phase_error": 0.028603538376174454,
+          "gain": 0.4020077232076904
+        },
+        {
+          "partial": 5,
+          "initial_cents": -2.3570457392974995,
+          "tau": 0.04,
+          "phase_error": 0.01932391435173189,
+          "flat_phase_error": 0.020697942453126734,
+          "gain": 0.06638476768918045
+        },
+        {
+          "partial": 6,
+          "initial_cents": 6.081270027418883,
+          "tau": 0.04,
+          "phase_error": 0.017689298791622128,
+          "flat_phase_error": 0.027801097073379286,
+          "gain": 0.3637193976578582
+        },
+        {
+          "partial": 7,
+          "initial_cents": 0.37494723548310716,
+          "tau": 0.2,
+          "phase_error": 0.008017004022869215,
+          "flat_phase_error": 0.023284490764731873,
+          "gain": 0.6556933924871458
+        },
+        {
+          "partial": 8,
+          "initial_cents": 4.405528620066828,
+          "tau": 0.04,
+          "phase_error": 0.059384875987634256,
+          "flat_phase_error": 0.06522207720961565,
+          "gain": 0.08949732163882718
+        }
+      ]
+    },
+    {
+      "note": "A3",
+      "midi": 57,
+      "velocity": 48,
+      "source_sha256": "ebf43d7daef3242aa1e95f5432cb52666aaf7723d5b8e72bf2d1a7656b2271b3",
+      "initial_cents": -1.3596755281458979,
+      "tau": 0.135,
+      "accepted_partials": 4,
+      "partials": [
+        {
+          "partial": 1,
+          "initial_cents": -3.3179394063737124,
+          "tau": 0.2,
+          "phase_error": 0.017273388759865053,
+          "flat_phase_error": 0.0401664169697123,
+          "gain": 0.5699544529229444
+        },
+        {
+          "partial": 2,
+          "initial_cents": 71.15662630877151,
+          "tau": 0.04,
+          "phase_error": 0.11158025825646561,
+          "flat_phase_error": 0.19368894291918148,
+          "gain": 0.4239203509772702
+        },
+        {
+          "partial": 3,
+          "initial_cents": 5.4790989358051885,
+          "tau": 0.04,
+          "phase_error": 0.052260910262030565,
+          "flat_phase_error": 0.05533722859142761,
+          "gain": 0.05559220090529804
+        },
+        {
+          "partial": 4,
+          "initial_cents": -3.2413058235413397,
+          "tau": 0.07,
+          "phase_error": 0.06424799962653426,
+          "flat_phase_error": 0.07653658514506347,
+          "gain": 0.16055831985759572
+        },
+        {
+          "partial": 5,
+          "initial_cents": 2.703087340072102,
+          "tau": 0.07,
+          "phase_error": 0.01252286627777825,
+          "flat_phase_error": 0.04794916097094337,
+          "gain": 0.7388303356263739
+        },
+        {
+          "partial": 6,
+          "initial_cents": 0.5219547672495439,
+          "tau": 0.35,
+          "phase_error": 0.0167153527254331,
+          "flat_phase_error": 0.02013837332263395,
+          "gain": 0.1699750293810297
+        },
+        {
+          "partial": 7,
+          "initial_cents": 0.5607664761382788,
+          "tau": 0.04,
+          "phase_error": 0.01741555003601681,
+          "flat_phase_error": 0.018204908494000985,
+          "gain": 0.04335964985730578
+        }
+      ]
+    },
+    {
+      "note": "A3",
+      "midi": 57,
+      "velocity": 100,
+      "source_sha256": "9439d0d4910194278b69c1f2a5f95baf1f1d8f0b144e57866947fd8024a03ce3",
+      "initial_cents": 1.573135161858265,
+      "tau": 0.095,
+      "accepted_partials": 6,
+      "partials": [
+        {
+          "partial": 1,
+          "initial_cents": -2.9344440267182454,
+          "tau": 0.2,
+          "phase_error": 0.018593173996431248,
+          "flat_phase_error": 0.03459260350564713,
+          "gain": 0.4625101289818798
+        },
+        {
+          "partial": 2,
+          "initial_cents": 76.66683905088321,
+          "tau": 0.04,
+          "phase_error": 0.09323017819915899,
+          "flat_phase_error": 0.20000320808786323,
+          "gain": 0.5338565861493476
+        },
+        {
+          "partial": 3,
+          "initial_cents": 9.278791270042612,
+          "tau": 0.04,
+          "phase_error": 0.04761146606986743,
+          "flat_phase_error": 0.05720522486006747,
+          "gain": 0.16770773672628347
+        },
+        {
+          "partial": 4,
+          "initial_cents": -5.321389206135902,
+          "tau": 0.04,
+          "phase_error": 0.06466377383374206,
+          "flat_phase_error": 0.06831264952973519,
+          "gain": 0.0534143488960247
+        },
+        {
+          "partial": 5,
+          "initial_cents": 1.9463748601064708,
+          "tau": 0.12,
+          "phase_error": 0.019169559622859045,
+          "flat_phase_error": 0.06835998255606239,
+          "gain": 0.7195792200921353
+        },
+        {
+          "partial": 6,
+          "initial_cents": 1.1998954636100592,
+          "tau": 0.07,
+          "phase_error": 0.016908989537869453,
+          "flat_phase_error": 0.02930563023607141,
+          "gain": 0.42301225390277764
+        },
+        {
+          "partial": 7,
+          "initial_cents": 2.298768370856478,
+          "tau": 0.04,
+          "phase_error": 0.009611478772715702,
+          "flat_phase_error": 0.021568863914216942,
+          "gain": 0.5543817787092451
+        },
+        {
+          "partial": 8,
+          "initial_cents": 0.3367374836165882,
+          "tau": 0.35,
+          "phase_error": 0.027921835359673866,
+          "flat_phase_error": 0.03262681750343234,
+          "gain": 0.14420597851027028
+        }
+      ]
+    },
+    {
+      "note": "C4",
+      "midi": 60,
+      "velocity": 48,
+      "source_sha256": "358bdd9f50cb3905235bd80aebf441b01b7e841b3a5c7dee78dd15a3f99a5309",
+      "initial_cents": 0.0,
+      "tau": 0.275,
+      "accepted_partials": 2,
+      "partials": [
+        {
+          "partial": 1,
+          "initial_cents": 4.314730039965958,
+          "tau": 0.35,
+          "phase_error": 0.08343628781360775,
+          "flat_phase_error": 0.08520401153097658,
+          "gain": 0.020746954111733995
+        },
+        {
+          "partial": 2,
+          "initial_cents": -1.914351412914864,
+          "tau": 0.2,
+          "phase_error": 0.01710196546842686,
+          "flat_phase_error": 0.046026334986174686,
+          "gain": 0.6284308652087132
+        },
+        {
+          "partial": 3,
+          "initial_cents": -0.9063455797220767,
+          "tau": 0.35,
+          "phase_error": 0.019344707919994517,
+          "flat_phase_error": 0.03341653204382131,
+          "gain": 0.42110366525686993
+        },
+        {
+          "partial": 4,
+          "initial_cents": 18.92153945142175,
+          "tau": 0.04,
+          "phase_error": 0.06527652304395513,
+          "flat_phase_error": 0.13119920994578574,
+          "gain": 0.5024625295310181
+        }
+      ]
+    },
+    {
+      "note": "C4",
+      "midi": 60,
+      "velocity": 100,
+      "source_sha256": "b09110864a56347319482e458b7c3f51ec0786d4770a03e5933b11da9a518b93",
+      "initial_cents": 0.7193736168708241,
+      "tau": 0.2,
+      "accepted_partials": 5,
+      "partials": [
+        {
+          "partial": 1,
+          "initial_cents": -16.08722626430621,
+          "tau": 0.04,
+          "phase_error": 0.08949188905561303,
+          "flat_phase_error": 0.09133279105977882,
+          "gain": 0.02015598103161964
+        },
+        {
+          "partial": 2,
+          "initial_cents": -1.37294065124783,
+          "tau": 0.2,
+          "phase_error": 0.015950827029431052,
+          "flat_phase_error": 0.03547706170345256,
+          "gain": 0.5503904138746996
+        },
+        {
+          "partial": 3,
+          "initial_cents": -0.6886118590119671,
+          "tau": 0.35,
+          "phase_error": 0.0202073410767793,
+          "flat_phase_error": 0.028566813143498796,
+          "gain": 0.29262879358392613
+        },
+        {
+          "partial": 4,
+          "initial_cents": 7.865303350560812,
+          "tau": 0.04,
+          "phase_error": 0.06450670514136424,
+          "flat_phase_error": 0.07747365086738649,
+          "gain": 0.16737233344299318
+        },
+        {
+          "partial": 5,
+          "initial_cents": 1.3430278841727539,
+          "tau": 0.12,
+          "phase_error": 0.02852690148588686,
+          "flat_phase_error": 0.05989774264631918,
+          "gain": 0.5237399570409372
+        },
+        {
+          "partial": 6,
+          "initial_cents": -0.179344634038058,
+          "tau": 0.35,
+          "phase_error": 0.05590727872799878,
+          "flat_phase_error": 0.05725619357153251,
+          "gain": 0.02355928257522888
+        },
+        {
+          "partial": 7,
+          "initial_cents": 0.7193736168708241,
+          "tau": 0.35,
+          "phase_error": 0.019001104046868444,
+          "flat_phase_error": 0.046204319878735224,
+          "gain": 0.5887591442372169
+        }
+      ]
+    },
+    {
+      "note": "A4",
+      "midi": 69,
+      "velocity": 48,
+      "source_sha256": "a54dd8868b5550df2f393d5b98ceaf4ebeed5bd38feb969537c47ee652cbfa1d",
+      "initial_cents": 0.0,
+      "tau": 0.07,
+      "accepted_partials": 1,
+      "partials": [
+        {
+          "partial": 1,
+          "initial_cents": 4.797531389423447,
+          "tau": 0.04,
+          "phase_error": 0.04253874832110991,
+          "flat_phase_error": 0.044056827353871036,
+          "gain": 0.03445729354426019
+        },
+        {
+          "partial": 2,
+          "initial_cents": -0.3703253172359368,
+          "tau": 0.2,
+          "phase_error": 0.021509206606426672,
+          "flat_phase_error": 0.023818414023061226,
+          "gain": 0.09695051124725418
+        },
+        {
+          "partial": 4,
+          "initial_cents": 0.7239524322387069,
+          "tau": 0.07,
+          "phase_error": 0.018439429233886737,
+          "flat_phase_error": 0.027115673680740953,
+          "gain": 0.31997156143004346
+        }
+      ]
+    },
+    {
+      "note": "A4",
+      "midi": 69,
+      "velocity": 100,
+      "source_sha256": "144f8bbf121848ad77d08ef840f6fe8c4dcb9b9de58ea83570a4f4287c608249",
+      "initial_cents": 1.2511141320351842,
+      "tau": 0.05500000000000001,
+      "accepted_partials": 4,
+      "partials": [
+        {
+          "partial": 1,
+          "initial_cents": 11.766324137437499,
+          "tau": 0.04,
+          "phase_error": 0.032038815660633595,
+          "flat_phase_error": 0.043352235982064405,
+          "gain": 0.2609650936138882
+        },
+        {
+          "partial": 2,
+          "initial_cents": -0.08712526803925304,
+          "tau": 0.35,
+          "phase_error": 0.02168708448212309,
+          "flat_phase_error": 0.021814099889209664,
+          "gain": 0.005822628837846344
+        },
+        {
+          "partial": 3,
+          "initial_cents": 1.6558042853105115,
+          "tau": 0.07,
+          "phase_error": 0.025133572205133306,
+          "flat_phase_error": 0.04030603393461777,
+          "gain": 0.37643152273668
+        },
+        {
+          "partial": 4,
+          "initial_cents": 0.8157689984691765,
+          "tau": 0.04,
+          "phase_error": 0.041005142030990024,
+          "flat_phase_error": 0.04172500232995628,
+          "gain": 0.01725249272064
+        },
+        {
+          "partial": 5,
+          "initial_cents": -1.2700239312097343,
+          "tau": 0.04,
+          "phase_error": 0.05797469536154457,
+          "flat_phase_error": 0.05995078236060438,
+          "gain": 0.03296182170190265
+        },
+        {
+          "partial": 6,
+          "initial_cents": 0.636038469682733,
+          "tau": 0.04,
+          "phase_error": 0.016678752148236234,
+          "flat_phase_error": 0.019416806318386673,
+          "gain": 0.14101465118687662
+        },
+        {
+          "partial": 7,
+          "initial_cents": 0.8464239787598569,
+          "tau": 0.07,
+          "phase_error": 0.016840718575412708,
+          "flat_phase_error": 0.04006883563722775,
+          "gain": 0.5797053169230082
+        }
+      ]
+    },
+    {
+      "note": "C5",
+      "midi": 72,
+      "velocity": 48,
+      "source_sha256": "4ddc3c30ca2ff91d6fcc6c5aefc1bd56e9c5220da3345d6c683a293d27a0181c",
+      "initial_cents": 0.0,
+      "tau": 0.05500000000000001,
+      "accepted_partials": 2,
+      "partials": [
+        {
+          "partial": 1,
+          "initial_cents": -7.590628910054166,
+          "tau": 0.07,
+          "phase_error": 0.02331176376695986,
+          "flat_phase_error": 0.060511067458366485,
+          "gain": 0.6147520652647702
+        },
+        {
+          "partial": 2,
+          "initial_cents": -5.625445182554141,
+          "tau": 0.04,
+          "phase_error": 0.05318411987838673,
+          "flat_phase_error": 0.06236582470803339,
+          "gain": 0.14722333702201418
+        }
+      ]
+    },
+    {
+      "note": "C5",
+      "midi": 72,
+      "velocity": 100,
+      "source_sha256": "efabef1b3742ed64d5446dd0d0d70d13e77044ec420e93420350b694983a3d18",
+      "initial_cents": 0.0,
+      "tau": 0.07,
+      "accepted_partials": 2,
+      "partials": [
+        {
+          "partial": 1,
+          "initial_cents": -5.775260434501913,
+          "tau": 0.07,
+          "phase_error": 0.025279529564271912,
+          "flat_phase_error": 0.04740279730310365,
+          "gain": 0.46670806360584205
+        },
+        {
+          "partial": 2,
+          "initial_cents": 0.4639852217109261,
+          "tau": 0.35,
+          "phase_error": 0.05010783249840915,
+          "flat_phase_error": 0.051227202454680314,
+          "gain": 0.021851085021897254
+        },
+        {
+          "partial": 3,
+          "initial_cents": 2.724005780606118,
+          "tau": 0.07,
+          "phase_error": 0.09343800379184468,
+          "flat_phase_error": 0.10733809827103978,
+          "gain": 0.12949823690835227
+        },
+        {
+          "partial": 4,
+          "initial_cents": -0.2436501371393607,
+          "tau": 0.35,
+          "phase_error": 0.03768689906144831,
+          "flat_phase_error": 0.04228716397309473,
+          "gain": 0.10878631904880998
+        },
+        {
+          "partial": 5,
+          "initial_cents": 0.41367881839248216,
+          "tau": 0.04,
+          "phase_error": 0.02947966865266893,
+          "flat_phase_error": 0.029887546462914118,
+          "gain": 0.013647082431182511
+        },
+        {
+          "partial": 6,
+          "initial_cents": 0.3514040154191071,
+          "tau": 0.04,
+          "phase_error": 0.02782823435172404,
+          "flat_phase_error": 0.028339446934289865,
+          "gain": 0.018038904702380565
+        }
+      ]
+    }
+  ]
+}

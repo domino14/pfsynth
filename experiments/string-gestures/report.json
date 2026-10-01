@@ -1,0 +1,218 @@
+{
+  "checks": [
+    "Piano frequency-motion output is finite and bit-identical across block sizes at keyboard/velocity extremes, 0/3/18 cents.",
+    "Linear/nonlinear plucked-string output is finite, block-identical, and total SAV energy decreases after one second at E2/A3/E5.",
+    "Bowed-string output is finite and block-identical at G3/A4/E6, with/without expressive controls.",
+    "Imported MIDI timing and per-channel bends retained in note curves; violin bend range verified from author code (4096 units/semitone).",
+    "GOAT tie notes merged; fret/string identities, bend points, hammer transitions and legato slides retained.",
+    "Full excerpts finite and bounded; gesture and variation outputs differ; seeded re-renders exactly reproducible."
+  ],
+  "guitar_tempo": 77,
+  "source_sha256": {
+    "research/strings/midi/guitar/goat/audio-examples/example1/example1.gp5": "47e997ce9565b6195e955cb81a8ec632e69b7b3b9f92a2095adfcf483bafd882",
+    "research/strings/midi/violin/Wohlfahrt/Wohlfahrt_Op45-08_BernardChevalier_b_OfyqFc_kI-0000-0080.mid": "3029c64c2b78b1807ba83e3878f2e2df7957e20802f6cee8eb6b9aea6ae71c05"
+  },
+  "kernels": {
+    "src/host/stringlab.c": "d60b880ad47621a211da680bbfd28295df71446ebc2c93a36eea4dd0f00ac58e",
+    "src/host/midi.c": "7be636a6d2f1c6138fbc6ac9e7692ea466b629650d581be4fd1a3a9b6b817114",
+    "src/core/pf_partial.c": "d5d776fdc824481d491843e604db24f78aa28da91fa6b8eabd9a07a4644ff32c",
+    "src/core/pf_attack.c": "450fff22cf231ec0431cb32aa480af320f12ef82d69d40c0fa779fe2296a5b5d",
+    "src/core/pf_resonance.c": "1af08a682b69e52e0e69df1e818dacd388a031027e8c62587bf553751bcee79b",
+    "src/core/pf_motion.c": "e131f735a3dd6b4686cd578a2fa97ec5804b14d5b2e81895d129828cd350dbdd",
+    "src/core/pf_pluck.c": "3c51bc9274918bd170114b593e3b392b2c6c34663f9a97af36f40f1ce2bcf223",
+    "src/core/pf_bow.c": "5aaf45c907892869ba330cc441f2f7ab87b96aff8aff3910bddab82980e71ae3",
+    "src/core/pf_radiation.c": "935ba0b1f9dca7a33b16117bb982042ca2a04af18e2fd1222acb20e68fbb4096"
+  },
+  "clips": [
+    {
+      "id": "guitar-goat-gestures",
+      "note": "Guitar \u00b7 GOAT example 1",
+      "dynamic": "Bends / hammer transitions / slides",
+      "split": "music",
+      "duration": 34.0,
+      "audio": {
+        "current": "audio/guitar-goat-gestures-current.mp3",
+        "fitted": "audio/guitar-goat-gestures-fitted.mp3",
+        "ref": "audio/guitar-goat-gestures-ref.mp3"
+      },
+      "labels": {
+        "current": "Notes + string identity",
+        "fitted": "Tablature gestures",
+        "ref": "Gestures + note variation"
+      },
+      "experiment": "Experiment 05 \u00b7 strings",
+      "description": "Exact GOAT string/fret assignment and Guitar Pro timing. B retains bends, ties, hammer transitions and legato slides. The third version adds small seeded pluck-position and excitation changes. Slide timing and hammer excitation are prototype interpretations, not captured gestures.",
+      "thirdLabel": "With variation",
+      "question": "Which gesture version do you prefer?",
+      "metrics": {
+        "current": {
+          "peak_dbfs": -1.592084308985523,
+          "rms_dbfs": -19.280937018389785,
+          "sha256": "d9018619afd4b618e3d3361c5887444ebf6c9819883a578281cb8e28da97361c"
+        },
+        "fitted": {
+          "peak_dbfs": -1.4151247366017596,
+          "rms_dbfs": -19.280937018389785,
+          "sha256": "1279381c0e9ae79e8dc99e5826434947f74412ed935fcce5749a58a1e5b6cb00"
+        },
+        "ref": {
+          "peak_dbfs": -1.012199867091985,
+          "rms_dbfs": -19.280937018389785,
+          "sha256": "df5e487f341fd83f5a95647331a0998caf6d9daef906ac62a35bc9bd435eaee8"
+        }
+      }
+    },
+    {
+      "id": "guitar-goat-variation",
+      "note": "Guitar \u00b7 GOAT note character",
+      "dynamic": "Controlled repeat variation",
+      "split": "music",
+      "duration": 34.0,
+      "audio": {
+        "current": "audio/guitar-goat-variation-current.mp3",
+        "fitted": "audio/guitar-goat-variation-fitted.mp3",
+        "ref": "audio/guitar-goat-variation-ref.mp3"
+      },
+      "labels": {
+        "current": "Gestures, fixed pluck character",
+        "fitted": "Gestures, varying pluck character",
+        "ref": "Another variation take"
+      },
+      "experiment": "Experiment 05 \u00b7 strings",
+      "description": "Same string identities, source timing and gestures. B adds bounded changes in pluck position and excitation. Third version uses a different repeatable seed; no random timing or pitch drift is added.",
+      "thirdLabel": "Another take",
+      "question": "Which note character do you prefer?",
+      "metrics": {
+        "current": {
+          "peak_dbfs": -1.4151247366017596,
+          "rms_dbfs": -19.280937018389785,
+          "sha256": "1279381c0e9ae79e8dc99e5826434947f74412ed935fcce5749a58a1e5b6cb00"
+        },
+        "fitted": {
+          "peak_dbfs": -1.012199867091985,
+          "rms_dbfs": -19.280937018389785,
+          "sha256": "df5e487f341fd83f5a95647331a0998caf6d9daef906ac62a35bc9bd435eaee8"
+        },
+        "ref": {
+          "peak_dbfs": -1.024297417072055,
+          "rms_dbfs": -19.280937018389785,
+          "sha256": "4287d6b813aa9187a7c6f7d3f1e8d67c55a20f104e237418c1fc9b7fe97a1399"
+        }
+      }
+    },
+    {
+      "id": "violin-wohlfahrt-gestures",
+      "note": "Violin \u00b7 Wohlfahrt \u00e9tude 8",
+      "dynamic": "Performed timing / pitch contours",
+      "split": "music",
+      "duration": 28.83637188208617,
+      "audio": {
+        "current": "audio/violin-wohlfahrt-gestures-current.mp3",
+        "fitted": "audio/violin-wohlfahrt-gestures-fitted.mp3",
+        "ref": "audio/violin-wohlfahrt-gestures-ref.mp3"
+      },
+      "labels": {
+        "current": "Performed timing, steady pitch",
+        "fitted": "Performed pitch contours",
+        "ref": "Contours + bow variation"
+      },
+      "experiment": "Experiment 05 \u00b7 strings",
+      "description": "Wohlfahrt Op.45 No.8, Bernard Chevalier performance-aligned MIDI. B retains recorded/transcribed pitch-bend curves, including vibrato and intonation. String assignment is inferred. The third version adds bounded bow attack, contact, pressure and speed variation. No automatic vibrato is added.",
+      "thirdLabel": "With variation",
+      "question": "Which pitch interpretation do you prefer?",
+      "metrics": {
+        "current": {
+          "peak_dbfs": -9.097786336983654,
+          "rms_dbfs": -18.41637507897531,
+          "sha256": "31fbfba1707e525c64426346d9bbf6d1ccd5e24f3c664402746b0110d1d470ae"
+        },
+        "fitted": {
+          "peak_dbfs": -9.053057266805478,
+          "rms_dbfs": -18.41637507897531,
+          "sha256": "330b76d8e0aa3420806ace1f882bf436b6580bd4874d587a56e609bb095f8c14"
+        },
+        "ref": {
+          "peak_dbfs": -8.478630055049265,
+          "rms_dbfs": -18.416375078975335,
+          "sha256": "14bb5afda8318c74d14a7efc7c21e494f384317e7d50209bafba2caccb33a022"
+        }
+      }
+    },
+    {
+      "id": "violin-wohlfahrt-variation",
+      "note": "Violin \u00b7 Wohlfahrt bow character",
+      "dynamic": "Controlled attack / tone variation",
+      "split": "music",
+      "duration": 28.83637188208617,
+      "audio": {
+        "current": "audio/violin-wohlfahrt-variation-current.mp3",
+        "fitted": "audio/violin-wohlfahrt-variation-fitted.mp3",
+        "ref": "audio/violin-wohlfahrt-variation-ref.mp3"
+      },
+      "labels": {
+        "current": "Contours, fixed bow character",
+        "fitted": "Contours, varying bow character",
+        "ref": "Another variation take"
+      },
+      "experiment": "Experiment 05 \u00b7 strings",
+      "description": "Source timing and pitch contours stay the same. B varies attack time, bow contact, friction curve and speed subtly. Third version changes the seeded take. This is a designed performance layer, not recovered bow-motion measurements.",
+      "thirdLabel": "Another take",
+      "question": "Which bow character do you prefer?",
+      "metrics": {
+        "current": {
+          "peak_dbfs": -9.053057266805478,
+          "rms_dbfs": -18.41637507897531,
+          "sha256": "330b76d8e0aa3420806ace1f882bf436b6580bd4874d587a56e609bb095f8c14"
+        },
+        "fitted": {
+          "peak_dbfs": -8.478630055049265,
+          "rms_dbfs": -18.416375078975335,
+          "sha256": "14bb5afda8318c74d14a7efc7c21e494f384317e7d50209bafba2caccb33a022"
+        },
+        "ref": {
+          "peak_dbfs": -8.927155166412357,
+          "rms_dbfs": -18.41637507897527,
+          "sha256": "ba8cb4efe2b2f3116c24768ba8e193d737e5ac19b25191bd3058250a127c928e"
+        }
+      }
+    },
+    {
+      "id": "violin-wohlfahrt-steady",
+      "note": "Violin \u00b7 steady bow variation",
+      "dynamic": "No vibrato / attack and tone only",
+      "split": "music",
+      "duration": 28.83637188208617,
+      "audio": {
+        "current": "audio/violin-wohlfahrt-steady-current.mp3",
+        "fitted": "audio/violin-wohlfahrt-steady-fitted.mp3",
+        "ref": "audio/violin-wohlfahrt-steady-ref.mp3"
+      },
+      "labels": {
+        "current": "Steady pitch, fixed bow character",
+        "fitted": "Steady pitch, varying bow character",
+        "ref": "Another steady take"
+      },
+      "experiment": "Experiment 05 \u00b7 strings",
+      "description": "Performed note timing, inferred strings and steady pitch in all three versions. B has small changes in attack and bow tone without vibrato; third version is another seeded take.",
+      "thirdLabel": "Another take",
+      "question": "Which steady-bow version do you prefer?",
+      "metrics": {
+        "current": {
+          "peak_dbfs": -9.097786336983654,
+          "rms_dbfs": -18.41637507897531,
+          "sha256": "31fbfba1707e525c64426346d9bbf6d1ccd5e24f3c664402746b0110d1d470ae"
+        },
+        "fitted": {
+          "peak_dbfs": -8.486951661393366,
+          "rms_dbfs": -18.41637507897534,
+          "sha256": "e50c64767f524ca62a10334c38324b4b69049c1b8cfb9c3edaad271861efebbe"
+        },
+        "ref": {
+          "peak_dbfs": -8.943783204912254,
+          "rms_dbfs": -18.416375078975275,
+          "sha256": "6e9e22c6b8c68b8879916a931b3081efd5a0f1e123350e58c57a22cb0b25024f"
+        }
+      }
+    }
+  ]
+}

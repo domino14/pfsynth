@@ -1,0 +1,129 @@
+{
+  "finger": {
+    "width_fraction": 0.045,
+    "width_mm_on_650": 29.2,
+    "rho_per_s": 424,
+    "lift_s": 0.06,
+    "offset_mm": 2.0,
+    "pluck": 0.12,
+    "scale": 1.5,
+    "note": "User asked (2026-10-01) to exaggerate the 12th-fret harmonic: the fitted finger with 1.5x the contact width and lift time. Partials 2-4 vs ordinary notes -1.8/-12.7/-17.5 dB (real steel-string -3.7/-14.1/-18.9), purer than any recording above that; contrast error AG-PT 11.3 -> 14.5, Philharmonia 14.2 -> 28.8. 2x (width 0.06, lift 0.08 s) gives a near-sine: partials 3-7 -24 to -57 dB. Then (user: \"louder yet more harmonic finger-touch timbre\u2026 show off a little\"): plucked at 0.12 of the string, which with the 1.5x finger matches the real Sonatina harmonics' octave-to-fundamental balance (g54 body: D4 -5.8, D5 -7.4 dB re context vs recording -10.2, -7.8; at 0.19 D5 was -12.1), and in the Sonatina plucked 1.6x harder than fitted (about +6.5 dB above the recording's harmonics relative to their context).",
+    "velocity_boost": 1.6
+  },
+  "clips": [
+    "guitar-capricho-harmonics",
+    "guitar-harmonics-exposed",
+    "guitar-harmonics-nylon",
+    "guitar-sonatina-harmonics"
+  ],
+  "nylon_notes": [
+    {
+      "start": 0.3,
+      "end": 2.4999999999999996,
+      "pitch": 40,
+      "velocity": 100,
+      "string": 6,
+      "fret": 0,
+      "bend": [],
+      "mute": false,
+      "sounding": 52,
+      "pluck_position": 0.12,
+      "touch": {
+        "position": 0.5030769230769231,
+        "rho": 424,
+        "lift": 0.06,
+        "width": 0.045
+      }
+    },
+    {
+      "start": 2.6999999999999997,
+      "end": 4.8999999999999995,
+      "pitch": 45,
+      "velocity": 100,
+      "string": 5,
+      "fret": 0,
+      "bend": [],
+      "mute": false,
+      "sounding": 57,
+      "pluck_position": 0.12,
+      "touch": {
+        "position": 0.5030769230769231,
+        "rho": 424,
+        "lift": 0.06,
+        "width": 0.045
+      }
+    },
+    {
+      "start": 5.1,
+      "end": 7.3,
+      "pitch": 50,
+      "velocity": 100,
+      "string": 4,
+      "fret": 0,
+      "bend": [],
+      "mute": false,
+      "sounding": 62,
+      "pluck_position": 0.12,
+      "touch": {
+        "position": 0.5030769230769231,
+        "rho": 424,
+        "lift": 0.06,
+        "width": 0.045
+      }
+    },
+    {
+      "start": 7.499999999999999,
+      "end": 9.7,
+      "pitch": 55,
+      "velocity": 100,
+      "string": 3,
+      "fret": 0,
+      "bend": [],
+      "mute": false,
+      "sounding": 67,
+      "pluck_position": 0.12,
+      "touch": {
+        "position": 0.5030769230769231,
+        "rho": 424,
+        "lift": 0.06,
+        "width": 0.045
+      }
+    },
+    {
+      "start": 9.9,
+      "end": 12.100000000000001,
+      "pitch": 59,
+      "velocity": 100,
+      "string": 2,
+      "fret": 0,
+      "bend": [],
+      "mute": false,
+      "sounding": 71,
+      "pluck_position": 0.12,
+      "touch": {
+        "position": 0.5030769230769231,
+        "rho": 424,
+        "lift": 0.06,
+        "width": 0.045
+      }
+    },
+    {
+      "start": 12.3,
+      "end": 14.500000000000002,
+      "pitch": 64,
+      "velocity": 100,
+      "string": 1,
+      "fret": 0,
+      "bend": [],
+      "mute": false,
+      "sounding": 76,
+      "pluck_position": 0.12,
+      "touch": {
+        "position": 0.5030769230769231,
+        "rho": 424,
+        "lift": 0.06,
+        "width": 0.045
+      }
+    }
+  ]
+}

@@ -1,0 +1,6569 @@
+{
+  "assumption": "Edition slurs played as slurs; Kowalski unverified",
+  "clearance_m": 0.0007,
+  "contact_s": 0.0005,
+  "pull_m": 0.0006,
+  "hammer_notes": [
+    {
+      "start": 1.9909090909090903,
+      "pitch": 66,
+      "string": 2,
+      "fret": 7,
+      "clearance_mm": 0.744,
+      "level_error_db": -0.017
+    },
+    {
+      "start": 11.870454545454539,
+      "pitch": 71,
+      "string": 1,
+      "fret": 7,
+      "clearance_mm": 0.05,
+      "level_error_db": 2.213
+    },
+    {
+      "start": 12.904545454545453,
+      "pitch": 76,
+      "string": 1,
+      "fret": 12,
+      "clearance_mm": 0.05,
+      "level_error_db": 1.754
+    }
+  ],
+  "pull_notes": [
+    {
+      "start": 6.184090909090909,
+      "pitch": 63,
+      "string": 2,
+      "fret": 4,
+      "pull_mm": 1.151,
+      "level_error_db": -0.255
+    },
+    {
+      "start": 9.402272727272726,
+      "pitch": 63,
+      "string": 2,
+      "fret": 4,
+      "pull_mm": 1.151,
+      "level_error_db": -0.386
+    },
+    {
+      "start": 15.286363636363637,
+      "pitch": 75,
+      "string": 1,
+      "fret": 11,
+      "pull_mm": 1.151,
+      "level_error_db": -0.196
+    }
+  ],
+  "first_sample_differing_s": 1.984467120181406,
+  "exposed_level_vs_pluck_db": {
+    "guitar-hammer-exposed": {
+      "pluck": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "legato": [
+        -5.83,
+        -4.69,
+        -5.35,
+        -3.47,
+        -4.91
+      ],
+      "placeholder": [
+        -9.07,
+        -6.09,
+        -4.91,
+        -8.87,
+        -14.23
+      ]
+    },
+    "guitar-pulloff-exposed": {
+      "pluck": [
+        0.0,
+        0.0
+      ],
+      "legato": [
+        -3.47,
+        -4.91
+      ],
+      "placeholder": [
+        -8.87,
+        -14.23
+      ]
+    }
+  },
+  "clips": [
+    {
+      "id": "guitar-bach-hammer",
+      "note": "Guitar \u00b7 slurs in context",
+      "dynamic": "Bach Prelude \u00b7 edition slurs as hammer-ons and pull-offs",
+      "split": "music",
+      "duration": 18.0,
+      "audio": {
+        "current": "audio/guitar-bach-hammer-current.mp3",
+        "fitted": "audio/guitar-bach-hammer-fitted.mp3",
+        "ref": "audio/guitar-bach-hammer-ref.mp3"
+      },
+      "labels": {
+        "current": "Every note plucked (fitted dynamics)",
+        "fitted": "Edition slurs: hammer-ons (bars 2, 8) + pull-offs (bars 4, 6, 10)",
+        "ref": "Real performance \u00b7 Mateusz Kowalski"
+      },
+      "experiment": "Experiment 05 \u00b7 strings",
+      "description": "Same fitted velocities, timing and measured-body model in both. B plays all six slurs Apke marks as left-hand legato. Hammer-ons (bar 2 E\u2192F\u266f, bar 8 G\u266f\u2192B and D\u266f\u2192E): the ringing string is shortened without a new pluck, and the finger\u2019s slam onto the fret excites it. Pull-offs (bars 4 and 6 E\u2192D\u266f on the 2nd string, bar 10 E\u2192D\u266f on the 1st): the string lengthens, and the leaving finger plucks it sideways at the old fret, so the note is bright and thin. Each slurred note is matched to its fitted plucked level, so only the articulation differs. Assumption: Kowalski slurs these notes (unverified). Designed physics, not fitted.",
+      "thirdLabel": "Real recording",
+      "question": "Which sounds closer to the performance at the slurs?",
+      "metrics": {
+        "current": {
+          "peak_dbfs": -1.012199867091985,
+          "rms_dbfs": -20.042953131042008,
+          "sha256": "eca4328abec27b3a21c76c01b19ccfd51288159c8b0f5f59aaff839360eba4cd"
+        },
+        "fitted": {
+          "peak_dbfs": -1.0706215005133177,
+          "rms_dbfs": -20.042946739840044,
+          "sha256": "a87a3148eb1a6a7dfca6d25ab3ccd4794bb273f54276d887a784e53aa40decdc"
+        },
+        "ref": {
+          "peak_dbfs": -3.6067938305050444,
+          "rms_dbfs": -20.04336019470356,
+          "sha256": "85890586d22dee214adb509ae374e1211493296ea19385c52b88f015c41f1df1"
+        }
+      },
+      "score": {
+        "kind": "guitar",
+        "title": "Bach \u00b7 Prelude, BWV 1006a",
+        "quarter": null,
+        "meter": null,
+        "pickup": 0,
+        "measures": [
+          0,
+          1.8677272727272731,
+          3.617727272727273,
+          5.357727272727273,
+          6.947727272727272,
+          8.577727272727271,
+          10.177727272727271,
+          11.717727272727268,
+          13.307727272727268,
+          15.007727272727267,
+          16.647727272727273,
+          18.0
+        ],
+        "inferred": false,
+        "source": "https://aim-qmul.github.io/GAPS/",
+        "audit": {
+          "passed": true,
+          "violations": [],
+          "max_longitudinal_span_mm": 21.692146675338105,
+          "rolled_chord_times": [],
+          "scale_length_mm": 650,
+          "max_shift_mm": 325.0,
+          "assumptions": "Edition string/fret/printed-finger assignments; pitch, simultaneous contacts, pairwise reach and fret-transition speed checked. Unmarked stopped digits remain unspecified; no claim of a fully specified hand-position audit. Source durations retained."
+        },
+        "notes": [
+          {
+            "start": 0.0,
+            "pitch": 40,
+            "end": 0.7113636363636364,
+            "string": 6,
+            "fret": 0,
+            "score_tick": 0,
+            "score_measure": 1,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 0,
+              "x": 300.0,
+              "y": 462.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 441.3
+          },
+          {
+            "start": 0.456818181818182,
+            "pitch": 76,
+            "end": 0.5636363636363639,
+            "string": 1,
+            "fret": 12,
+            "score_tick": 16,
+            "score_measure": 1,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 356.0,
+              "y": 325.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 175.5
+          },
+          {
+            "start": 0.581818181818182,
+            "pitch": 75,
+            "end": 0.7113636363636364,
+            "string": 1,
+            "fret": 11,
+            "score_tick": 24,
+            "score_measure": 1,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 392.0,
+              "y": 332.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 192.6
+          },
+          {
+            "start": 0.7386363636363638,
+            "pitch": 76,
+            "end": 1.0181818181818185,
+            "string": 1,
+            "fret": 12,
+            "score_tick": 32,
+            "score_measure": 1,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 427.0,
+              "y": 325.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 154.0
+          },
+          {
+            "start": 1.0477272727272733,
+            "pitch": 71,
+            "end": 1.3159090909090914,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 48,
+            "score_measure": 1,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 484.0,
+              "y": 345.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 104.0
+          },
+          {
+            "start": 1.329545454545455,
+            "pitch": 68,
+            "end": 1.581818181818182,
+            "string": 1,
+            "fret": 4,
+            "score_tick": 64,
+            "score_measure": 1,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 541.0,
+              "y": 358.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 176.1
+          },
+          {
+            "start": 1.6022727272727275,
+            "pitch": 71,
+            "end": 1.8681818181818182,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 80,
+            "score_measure": 1,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 598.0,
+              "y": 345.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 80.1
+          },
+          {
+            "start": 1.8840909090909088,
+            "pitch": 64,
+            "end": 1.9840909090909085,
+            "string": 2,
+            "fret": 5,
+            "score_tick": 96,
+            "score_measure": 2,
+            "finger": 2,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 679.0,
+              "y": 371.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 88.1
+          },
+          {
+            "start": 1.9909090909090903,
+            "pitch": 66,
+            "end": 2.1090909090909085,
+            "string": 2,
+            "fret": 7,
+            "score_tick": 104,
+            "score_measure": 2,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 712.0,
+              "y": 364.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "edition_slur": "hammer-on",
+            "velocity": 80.3,
+            "legato": "HO"
+          },
+          {
+            "start": 2.136363636363636,
+            "pitch": 64,
+            "end": 2.2249999999999996,
+            "string": 2,
+            "fret": 5,
+            "score_tick": 112,
+            "score_measure": 2,
+            "finger": 2,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 746.0,
+              "y": 371.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 92.8
+          },
+          {
+            "start": 2.2386363636363633,
+            "pitch": 63,
+            "end": 2.370454545454545,
+            "string": 2,
+            "fret": 4,
+            "score_tick": 120,
+            "score_measure": 2,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 780.0,
+              "y": 377.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 160.8
+          },
+          {
+            "start": 2.3909090909090907,
+            "pitch": 64,
+            "end": 2.6431818181818176,
+            "string": 2,
+            "fret": 5,
+            "score_tick": 128,
+            "score_measure": 2,
+            "finger": 2,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 814.0,
+              "y": 371.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 174.9
+          },
+          {
+            "start": 2.670454545454545,
+            "pitch": 59,
+            "end": 2.9340909090909086,
+            "string": 3,
+            "fret": 4,
+            "score_tick": 144,
+            "score_measure": 2,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 868.0,
+              "y": 390.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 148.1
+          },
+          {
+            "start": 2.956818181818181,
+            "pitch": 56,
+            "end": 3.2249999999999996,
+            "string": 4,
+            "fret": 6,
+            "score_tick": 160,
+            "score_measure": 2,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 922.0,
+              "y": 403.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 270.3
+          },
+          {
+            "start": 3.243181818181818,
+            "pitch": 59,
+            "end": 3.618181818181818,
+            "string": 3,
+            "fret": 4,
+            "score_tick": 176,
+            "score_measure": 2,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 976.0,
+              "y": 390.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 156.2
+          },
+          {
+            "start": 3.4272727272727277,
+            "pitch": 40,
+            "end": 4.297727272727272,
+            "string": 6,
+            "fret": 0,
+            "score_tick": 192,
+            "score_measure": 3,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 0,
+              "x": 1053.0,
+              "y": 462.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 171.1
+          },
+          {
+            "start": 3.661363636363636,
+            "pitch": 52,
+            "end": 3.8227272727272723,
+            "string": 5,
+            "fret": 7,
+            "score_tick": 192,
+            "score_measure": 3,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 1052.0,
+              "y": 417.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 100.0
+          },
+          {
+            "start": 3.886363636363636,
+            "pitch": 59,
+            "end": 4.006818181818181,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 200,
+            "score_measure": 3,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 0,
+              "x": 1088.0,
+              "y": 391.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 123.5
+          },
+          {
+            "start": 4.045454545454545,
+            "pitch": 54,
+            "end": 4.1522727272727264,
+            "string": 4,
+            "fret": 4,
+            "score_tick": 208,
+            "score_measure": 3,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 1125.0,
+              "y": 410.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 138.5
+          },
+          {
+            "start": 4.184090909090909,
+            "pitch": 59,
+            "end": 4.297727272727272,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 216,
+            "score_measure": 3,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 0,
+              "x": 1161.0,
+              "y": 391.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 115.8
+          },
+          {
+            "start": 4.320454545454544,
+            "pitch": 56,
+            "end": 4.413636363636362,
+            "string": 4,
+            "fret": 6,
+            "score_tick": 224,
+            "score_measure": 3,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 1198.0,
+              "y": 403.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 135.4
+          },
+          {
+            "start": 4.438636363636363,
+            "pitch": 59,
+            "end": 4.556818181818181,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 232,
+            "score_measure": 3,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 0,
+              "x": 1234.0,
+              "y": 391.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 122.2
+          },
+          {
+            "start": 4.572727272727271,
+            "pitch": 57,
+            "end": 4.681818181818181,
+            "string": 4,
+            "fret": 7,
+            "score_tick": 240,
+            "score_measure": 3,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 1270.0,
+              "y": 397.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 78.5
+          },
+          {
+            "start": 4.709090909090908,
+            "pitch": 59,
+            "end": 4.8181818181818175,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 248,
+            "score_measure": 3,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 0,
+              "x": 1306.0,
+              "y": 391.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 116.1
+          },
+          {
+            "start": 4.84090909090909,
+            "pitch": 56,
+            "end": 4.952272727272726,
+            "string": 4,
+            "fret": 6,
+            "score_tick": 256,
+            "score_measure": 3,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 1343.0,
+              "y": 403.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 214.8
+          },
+          {
+            "start": 4.963636363636363,
+            "pitch": 59,
+            "end": 5.097727272727272,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 264,
+            "score_measure": 3,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 0,
+              "x": 1379.0,
+              "y": 391.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 117.0
+          },
+          {
+            "start": 5.106818181818181,
+            "pitch": 54,
+            "end": 5.213636363636362,
+            "string": 4,
+            "fret": 4,
+            "score_tick": 272,
+            "score_measure": 3,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 1415.0,
+              "y": 410.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 156.6
+          },
+          {
+            "start": 5.224999999999999,
+            "pitch": 59,
+            "end": 5.356818181818181,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 280,
+            "score_measure": 3,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 0,
+              "x": 1451.0,
+              "y": 391.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 126.4
+          },
+          {
+            "start": 5.368181818181817,
+            "pitch": 52,
+            "end": 5.49090909090909,
+            "string": 5,
+            "fret": 7,
+            "score_tick": 288,
+            "score_measure": 4,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 206.0,
+              "y": 602.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 89.5
+          },
+          {
+            "start": 5.515909090909091,
+            "pitch": 64,
+            "end": 5.622727272727273,
+            "string": 1,
+            "fret": 0,
+            "score_tick": 296,
+            "score_measure": 4,
+            "finger": 0,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 240.0,
+              "y": 556.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 133.8
+          },
+          {
+            "start": 5.647727272727273,
+            "pitch": 63,
+            "end": 5.754545454545456,
+            "string": 2,
+            "fret": 4,
+            "score_tick": 304,
+            "score_measure": 4,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 273.0,
+              "y": 562.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 126.1
+          },
+          {
+            "start": 5.781818181818183,
+            "pitch": 61,
+            "end": 5.8886363636363654,
+            "string": 3,
+            "fret": 6,
+            "score_tick": 312,
+            "score_measure": 4,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 306.0,
+              "y": 569.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 144.5
+          },
+          {
+            "start": 5.893181818181819,
+            "pitch": 59,
+            "end": 6.020454545454546,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 320,
+            "score_measure": 4,
+            "finger": 0,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 341.0,
+              "y": 575.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 126.1
+          },
+          {
+            "start": 6.036363636363637,
+            "pitch": 64,
+            "end": 6.152272727272727,
+            "string": 2,
+            "fret": 5,
+            "score_tick": 328,
+            "score_measure": 4,
+            "finger": 2,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 373.0,
+              "y": 556.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 104.1
+          },
+          {
+            "start": 6.184090909090909,
+            "pitch": 63,
+            "end": 6.275,
+            "string": 2,
+            "fret": 4,
+            "score_tick": 336,
+            "score_measure": 4,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 408.0,
+              "y": 562.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "edition_slur": "pull-off",
+            "velocity": 137.5,
+            "legato": "PO"
+          },
+          {
+            "start": 6.297727272727274,
+            "pitch": 61,
+            "end": 6.406818181818183,
+            "string": 3,
+            "fret": 6,
+            "score_tick": 344,
+            "score_measure": 4,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 441.0,
+              "y": 569.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 115.1
+          },
+          {
+            "start": 6.4295454545454565,
+            "pitch": 59,
+            "end": 6.540909090909093,
+            "string": 3,
+            "fret": 4,
+            "score_tick": 352,
+            "score_measure": 4,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 473.0,
+              "y": 576.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 95.9
+          },
+          {
+            "start": 6.556818181818183,
+            "pitch": 57,
+            "end": 6.672727272727274,
+            "string": 4,
+            "fret": 7,
+            "score_tick": 360,
+            "score_measure": 4,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 507.0,
+              "y": 582.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 84.4
+          },
+          {
+            "start": 6.672727272727274,
+            "pitch": 56,
+            "end": 6.804545454545455,
+            "string": 4,
+            "fret": 6,
+            "score_tick": 368,
+            "score_measure": 4,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 541.0,
+              "y": 588.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 75.1
+          },
+          {
+            "start": 6.827272727272728,
+            "pitch": 54,
+            "end": 6.947727272727274,
+            "string": 4,
+            "fret": 4,
+            "score_tick": 376,
+            "score_measure": 4,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 574.0,
+              "y": 596.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 70.4
+          },
+          {
+            "start": 6.963636363636365,
+            "pitch": 52,
+            "end": 7.084090909090911,
+            "string": 5,
+            "fret": 7,
+            "score_tick": 384,
+            "score_measure": 5,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 630.0,
+              "y": 602.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 75.6
+          },
+          {
+            "start": 7.0136363636363654,
+            "pitch": 40,
+            "end": 7.500000000000002,
+            "string": 6,
+            "fret": 0,
+            "score_tick": 384,
+            "score_measure": 5,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 1,
+              "x": 631.0,
+              "y": 647.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 71.2
+          },
+          {
+            "start": 7.090909090909092,
+            "pitch": 59,
+            "end": 7.229545454545455,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 392,
+            "score_measure": 5,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 1,
+              "x": 665.0,
+              "y": 576.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 70.4
+          },
+          {
+            "start": 7.275,
+            "pitch": 54,
+            "end": 7.365909090909092,
+            "string": 4,
+            "fret": 4,
+            "score_tick": 400,
+            "score_measure": 5,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 700.0,
+              "y": 596.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 66.1
+          },
+          {
+            "start": 7.402272727272729,
+            "pitch": 59,
+            "end": 7.500000000000002,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 408,
+            "score_measure": 5,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 1,
+              "x": 735.0,
+              "y": 576.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 50.7
+          },
+          {
+            "start": 7.53409090909091,
+            "pitch": 56,
+            "end": 7.645454545454546,
+            "string": 4,
+            "fret": 6,
+            "score_tick": 416,
+            "score_measure": 5,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 771.0,
+              "y": 588.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 66.1
+          },
+          {
+            "start": 7.675000000000001,
+            "pitch": 59,
+            "end": 7.781818181818183,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 424,
+            "score_measure": 5,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 1,
+              "x": 805.0,
+              "y": 576.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 66.1
+          },
+          {
+            "start": 7.80909090909091,
+            "pitch": 57,
+            "end": 7.90909090909091,
+            "string": 4,
+            "fret": 7,
+            "score_tick": 432,
+            "score_measure": 5,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 840.0,
+              "y": 582.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 38.8
+          },
+          {
+            "start": 7.927272727272728,
+            "pitch": 59,
+            "end": 8.045454545454547,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 440,
+            "score_measure": 5,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 1,
+              "x": 874.0,
+              "y": 576.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 48.5
+          },
+          {
+            "start": 8.072727272727274,
+            "pitch": 56,
+            "end": 8.170454545454547,
+            "string": 4,
+            "fret": 6,
+            "score_tick": 448,
+            "score_measure": 5,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 910.0,
+              "y": 588.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 78.3
+          },
+          {
+            "start": 8.195454545454547,
+            "pitch": 59,
+            "end": 8.306818181818183,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 456,
+            "score_measure": 5,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 1,
+              "x": 944.0,
+              "y": 576.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 51.0
+          },
+          {
+            "start": 8.327272727272728,
+            "pitch": 54,
+            "end": 8.440909090909091,
+            "string": 4,
+            "fret": 4,
+            "score_tick": 464,
+            "score_measure": 5,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 979.0,
+              "y": 596.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 39.5
+          },
+          {
+            "start": 8.450000000000001,
+            "pitch": 59,
+            "end": 8.577272727272728,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 472,
+            "score_measure": 5,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 1,
+              "x": 1014.0,
+              "y": 576.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 78.3
+          },
+          {
+            "start": 8.600000000000001,
+            "pitch": 52,
+            "end": 8.690909090909091,
+            "string": 5,
+            "fret": 7,
+            "score_tick": 480,
+            "score_measure": 6,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1072.0,
+              "y": 602.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 56.4
+          },
+          {
+            "start": 8.686363636363637,
+            "pitch": 64,
+            "end": 8.834090909090909,
+            "string": 1,
+            "fret": 0,
+            "score_tick": 488,
+            "score_measure": 6,
+            "finger": 0,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1106.0,
+              "y": 556.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 62.8
+          },
+          {
+            "start": 8.870454545454546,
+            "pitch": 63,
+            "end": 8.968181818181819,
+            "string": 2,
+            "fret": 4,
+            "score_tick": 496,
+            "score_measure": 6,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1141.0,
+              "y": 563.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 79.1
+          },
+          {
+            "start": 8.988636363636363,
+            "pitch": 61,
+            "end": 9.1,
+            "string": 3,
+            "fret": 6,
+            "score_tick": 504,
+            "score_measure": 6,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1176.0,
+              "y": 569.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 99.9
+          },
+          {
+            "start": 9.118181818181817,
+            "pitch": 59,
+            "end": 9.245454545454544,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 512,
+            "score_measure": 6,
+            "finger": 0,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1211.0,
+              "y": 575.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 75.6
+          },
+          {
+            "start": 9.261363636363635,
+            "pitch": 64,
+            "end": 9.377272727272725,
+            "string": 2,
+            "fret": 5,
+            "score_tick": 520,
+            "score_measure": 6,
+            "finger": 2,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1245.0,
+              "y": 556.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 76.3
+          },
+          {
+            "start": 9.402272727272726,
+            "pitch": 63,
+            "end": 9.511363636363635,
+            "string": 2,
+            "fret": 4,
+            "score_tick": 528,
+            "score_measure": 6,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1281.0,
+              "y": 562.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "edition_slur": "pull-off",
+            "velocity": 100.6,
+            "legato": "PO"
+          },
+          {
+            "start": 9.536363636363635,
+            "pitch": 61,
+            "end": 9.634090909090908,
+            "string": 3,
+            "fret": 6,
+            "score_tick": 536,
+            "score_measure": 6,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1315.0,
+              "y": 568.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 127.0
+          },
+          {
+            "start": 9.649999999999999,
+            "pitch": 59,
+            "end": 9.768181818181818,
+            "string": 3,
+            "fret": 4,
+            "score_tick": 544,
+            "score_measure": 6,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1349.0,
+              "y": 576.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 73.9
+          },
+          {
+            "start": 9.781818181818181,
+            "pitch": 57,
+            "end": 9.881818181818181,
+            "string": 4,
+            "fret": 7,
+            "score_tick": 552,
+            "score_measure": 6,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1384.0,
+              "y": 582.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 55.0
+          },
+          {
+            "start": 9.884090909090908,
+            "pitch": 56,
+            "end": 10.024999999999999,
+            "string": 4,
+            "fret": 6,
+            "score_tick": 560,
+            "score_measure": 6,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1419.0,
+              "y": 588.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 65.9
+          },
+          {
+            "start": 10.045454545454543,
+            "pitch": 54,
+            "end": 10.177272727272724,
+            "string": 4,
+            "fret": 4,
+            "score_tick": 568,
+            "score_measure": 6,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1453.0,
+              "y": 596.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 84.3
+          },
+          {
+            "start": 10.186363636363634,
+            "pitch": 52,
+            "end": 10.306818181818178,
+            "string": 5,
+            "fret": 7,
+            "score_tick": 576,
+            "score_measure": 7,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 207.0,
+              "y": 799.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 91.8
+          },
+          {
+            "start": 10.190909090909088,
+            "pitch": 40,
+            "end": 10.690909090909086,
+            "string": 6,
+            "fret": 0,
+            "score_tick": 576,
+            "score_measure": 7,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 2,
+              "x": 207.0,
+              "y": 845.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 139.6
+          },
+          {
+            "start": 10.311363636363632,
+            "pitch": 54,
+            "end": 10.434090909090905,
+            "string": 4,
+            "fret": 4,
+            "score_tick": 584,
+            "score_measure": 7,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 237.0,
+              "y": 793.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 86.3
+          },
+          {
+            "start": 10.447727272727269,
+            "pitch": 56,
+            "end": 10.563636363636359,
+            "string": 4,
+            "fret": 6,
+            "score_tick": 592,
+            "score_measure": 7,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 265.0,
+              "y": 787.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 115.6
+          },
+          {
+            "start": 10.57954545454545,
+            "pitch": 57,
+            "end": 10.690909090909086,
+            "string": 4,
+            "fret": 7,
+            "score_tick": 600,
+            "score_measure": 7,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 296.0,
+              "y": 780.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 68.2
+          },
+          {
+            "start": 10.71363636363636,
+            "pitch": 59,
+            "end": 10.820454545454542,
+            "string": 3,
+            "fret": 4,
+            "score_tick": 608,
+            "score_measure": 7,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 327.0,
+              "y": 773.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 94.6
+          },
+          {
+            "start": 10.83863636363636,
+            "pitch": 61,
+            "end": 10.947727272727269,
+            "string": 3,
+            "fret": 6,
+            "score_tick": 616,
+            "score_measure": 7,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 355.0,
+              "y": 767.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 153.3
+          },
+          {
+            "start": 10.970454545454542,
+            "pitch": 63,
+            "end": 11.074999999999998,
+            "string": 2,
+            "fret": 4,
+            "score_tick": 624,
+            "score_measure": 7,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 386.0,
+              "y": 761.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 144.6
+          },
+          {
+            "start": 11.090909090909088,
+            "pitch": 64,
+            "end": 11.204545454545451,
+            "string": 2,
+            "fret": 5,
+            "score_tick": 632,
+            "score_measure": 7,
+            "finger": 2,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 416.0,
+              "y": 754.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 99.1
+          },
+          {
+            "start": 11.220454545454542,
+            "pitch": 66,
+            "end": 11.331818181818178,
+            "string": 2,
+            "fret": 7,
+            "score_tick": 640,
+            "score_measure": 7,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 446.0,
+              "y": 748.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 96.7
+          },
+          {
+            "start": 11.345454545454542,
+            "pitch": 68,
+            "end": 11.461363636363632,
+            "string": 1,
+            "fret": 4,
+            "score_tick": 648,
+            "score_measure": 7,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 475.0,
+              "y": 741.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 143.1
+          },
+          {
+            "start": 11.481818181818177,
+            "pitch": 69,
+            "end": 11.58863636363636,
+            "string": 1,
+            "fret": 5,
+            "score_tick": 656,
+            "score_measure": 7,
+            "finger": 2,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 505.0,
+              "y": 735.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 85.9
+          },
+          {
+            "start": 11.606818181818177,
+            "pitch": 66,
+            "end": 11.718181818181813,
+            "string": 2,
+            "fret": 7,
+            "score_tick": 664,
+            "score_measure": 7,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 536.0,
+              "y": 747.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 113.7
+          },
+          {
+            "start": 11.736363636363631,
+            "pitch": 68,
+            "end": 11.849999999999994,
+            "string": 1,
+            "fret": 4,
+            "score_tick": 672,
+            "score_measure": 8,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 589.0,
+              "y": 741.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 132.4
+          },
+          {
+            "start": 11.870454545454539,
+            "pitch": 71,
+            "end": 11.972727272727266,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 680,
+            "score_measure": 8,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 625.0,
+              "y": 728.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "edition_slur": "hammer-on",
+            "velocity": 66.7,
+            "legato": "HO"
+          },
+          {
+            "start": 11.988636363636356,
+            "pitch": 64,
+            "end": 12.095454545454539,
+            "string": 2,
+            "fret": 5,
+            "score_tick": 688,
+            "score_measure": 8,
+            "finger": 2,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 661.0,
+              "y": 754.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 123.5
+          },
+          {
+            "start": 12.106818181818175,
+            "pitch": 66,
+            "end": 12.227272727272721,
+            "string": 2,
+            "fret": 7,
+            "score_tick": 696,
+            "score_measure": 8,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 697.0,
+              "y": 747.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 146.8
+          },
+          {
+            "start": 12.243181818181812,
+            "pitch": 68,
+            "end": 12.349999999999994,
+            "string": 1,
+            "fret": 4,
+            "score_tick": 704,
+            "score_measure": 8,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 731.0,
+              "y": 741.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 128.7
+          },
+          {
+            "start": 12.372727272727268,
+            "pitch": 69,
+            "end": 12.481818181818177,
+            "string": 1,
+            "fret": 5,
+            "score_tick": 712,
+            "score_measure": 8,
+            "finger": 2,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 768.0,
+              "y": 734.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 81.8
+          },
+          {
+            "start": 12.506818181818177,
+            "pitch": 71,
+            "end": 12.615909090909087,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 720,
+            "score_measure": 8,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 803.0,
+              "y": 728.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 125.8
+          },
+          {
+            "start": 12.62954545454545,
+            "pitch": 73,
+            "end": 12.74772727272727,
+            "string": 1,
+            "fret": 9,
+            "score_tick": 728,
+            "score_measure": 8,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 839.0,
+              "y": 721.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 198.8
+          },
+          {
+            "start": 12.761363636363633,
+            "pitch": 75,
+            "end": 12.879545454545452,
+            "string": 1,
+            "fret": 11,
+            "score_tick": 736,
+            "score_measure": 8,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 875.0,
+              "y": 715.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 209.5
+          },
+          {
+            "start": 12.904545454545453,
+            "pitch": 76,
+            "end": 13.002272727272725,
+            "string": 1,
+            "fret": 12,
+            "score_tick": 744,
+            "score_measure": 8,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 910.0,
+              "y": 708.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "edition_slur": "hammer-on",
+            "velocity": 148.2,
+            "legato": "HO"
+          },
+          {
+            "start": 13.024999999999999,
+            "pitch": 73,
+            "end": 13.145454545454545,
+            "string": 1,
+            "fret": 9,
+            "score_tick": 752,
+            "score_measure": 8,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 946.0,
+              "y": 721.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 178.5
+          },
+          {
+            "start": 13.16590909090909,
+            "pitch": 75,
+            "end": 13.30681818181818,
+            "string": 1,
+            "fret": 11,
+            "score_tick": 760,
+            "score_measure": 8,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 982.0,
+              "y": 715.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 155.3
+          },
+          {
+            "start": 13.329545454545453,
+            "pitch": 40,
+            "end": 13.974999999999996,
+            "string": 6,
+            "fret": 0,
+            "score_tick": 768,
+            "score_measure": 9,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 2,
+              "x": 1040.0,
+              "y": 845.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 114.0
+          },
+          {
+            "start": 13.329545454545453,
+            "pitch": 76,
+            "end": 13.559090909090907,
+            "string": 1,
+            "fret": 12,
+            "score_tick": 768,
+            "score_measure": 9,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 1039.0,
+              "y": 709.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 94.4
+          },
+          {
+            "start": 13.59772727272727,
+            "pitch": 71,
+            "end": 13.699999999999998,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 776,
+            "score_measure": 9,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 2,
+              "x": 1079.0,
+              "y": 728.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 84.2
+          },
+          {
+            "start": 13.743181818181816,
+            "pitch": 69,
+            "end": 13.843181818181817,
+            "string": 2,
+            "fret": 10,
+            "score_tick": 784,
+            "score_measure": 9,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 1116.0,
+              "y": 735.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 74.0
+          },
+          {
+            "start": 13.879545454545452,
+            "pitch": 71,
+            "end": 13.974999999999996,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 792,
+            "score_measure": 9,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 2,
+              "x": 1153.0,
+              "y": 728.0,
+              "w": 19.968000793457122,
+              "source": "ClefScan"
+            },
+            "velocity": 78.5
+          },
+          {
+            "start": 13.993181818181816,
+            "pitch": 68,
+            "end": 14.086363636363634,
+            "string": 2,
+            "fret": 9,
+            "score_tick": 800,
+            "score_measure": 9,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 1191.0,
+              "y": 741.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 106.7
+          },
+          {
+            "start": 14.111363636363633,
+            "pitch": 71,
+            "end": 14.227272727272725,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 808,
+            "score_measure": 9,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 2,
+              "x": 1228.0,
+              "y": 728.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 80.2
+          },
+          {
+            "start": 14.249999999999998,
+            "pitch": 69,
+            "end": 14.35,
+            "string": 2,
+            "fret": 10,
+            "score_tick": 816,
+            "score_measure": 9,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 1265.0,
+              "y": 735.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 98.6
+          },
+          {
+            "start": 14.374999999999998,
+            "pitch": 71,
+            "end": 14.49090909090909,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 824,
+            "score_measure": 9,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 2,
+              "x": 1302.0,
+              "y": 728.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 108.5
+          },
+          {
+            "start": 14.504545454545452,
+            "pitch": 68,
+            "end": 14.602272727272725,
+            "string": 2,
+            "fret": 9,
+            "score_tick": 832,
+            "score_measure": 9,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 1339.0,
+              "y": 741.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 234.6
+          },
+          {
+            "start": 14.629545454545452,
+            "pitch": 71,
+            "end": 14.745454545454544,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 840,
+            "score_measure": 9,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 2,
+              "x": 1376.0,
+              "y": 728.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 95.3
+          },
+          {
+            "start": 14.754545454545452,
+            "pitch": 66,
+            "end": 14.86590909090909,
+            "string": 2,
+            "fret": 7,
+            "score_tick": 848,
+            "score_measure": 9,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 2,
+              "x": 1413.0,
+              "y": 748.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 204.0
+          },
+          {
+            "start": 14.879545454545452,
+            "pitch": 71,
+            "end": 15.006818181818181,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 856,
+            "score_measure": 9,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 2,
+              "x": 1451.0,
+              "y": 728.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 88.9
+          },
+          {
+            "start": 15.025,
+            "pitch": 64,
+            "end": 15.13409090909091,
+            "string": 3,
+            "fret": 9,
+            "score_tick": 864,
+            "score_measure": 10,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 207.0,
+              "y": 975.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 112.0
+          },
+          {
+            "start": 15.156818181818183,
+            "pitch": 76,
+            "end": 15.261363636363638,
+            "string": 1,
+            "fret": 12,
+            "score_tick": 872,
+            "score_measure": 10,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 240.0,
+              "y": 929.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 112.0
+          },
+          {
+            "start": 15.286363636363637,
+            "pitch": 75,
+            "end": 15.388636363636364,
+            "string": 1,
+            "fret": 11,
+            "score_tick": 880,
+            "score_measure": 10,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 272.0,
+              "y": 937.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "edition_slur": "pull-off",
+            "velocity": 92.9,
+            "legato": "PO"
+          },
+          {
+            "start": 15.411363636363637,
+            "pitch": 73,
+            "end": 15.525,
+            "string": 1,
+            "fret": 9,
+            "score_tick": 888,
+            "score_measure": 10,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 305.0,
+              "y": 942.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 127.6
+          },
+          {
+            "start": 15.538636363636362,
+            "pitch": 71,
+            "end": 15.661363636363633,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 896,
+            "score_measure": 10,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 344.0,
+              "y": 950.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 95.5
+          },
+          {
+            "start": 15.674999999999995,
+            "pitch": 64,
+            "end": 15.788636363636359,
+            "string": 3,
+            "fret": 9,
+            "score_tick": 904,
+            "score_measure": 10,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 377.0,
+              "y": 975.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 188.3
+          },
+          {
+            "start": 15.795454545454541,
+            "pitch": 73,
+            "end": 15.924999999999995,
+            "string": 1,
+            "fret": 9,
+            "score_tick": 912,
+            "score_measure": 10,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 409.0,
+              "y": 942.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 164.1
+          },
+          {
+            "start": 15.936363636363632,
+            "pitch": 64,
+            "end": 16.06136363636363,
+            "string": 3,
+            "fret": 9,
+            "score_tick": 920,
+            "score_measure": 10,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 442.0,
+              "y": 975.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 213.9
+          },
+          {
+            "start": 16.079545454545453,
+            "pitch": 71,
+            "end": 16.19772727272727,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 928,
+            "score_measure": 10,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 474.0,
+              "y": 950.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 140.7
+          },
+          {
+            "start": 16.20227272727272,
+            "pitch": 64,
+            "end": 16.345454545454544,
+            "string": 3,
+            "fret": 9,
+            "score_tick": 936,
+            "score_measure": 10,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 507.0,
+              "y": 975.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 164.1
+          },
+          {
+            "start": 16.361363636363635,
+            "pitch": 69,
+            "end": 16.5,
+            "string": 2,
+            "fret": 10,
+            "score_tick": 944,
+            "score_measure": 10,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 539.0,
+              "y": 955.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 152.0
+          },
+          {
+            "start": 16.438636363636363,
+            "pitch": 64,
+            "end": 16.647727272727273,
+            "string": 3,
+            "fret": 9,
+            "score_tick": 952,
+            "score_measure": 10,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 572.0,
+              "y": 975.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 140.7
+          },
+          {
+            "start": 16.659090909090907,
+            "pitch": 68,
+            "end": 16.799999999999997,
+            "string": 2,
+            "fret": 9,
+            "score_tick": 960,
+            "score_measure": 11,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 626.0,
+              "y": 963.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 75.2
+          },
+          {
+            "start": 16.68181818181818,
+            "pitch": 40,
+            "end": 17.197727272727278,
+            "string": 6,
+            "fret": 0,
+            "score_tick": 960,
+            "score_measure": 11,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 3,
+              "x": 627.0,
+              "y": 1066.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 75.2
+          },
+          {
+            "start": 16.815909090909088,
+            "pitch": 71,
+            "end": 16.93181818181818,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 968,
+            "score_measure": 11,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 662.0,
+              "y": 950.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 66.2
+          },
+          {
+            "start": 16.961363636363636,
+            "pitch": 66,
+            "end": 17.065909090909095,
+            "string": 2,
+            "fret": 7,
+            "score_tick": 976,
+            "score_measure": 11,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 697.0,
+              "y": 969.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 66.2
+          },
+          {
+            "start": 17.086363636363636,
+            "pitch": 71,
+            "end": 17.197727272727278,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 984,
+            "score_measure": 11,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 733.0,
+              "y": 950.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 58.1
+          },
+          {
+            "start": 17.21363636363637,
+            "pitch": 68,
+            "end": 17.32954545454546,
+            "string": 2,
+            "fret": 9,
+            "score_tick": 992,
+            "score_measure": 11,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 769.0,
+              "y": 962.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 115.2
+          },
+          {
+            "start": 17.35454545454546,
+            "pitch": 71,
+            "end": 17.46363636363637,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 1000,
+            "score_measure": 11,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 804.0,
+              "y": 950.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 58.2
+          },
+          {
+            "start": 17.48409090909091,
+            "pitch": 69,
+            "end": 17.58409090909091,
+            "string": 2,
+            "fret": 10,
+            "score_tick": 1008,
+            "score_measure": 11,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 840.0,
+              "y": 956.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 58.1
+          },
+          {
+            "start": 17.6,
+            "pitch": 71,
+            "end": 17.71818181818182,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 1016,
+            "score_measure": 11,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 875.0,
+              "y": 950.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 45.6
+          },
+          {
+            "start": 17.740909090909092,
+            "pitch": 68,
+            "end": 17.82954545454546,
+            "string": 2,
+            "fret": 9,
+            "score_tick": 1024,
+            "score_measure": 11,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 912.0,
+              "y": 962.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 97.5
+          },
+          {
+            "start": 17.859090909090916,
+            "pitch": 71,
+            "end": 17.96363636363637,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 1032,
+            "score_measure": 11,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 946.0,
+              "y": 950.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 48.2
+          },
+          {
+            "start": 17.988636363636367,
+            "pitch": 66,
+            "end": 18,
+            "string": 2,
+            "fret": 7,
+            "score_tick": 1040,
+            "score_measure": 11,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 982.0,
+              "y": 969.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 47.6
+          }
+        ],
+        "engraving": {
+          "image": "scores/imslp-apke-prelude-page7@2x.png",
+          "imageWidth": 1556,
+          "imageHeight": 2200,
+          "space": 13.066,
+          "systems": [
+            {
+              "index": 0,
+              "image": "scores/imslp-apke-page7-system1@2x.png",
+              "crop": [
+                50.94,
+                253.88,
+                1444.85,
+                248.04
+              ],
+              "points": [
+                [
+                  0.0,
+                  300.0
+                ],
+                [
+                  0.4568,
+                  356.0
+                ],
+                [
+                  0.5818,
+                  392.0
+                ],
+                [
+                  0.7386,
+                  427.0
+                ],
+                [
+                  1.0477,
+                  484.0
+                ],
+                [
+                  1.3295,
+                  541.0
+                ],
+                [
+                  1.6023,
+                  598.0
+                ],
+                [
+                  1.8841,
+                  679.0
+                ],
+                [
+                  1.9909,
+                  712.0
+                ],
+                [
+                  2.1364,
+                  746.0
+                ],
+                [
+                  2.2386,
+                  780.0
+                ],
+                [
+                  2.3909,
+                  814.0
+                ],
+                [
+                  2.6705,
+                  868.0
+                ],
+                [
+                  2.9568,
+                  922.0
+                ],
+                [
+                  3.2432,
+                  976.0
+                ],
+                [
+                  3.4273,
+                  1052.5
+                ],
+                [
+                  3.8864,
+                  1088.0
+                ],
+                [
+                  4.0455,
+                  1125.0
+                ],
+                [
+                  4.1841,
+                  1161.0
+                ],
+                [
+                  4.3205,
+                  1198.0
+                ],
+                [
+                  4.4386,
+                  1234.0
+                ],
+                [
+                  4.5727,
+                  1270.0
+                ],
+                [
+                  4.7091,
+                  1306.0
+                ],
+                [
+                  4.8409,
+                  1343.0
+                ],
+                [
+                  4.9636,
+                  1379.0
+                ],
+                [
+                  5.1068,
+                  1415.0
+                ],
+                [
+                  5.225,
+                  1451.0
+                ],
+                [
+                  5.3682,
+                  1481.7
+                ]
+              ],
+              "lines": [
+                365.19,
+                378.26,
+                391.32,
+                404.39,
+                417.45
+              ],
+              "left": 139.78,
+              "barlines": [
+                648.41,
+                1022.88,
+                1481.7
+              ],
+              "barline": 1481.7,
+              "measures": [
+                1,
+                3
+              ],
+              "start": 0,
+              "end": 5.368181818181817
+            },
+            {
+              "index": 1,
+              "image": "scores/imslp-apke-page7-system2@2x.png",
+              "crop": [
+                50.94,
+                439.0,
+                1444.85,
+                248.04
+              ],
+              "points": [
+                [
+                  5.3682,
+                  206.0
+                ],
+                [
+                  5.5159,
+                  240.0
+                ],
+                [
+                  5.6477,
+                  273.0
+                ],
+                [
+                  5.7818,
+                  306.0
+                ],
+                [
+                  5.8932,
+                  341.0
+                ],
+                [
+                  6.0364,
+                  373.0
+                ],
+                [
+                  6.1841,
+                  408.0
+                ],
+                [
+                  6.2977,
+                  441.0
+                ],
+                [
+                  6.4295,
+                  473.0
+                ],
+                [
+                  6.5568,
+                  507.0
+                ],
+                [
+                  6.6727,
+                  541.0
+                ],
+                [
+                  6.8273,
+                  574.0
+                ],
+                [
+                  6.9636,
+                  630.5
+                ],
+                [
+                  7.0909,
+                  665.0
+                ],
+                [
+                  7.275,
+                  700.0
+                ],
+                [
+                  7.4023,
+                  735.0
+                ],
+                [
+                  7.5341,
+                  771.0
+                ],
+                [
+                  7.675,
+                  805.0
+                ],
+                [
+                  7.8091,
+                  840.0
+                ],
+                [
+                  7.9273,
+                  874.0
+                ],
+                [
+                  8.0727,
+                  910.0
+                ],
+                [
+                  8.1955,
+                  944.0
+                ],
+                [
+                  8.3273,
+                  979.0
+                ],
+                [
+                  8.45,
+                  1014.0
+                ],
+                [
+                  8.6,
+                  1072.0
+                ],
+                [
+                  8.6864,
+                  1106.0
+                ],
+                [
+                  8.8705,
+                  1141.0
+                ],
+                [
+                  8.9886,
+                  1176.0
+                ],
+                [
+                  9.1182,
+                  1211.0
+                ],
+                [
+                  9.2614,
+                  1245.0
+                ],
+                [
+                  9.4023,
+                  1281.0
+                ],
+                [
+                  9.5364,
+                  1315.0
+                ],
+                [
+                  9.65,
+                  1349.0
+                ],
+                [
+                  9.7818,
+                  1384.0
+                ],
+                [
+                  9.8841,
+                  1419.0
+                ],
+                [
+                  10.0455,
+                  1453.0
+                ],
+                [
+                  10.1864,
+                  1481.7
+                ]
+              ],
+              "lines": [
+                550.31,
+                563.37,
+                576.44,
+                589.5,
+                602.57
+              ],
+              "left": 74.43,
+              "barlines": [
+                601.15,
+                1042.64,
+                1481.7
+              ],
+              "barline": 1481.7,
+              "measures": [
+                4,
+                6
+              ],
+              "start": 5.368181818181817,
+              "end": 10.186363636363634
+            },
+            {
+              "index": 2,
+              "image": "scores/imslp-apke-page7-system3@2x.png",
+              "crop": [
+                50.94,
+                636.97,
+                1444.85,
+                248.07
+              ],
+              "points": [
+                [
+                  10.1864,
+                  207.0
+                ],
+                [
+                  10.3114,
+                  237.0
+                ],
+                [
+                  10.4477,
+                  265.0
+                ],
+                [
+                  10.5795,
+                  296.0
+                ],
+                [
+                  10.7136,
+                  327.0
+                ],
+                [
+                  10.8386,
+                  355.0
+                ],
+                [
+                  10.9705,
+                  386.0
+                ],
+                [
+                  11.0909,
+                  416.0
+                ],
+                [
+                  11.2205,
+                  446.0
+                ],
+                [
+                  11.3455,
+                  475.0
+                ],
+                [
+                  11.4818,
+                  505.0
+                ],
+                [
+                  11.6068,
+                  536.0
+                ],
+                [
+                  11.7364,
+                  589.0
+                ],
+                [
+                  11.8705,
+                  625.0
+                ],
+                [
+                  11.9886,
+                  661.0
+                ],
+                [
+                  12.1068,
+                  697.0
+                ],
+                [
+                  12.2432,
+                  731.0
+                ],
+                [
+                  12.3727,
+                  768.0
+                ],
+                [
+                  12.5068,
+                  803.0
+                ],
+                [
+                  12.6295,
+                  839.0
+                ],
+                [
+                  12.7614,
+                  875.0
+                ],
+                [
+                  12.9045,
+                  910.0
+                ],
+                [
+                  13.025,
+                  946.0
+                ],
+                [
+                  13.1659,
+                  982.0
+                ],
+                [
+                  13.3295,
+                  1039.5
+                ],
+                [
+                  13.5977,
+                  1079.0
+                ],
+                [
+                  13.7432,
+                  1116.0
+                ],
+                [
+                  13.8795,
+                  1153.0
+                ],
+                [
+                  13.9932,
+                  1191.0
+                ],
+                [
+                  14.1114,
+                  1228.0
+                ],
+                [
+                  14.25,
+                  1265.0
+                ],
+                [
+                  14.375,
+                  1302.0
+                ],
+                [
+                  14.5045,
+                  1339.0
+                ],
+                [
+                  14.6295,
+                  1376.0
+                ],
+                [
+                  14.7545,
+                  1413.0
+                ],
+                [
+                  14.8795,
+                  1451.0
+                ],
+                [
+                  15.025,
+                  1481.7
+                ]
+              ],
+              "lines": [
+                748.28,
+                761.37,
+                774.44,
+                787.5,
+                800.57
+              ],
+              "left": 74.43,
+              "barlines": [
+                559.3,
+                1010.25,
+                1481.7
+              ],
+              "barline": 1481.7,
+              "measures": [
+                7,
+                9
+              ],
+              "start": 10.186363636363634,
+              "end": 15.025
+            },
+            {
+              "index": 3,
+              "image": "scores/imslp-apke-page7-system4@2x.png",
+              "crop": [
+                50.94,
+                858.46,
+                1444.85,
+                248.05
+              ],
+              "points": [
+                [
+                  15.025,
+                  207.0
+                ],
+                [
+                  15.1568,
+                  240.0
+                ],
+                [
+                  15.2864,
+                  272.0
+                ],
+                [
+                  15.4114,
+                  305.0
+                ],
+                [
+                  15.5386,
+                  344.0
+                ],
+                [
+                  15.675,
+                  377.0
+                ],
+                [
+                  15.7955,
+                  409.0
+                ],
+                [
+                  15.9364,
+                  442.0
+                ],
+                [
+                  16.0795,
+                  474.0
+                ],
+                [
+                  16.2023,
+                  507.0
+                ],
+                [
+                  16.3614,
+                  539.0
+                ],
+                [
+                  16.4386,
+                  572.0
+                ],
+                [
+                  16.6591,
+                  626.5
+                ],
+                [
+                  16.8159,
+                  662.0
+                ],
+                [
+                  16.9614,
+                  697.0
+                ],
+                [
+                  17.0864,
+                  733.0
+                ],
+                [
+                  17.2136,
+                  769.0
+                ],
+                [
+                  17.3545,
+                  804.0
+                ],
+                [
+                  17.4841,
+                  840.0
+                ],
+                [
+                  17.6,
+                  875.0
+                ],
+                [
+                  17.7409,
+                  912.0
+                ],
+                [
+                  17.8591,
+                  946.0
+                ],
+                [
+                  17.9886,
+                  982.0
+                ],
+                [
+                  18.0,
+                  1000.47
+                ]
+              ],
+              "lines": [
+                969.77,
+                982.84,
+                995.9,
+                1008.97,
+                1022.04
+              ],
+              "left": 74.43,
+              "barlines": [
+                596.7,
+                1047.08,
+                1481.7
+              ],
+              "barline": 1481.7,
+              "measures": [
+                10,
+                11
+              ],
+              "start": 15.025,
+              "end": 18.0,
+              "excerpt_end_x": 1000.47
+            }
+          ],
+          "edition": "Stefan Apke \u00b7 2018 \u00b7 IMSLP #554880",
+          "source": "https://imslp.org/wiki/Suite_in_E_major,_BWV_1006a_(Bach,_Johann_Sebastian)",
+          "pdf": "scores/imslp-apke-bwv1006a.pdf",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "alignment": "Whole printed systems at natural proportions. Noteheads are recognized by ClefScan and identified against the MusicXML by measure, onset order and staff position; each tab number sits under its printed head. The edition PDF\u2019s vector glyphs confirm every position. The playhead interpolates between performed onsets, so it moves unevenly where Kowalski\u2019s timing departs from the engraved spacing.",
+          "check": {
+            "measures_matched": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "fingers_checked": 97,
+            "fingers_agree": 93,
+            "vector_check": {
+              "measures_matched": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "notes_compared": 140,
+              "max_px": 2.16,
+              "median_px": 1.4
+            }
+          }
+        },
+        "fingering_source": "Apke edition; unmarked stopped fingers left blank"
+      },
+      "downloads": [
+        {
+          "label": "Fitted-velocity MIDI (loudest = 127)",
+          "url": "guitar-bach-dynamics.mid"
+        },
+        {
+          "label": "Fitted velocities / string assignments",
+          "url": "guitar-bach-dynamics-events.json"
+        },
+        {
+          "label": "Source tablature (MusicXML)",
+          "url": "gaps-bach-source-tab.musicxml"
+        },
+        {
+          "label": "IMSLP score PDF",
+          "url": "scores/imslp-apke-bwv1006a.pdf"
+        }
+      ],
+      "dynamics": {
+        "model": "nylon / Gil de Avalle body + loading",
+        "range_exponent": 1.0,
+        "room": {
+          "rt_low": 2.7,
+          "rt_high": 1.2,
+          "ratio": 1.0,
+          "loss": 0.6255626007587665
+        },
+        "envelope_error_db": {
+          "constant_with_room": 5.2646358158911175,
+          "fitted_with_room": 2.6215172688571244
+        },
+        "method": "room-aware band-power fit"
+      }
+    },
+    {
+      "id": "guitar-bach-slurs",
+      "note": "Guitar \u00b7 pull-offs in context",
+      "dynamic": "Bach Prelude \u00b7 edition pull-offs added",
+      "split": "music",
+      "duration": 18.0,
+      "audio": {
+        "current": "audio/guitar-bach-slurs-current.mp3",
+        "fitted": "audio/guitar-bach-slurs-fitted.mp3",
+        "ref": "audio/guitar-bach-slurs-ref.mp3"
+      },
+      "labels": {
+        "current": "Edition hammer-ons only (bars 2, 8)",
+        "fitted": "Hammer-ons + edition pull-offs (bars 4, 6, 10)",
+        "ref": "Real performance \u00b7 Mateusz Kowalski"
+      },
+      "experiment": "Experiment 05 \u00b7 strings",
+      "description": "Both versions play Apke\u2019s three hammer-ons as slurs. B also plays its three pull-offs (bars 4 and 6 E\u2192D\u266f on the 2nd string, bar 10 E\u2192D\u266f on the 1st) as left-hand legato: the ringing string lengthens without a right-hand pluck, and the leaving finger plucks it sideways at the old fret, close to the string\u2019s new end, so the note is bright and thin. Each pulled note is matched to its fitted plucked level. Assumption: Kowalski slurs these notes (unverified). Designed physics, not fitted.",
+      "thirdLabel": "Real recording",
+      "question": "Do the pull-offs sound closer to the performance?",
+      "metrics": {
+        "current": {
+          "peak_dbfs": -1.0126942597953883,
+          "rms_dbfs": -19.98452505273461,
+          "sha256": "fcfc9e7decadab66a97cb8c87f6d966856ba40c152f36559859e2867c6173cc9"
+        },
+        "fitted": {
+          "peak_dbfs": -1.012199867091985,
+          "rms_dbfs": -19.984525106419227,
+          "sha256": "dfbd8c2a8836eb6a4801ac80501c9c191c41f26e0beb5d94b0a9bad01494659b"
+        },
+        "ref": {
+          "peak_dbfs": -3.548372197083735,
+          "rms_dbfs": -19.984938561282746,
+          "sha256": "b131375bf6ee59e84276341ab5540df2d23dc9b2285ba3ab96c8f862b9faa451"
+        }
+      },
+      "score": {
+        "kind": "guitar",
+        "title": "Bach \u00b7 Prelude, BWV 1006a",
+        "quarter": null,
+        "meter": null,
+        "pickup": 0,
+        "measures": [
+          0,
+          1.8677272727272731,
+          3.617727272727273,
+          5.357727272727273,
+          6.947727272727272,
+          8.577727272727271,
+          10.177727272727271,
+          11.717727272727268,
+          13.307727272727268,
+          15.007727272727267,
+          16.647727272727273,
+          18.0
+        ],
+        "inferred": false,
+        "source": "https://aim-qmul.github.io/GAPS/",
+        "audit": {
+          "passed": true,
+          "violations": [],
+          "max_longitudinal_span_mm": 21.692146675338105,
+          "rolled_chord_times": [],
+          "scale_length_mm": 650,
+          "max_shift_mm": 325.0,
+          "assumptions": "Edition string/fret/printed-finger assignments; pitch, simultaneous contacts, pairwise reach and fret-transition speed checked. Unmarked stopped digits remain unspecified; no claim of a fully specified hand-position audit. Source durations retained."
+        },
+        "notes": [
+          {
+            "start": 0.0,
+            "pitch": 40,
+            "end": 0.7113636363636364,
+            "string": 6,
+            "fret": 0,
+            "score_tick": 0,
+            "score_measure": 1,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 0,
+              "x": 300.0,
+              "y": 462.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 441.3
+          },
+          {
+            "start": 0.456818181818182,
+            "pitch": 76,
+            "end": 0.5636363636363639,
+            "string": 1,
+            "fret": 12,
+            "score_tick": 16,
+            "score_measure": 1,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 356.0,
+              "y": 325.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 175.5
+          },
+          {
+            "start": 0.581818181818182,
+            "pitch": 75,
+            "end": 0.7113636363636364,
+            "string": 1,
+            "fret": 11,
+            "score_tick": 24,
+            "score_measure": 1,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 392.0,
+              "y": 332.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 192.6
+          },
+          {
+            "start": 0.7386363636363638,
+            "pitch": 76,
+            "end": 1.0181818181818185,
+            "string": 1,
+            "fret": 12,
+            "score_tick": 32,
+            "score_measure": 1,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 427.0,
+              "y": 325.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 154.0
+          },
+          {
+            "start": 1.0477272727272733,
+            "pitch": 71,
+            "end": 1.3159090909090914,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 48,
+            "score_measure": 1,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 484.0,
+              "y": 345.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 104.0
+          },
+          {
+            "start": 1.329545454545455,
+            "pitch": 68,
+            "end": 1.581818181818182,
+            "string": 1,
+            "fret": 4,
+            "score_tick": 64,
+            "score_measure": 1,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 541.0,
+              "y": 358.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 176.1
+          },
+          {
+            "start": 1.6022727272727275,
+            "pitch": 71,
+            "end": 1.8681818181818182,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 80,
+            "score_measure": 1,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 598.0,
+              "y": 345.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 80.1
+          },
+          {
+            "start": 1.8840909090909088,
+            "pitch": 64,
+            "end": 1.9840909090909085,
+            "string": 2,
+            "fret": 5,
+            "score_tick": 96,
+            "score_measure": 2,
+            "finger": 2,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 679.0,
+              "y": 371.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 88.1
+          },
+          {
+            "start": 1.9909090909090903,
+            "pitch": 66,
+            "end": 2.1090909090909085,
+            "string": 2,
+            "fret": 7,
+            "score_tick": 104,
+            "score_measure": 2,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 712.0,
+              "y": 364.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "edition_slur": "hammer-on",
+            "velocity": 80.3,
+            "legato": "HO"
+          },
+          {
+            "start": 2.136363636363636,
+            "pitch": 64,
+            "end": 2.2249999999999996,
+            "string": 2,
+            "fret": 5,
+            "score_tick": 112,
+            "score_measure": 2,
+            "finger": 2,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 746.0,
+              "y": 371.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 92.8
+          },
+          {
+            "start": 2.2386363636363633,
+            "pitch": 63,
+            "end": 2.370454545454545,
+            "string": 2,
+            "fret": 4,
+            "score_tick": 120,
+            "score_measure": 2,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 780.0,
+              "y": 377.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 160.8
+          },
+          {
+            "start": 2.3909090909090907,
+            "pitch": 64,
+            "end": 2.6431818181818176,
+            "string": 2,
+            "fret": 5,
+            "score_tick": 128,
+            "score_measure": 2,
+            "finger": 2,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 814.0,
+              "y": 371.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 174.9
+          },
+          {
+            "start": 2.670454545454545,
+            "pitch": 59,
+            "end": 2.9340909090909086,
+            "string": 3,
+            "fret": 4,
+            "score_tick": 144,
+            "score_measure": 2,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 868.0,
+              "y": 390.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 148.1
+          },
+          {
+            "start": 2.956818181818181,
+            "pitch": 56,
+            "end": 3.2249999999999996,
+            "string": 4,
+            "fret": 6,
+            "score_tick": 160,
+            "score_measure": 2,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 922.0,
+              "y": 403.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 270.3
+          },
+          {
+            "start": 3.243181818181818,
+            "pitch": 59,
+            "end": 3.618181818181818,
+            "string": 3,
+            "fret": 4,
+            "score_tick": 176,
+            "score_measure": 2,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 976.0,
+              "y": 390.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 156.2
+          },
+          {
+            "start": 3.4272727272727277,
+            "pitch": 40,
+            "end": 4.297727272727272,
+            "string": 6,
+            "fret": 0,
+            "score_tick": 192,
+            "score_measure": 3,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 0,
+              "x": 1053.0,
+              "y": 462.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 171.1
+          },
+          {
+            "start": 3.661363636363636,
+            "pitch": 52,
+            "end": 3.8227272727272723,
+            "string": 5,
+            "fret": 7,
+            "score_tick": 192,
+            "score_measure": 3,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 1052.0,
+              "y": 417.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 100.0
+          },
+          {
+            "start": 3.886363636363636,
+            "pitch": 59,
+            "end": 4.006818181818181,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 200,
+            "score_measure": 3,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 0,
+              "x": 1088.0,
+              "y": 391.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 123.5
+          },
+          {
+            "start": 4.045454545454545,
+            "pitch": 54,
+            "end": 4.1522727272727264,
+            "string": 4,
+            "fret": 4,
+            "score_tick": 208,
+            "score_measure": 3,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 1125.0,
+              "y": 410.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 138.5
+          },
+          {
+            "start": 4.184090909090909,
+            "pitch": 59,
+            "end": 4.297727272727272,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 216,
+            "score_measure": 3,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 0,
+              "x": 1161.0,
+              "y": 391.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 115.8
+          },
+          {
+            "start": 4.320454545454544,
+            "pitch": 56,
+            "end": 4.413636363636362,
+            "string": 4,
+            "fret": 6,
+            "score_tick": 224,
+            "score_measure": 3,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 1198.0,
+              "y": 403.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 135.4
+          },
+          {
+            "start": 4.438636363636363,
+            "pitch": 59,
+            "end": 4.556818181818181,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 232,
+            "score_measure": 3,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 0,
+              "x": 1234.0,
+              "y": 391.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 122.2
+          },
+          {
+            "start": 4.572727272727271,
+            "pitch": 57,
+            "end": 4.681818181818181,
+            "string": 4,
+            "fret": 7,
+            "score_tick": 240,
+            "score_measure": 3,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 1270.0,
+              "y": 397.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 78.5
+          },
+          {
+            "start": 4.709090909090908,
+            "pitch": 59,
+            "end": 4.8181818181818175,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 248,
+            "score_measure": 3,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 0,
+              "x": 1306.0,
+              "y": 391.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 116.1
+          },
+          {
+            "start": 4.84090909090909,
+            "pitch": 56,
+            "end": 4.952272727272726,
+            "string": 4,
+            "fret": 6,
+            "score_tick": 256,
+            "score_measure": 3,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 1343.0,
+              "y": 403.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 214.8
+          },
+          {
+            "start": 4.963636363636363,
+            "pitch": 59,
+            "end": 5.097727272727272,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 264,
+            "score_measure": 3,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 0,
+              "x": 1379.0,
+              "y": 391.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 117.0
+          },
+          {
+            "start": 5.106818181818181,
+            "pitch": 54,
+            "end": 5.213636363636362,
+            "string": 4,
+            "fret": 4,
+            "score_tick": 272,
+            "score_measure": 3,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 0,
+              "x": 1415.0,
+              "y": 410.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 156.6
+          },
+          {
+            "start": 5.224999999999999,
+            "pitch": 59,
+            "end": 5.356818181818181,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 280,
+            "score_measure": 3,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 0,
+              "x": 1451.0,
+              "y": 391.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 126.4
+          },
+          {
+            "start": 5.368181818181817,
+            "pitch": 52,
+            "end": 5.49090909090909,
+            "string": 5,
+            "fret": 7,
+            "score_tick": 288,
+            "score_measure": 4,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 206.0,
+              "y": 602.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 89.5
+          },
+          {
+            "start": 5.515909090909091,
+            "pitch": 64,
+            "end": 5.622727272727273,
+            "string": 1,
+            "fret": 0,
+            "score_tick": 296,
+            "score_measure": 4,
+            "finger": 0,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 240.0,
+              "y": 556.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 133.8
+          },
+          {
+            "start": 5.647727272727273,
+            "pitch": 63,
+            "end": 5.754545454545456,
+            "string": 2,
+            "fret": 4,
+            "score_tick": 304,
+            "score_measure": 4,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 273.0,
+              "y": 562.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 126.1
+          },
+          {
+            "start": 5.781818181818183,
+            "pitch": 61,
+            "end": 5.8886363636363654,
+            "string": 3,
+            "fret": 6,
+            "score_tick": 312,
+            "score_measure": 4,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 306.0,
+              "y": 569.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 144.5
+          },
+          {
+            "start": 5.893181818181819,
+            "pitch": 59,
+            "end": 6.020454545454546,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 320,
+            "score_measure": 4,
+            "finger": 0,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 341.0,
+              "y": 575.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 126.1
+          },
+          {
+            "start": 6.036363636363637,
+            "pitch": 64,
+            "end": 6.152272727272727,
+            "string": 2,
+            "fret": 5,
+            "score_tick": 328,
+            "score_measure": 4,
+            "finger": 2,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 373.0,
+              "y": 556.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 104.1
+          },
+          {
+            "start": 6.184090909090909,
+            "pitch": 63,
+            "end": 6.275,
+            "string": 2,
+            "fret": 4,
+            "score_tick": 336,
+            "score_measure": 4,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 408.0,
+              "y": 562.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "edition_slur": "pull-off",
+            "velocity": 137.5,
+            "legato": "PO"
+          },
+          {
+            "start": 6.297727272727274,
+            "pitch": 61,
+            "end": 6.406818181818183,
+            "string": 3,
+            "fret": 6,
+            "score_tick": 344,
+            "score_measure": 4,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 441.0,
+              "y": 569.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 115.1
+          },
+          {
+            "start": 6.4295454545454565,
+            "pitch": 59,
+            "end": 6.540909090909093,
+            "string": 3,
+            "fret": 4,
+            "score_tick": 352,
+            "score_measure": 4,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 473.0,
+              "y": 576.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 95.9
+          },
+          {
+            "start": 6.556818181818183,
+            "pitch": 57,
+            "end": 6.672727272727274,
+            "string": 4,
+            "fret": 7,
+            "score_tick": 360,
+            "score_measure": 4,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 507.0,
+              "y": 582.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 84.4
+          },
+          {
+            "start": 6.672727272727274,
+            "pitch": 56,
+            "end": 6.804545454545455,
+            "string": 4,
+            "fret": 6,
+            "score_tick": 368,
+            "score_measure": 4,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 541.0,
+              "y": 588.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 75.1
+          },
+          {
+            "start": 6.827272727272728,
+            "pitch": 54,
+            "end": 6.947727272727274,
+            "string": 4,
+            "fret": 4,
+            "score_tick": 376,
+            "score_measure": 4,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 574.0,
+              "y": 596.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 70.4
+          },
+          {
+            "start": 6.963636363636365,
+            "pitch": 52,
+            "end": 7.084090909090911,
+            "string": 5,
+            "fret": 7,
+            "score_tick": 384,
+            "score_measure": 5,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 630.0,
+              "y": 602.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 75.6
+          },
+          {
+            "start": 7.0136363636363654,
+            "pitch": 40,
+            "end": 7.500000000000002,
+            "string": 6,
+            "fret": 0,
+            "score_tick": 384,
+            "score_measure": 5,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 1,
+              "x": 631.0,
+              "y": 647.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 71.2
+          },
+          {
+            "start": 7.090909090909092,
+            "pitch": 59,
+            "end": 7.229545454545455,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 392,
+            "score_measure": 5,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 1,
+              "x": 665.0,
+              "y": 576.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 70.4
+          },
+          {
+            "start": 7.275,
+            "pitch": 54,
+            "end": 7.365909090909092,
+            "string": 4,
+            "fret": 4,
+            "score_tick": 400,
+            "score_measure": 5,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 700.0,
+              "y": 596.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 66.1
+          },
+          {
+            "start": 7.402272727272729,
+            "pitch": 59,
+            "end": 7.500000000000002,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 408,
+            "score_measure": 5,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 1,
+              "x": 735.0,
+              "y": 576.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 50.7
+          },
+          {
+            "start": 7.53409090909091,
+            "pitch": 56,
+            "end": 7.645454545454546,
+            "string": 4,
+            "fret": 6,
+            "score_tick": 416,
+            "score_measure": 5,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 771.0,
+              "y": 588.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 66.1
+          },
+          {
+            "start": 7.675000000000001,
+            "pitch": 59,
+            "end": 7.781818181818183,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 424,
+            "score_measure": 5,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 1,
+              "x": 805.0,
+              "y": 576.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 66.1
+          },
+          {
+            "start": 7.80909090909091,
+            "pitch": 57,
+            "end": 7.90909090909091,
+            "string": 4,
+            "fret": 7,
+            "score_tick": 432,
+            "score_measure": 5,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 840.0,
+              "y": 582.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 38.8
+          },
+          {
+            "start": 7.927272727272728,
+            "pitch": 59,
+            "end": 8.045454545454547,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 440,
+            "score_measure": 5,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 1,
+              "x": 874.0,
+              "y": 576.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 48.5
+          },
+          {
+            "start": 8.072727272727274,
+            "pitch": 56,
+            "end": 8.170454545454547,
+            "string": 4,
+            "fret": 6,
+            "score_tick": 448,
+            "score_measure": 5,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 910.0,
+              "y": 588.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 78.3
+          },
+          {
+            "start": 8.195454545454547,
+            "pitch": 59,
+            "end": 8.306818181818183,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 456,
+            "score_measure": 5,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 1,
+              "x": 944.0,
+              "y": 576.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 51.0
+          },
+          {
+            "start": 8.327272727272728,
+            "pitch": 54,
+            "end": 8.440909090909091,
+            "string": 4,
+            "fret": 4,
+            "score_tick": 464,
+            "score_measure": 5,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 979.0,
+              "y": 596.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 39.5
+          },
+          {
+            "start": 8.450000000000001,
+            "pitch": 59,
+            "end": 8.577272727272728,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 472,
+            "score_measure": 5,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 1,
+              "x": 1014.0,
+              "y": 576.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 78.3
+          },
+          {
+            "start": 8.600000000000001,
+            "pitch": 52,
+            "end": 8.690909090909091,
+            "string": 5,
+            "fret": 7,
+            "score_tick": 480,
+            "score_measure": 6,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1072.0,
+              "y": 602.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 56.4
+          },
+          {
+            "start": 8.686363636363637,
+            "pitch": 64,
+            "end": 8.834090909090909,
+            "string": 1,
+            "fret": 0,
+            "score_tick": 488,
+            "score_measure": 6,
+            "finger": 0,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1106.0,
+              "y": 556.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 62.8
+          },
+          {
+            "start": 8.870454545454546,
+            "pitch": 63,
+            "end": 8.968181818181819,
+            "string": 2,
+            "fret": 4,
+            "score_tick": 496,
+            "score_measure": 6,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1141.0,
+              "y": 563.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 79.1
+          },
+          {
+            "start": 8.988636363636363,
+            "pitch": 61,
+            "end": 9.1,
+            "string": 3,
+            "fret": 6,
+            "score_tick": 504,
+            "score_measure": 6,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1176.0,
+              "y": 569.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 99.9
+          },
+          {
+            "start": 9.118181818181817,
+            "pitch": 59,
+            "end": 9.245454545454544,
+            "string": 2,
+            "fret": 0,
+            "score_tick": 512,
+            "score_measure": 6,
+            "finger": 0,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1211.0,
+              "y": 575.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 75.6
+          },
+          {
+            "start": 9.261363636363635,
+            "pitch": 64,
+            "end": 9.377272727272725,
+            "string": 2,
+            "fret": 5,
+            "score_tick": 520,
+            "score_measure": 6,
+            "finger": 2,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1245.0,
+              "y": 556.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 76.3
+          },
+          {
+            "start": 9.402272727272726,
+            "pitch": 63,
+            "end": 9.511363636363635,
+            "string": 2,
+            "fret": 4,
+            "score_tick": 528,
+            "score_measure": 6,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1281.0,
+              "y": 562.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "edition_slur": "pull-off",
+            "velocity": 100.6,
+            "legato": "PO"
+          },
+          {
+            "start": 9.536363636363635,
+            "pitch": 61,
+            "end": 9.634090909090908,
+            "string": 3,
+            "fret": 6,
+            "score_tick": 536,
+            "score_measure": 6,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1315.0,
+              "y": 568.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 127.0
+          },
+          {
+            "start": 9.649999999999999,
+            "pitch": 59,
+            "end": 9.768181818181818,
+            "string": 3,
+            "fret": 4,
+            "score_tick": 544,
+            "score_measure": 6,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1349.0,
+              "y": 576.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 73.9
+          },
+          {
+            "start": 9.781818181818181,
+            "pitch": 57,
+            "end": 9.881818181818181,
+            "string": 4,
+            "fret": 7,
+            "score_tick": 552,
+            "score_measure": 6,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1384.0,
+              "y": 582.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 55.0
+          },
+          {
+            "start": 9.884090909090908,
+            "pitch": 56,
+            "end": 10.024999999999999,
+            "string": 4,
+            "fret": 6,
+            "score_tick": 560,
+            "score_measure": 6,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1419.0,
+              "y": 588.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 65.9
+          },
+          {
+            "start": 10.045454545454543,
+            "pitch": 54,
+            "end": 10.177272727272724,
+            "string": 4,
+            "fret": 4,
+            "score_tick": 568,
+            "score_measure": 6,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 1,
+              "x": 1453.0,
+              "y": 596.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 84.3
+          },
+          {
+            "start": 10.186363636363634,
+            "pitch": 52,
+            "end": 10.306818181818178,
+            "string": 5,
+            "fret": 7,
+            "score_tick": 576,
+            "score_measure": 7,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 207.0,
+              "y": 799.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 91.8
+          },
+          {
+            "start": 10.190909090909088,
+            "pitch": 40,
+            "end": 10.690909090909086,
+            "string": 6,
+            "fret": 0,
+            "score_tick": 576,
+            "score_measure": 7,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 2,
+              "x": 207.0,
+              "y": 845.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 139.6
+          },
+          {
+            "start": 10.311363636363632,
+            "pitch": 54,
+            "end": 10.434090909090905,
+            "string": 4,
+            "fret": 4,
+            "score_tick": 584,
+            "score_measure": 7,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 237.0,
+              "y": 793.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 86.3
+          },
+          {
+            "start": 10.447727272727269,
+            "pitch": 56,
+            "end": 10.563636363636359,
+            "string": 4,
+            "fret": 6,
+            "score_tick": 592,
+            "score_measure": 7,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 265.0,
+              "y": 787.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 115.6
+          },
+          {
+            "start": 10.57954545454545,
+            "pitch": 57,
+            "end": 10.690909090909086,
+            "string": 4,
+            "fret": 7,
+            "score_tick": 600,
+            "score_measure": 7,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 296.0,
+              "y": 780.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 68.2
+          },
+          {
+            "start": 10.71363636363636,
+            "pitch": 59,
+            "end": 10.820454545454542,
+            "string": 3,
+            "fret": 4,
+            "score_tick": 608,
+            "score_measure": 7,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 327.0,
+              "y": 773.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 94.6
+          },
+          {
+            "start": 10.83863636363636,
+            "pitch": 61,
+            "end": 10.947727272727269,
+            "string": 3,
+            "fret": 6,
+            "score_tick": 616,
+            "score_measure": 7,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 355.0,
+              "y": 767.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 153.3
+          },
+          {
+            "start": 10.970454545454542,
+            "pitch": 63,
+            "end": 11.074999999999998,
+            "string": 2,
+            "fret": 4,
+            "score_tick": 624,
+            "score_measure": 7,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 386.0,
+              "y": 761.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 144.6
+          },
+          {
+            "start": 11.090909090909088,
+            "pitch": 64,
+            "end": 11.204545454545451,
+            "string": 2,
+            "fret": 5,
+            "score_tick": 632,
+            "score_measure": 7,
+            "finger": 2,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 416.0,
+              "y": 754.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 99.1
+          },
+          {
+            "start": 11.220454545454542,
+            "pitch": 66,
+            "end": 11.331818181818178,
+            "string": 2,
+            "fret": 7,
+            "score_tick": 640,
+            "score_measure": 7,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 446.0,
+              "y": 748.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 96.7
+          },
+          {
+            "start": 11.345454545454542,
+            "pitch": 68,
+            "end": 11.461363636363632,
+            "string": 1,
+            "fret": 4,
+            "score_tick": 648,
+            "score_measure": 7,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 475.0,
+              "y": 741.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 143.1
+          },
+          {
+            "start": 11.481818181818177,
+            "pitch": 69,
+            "end": 11.58863636363636,
+            "string": 1,
+            "fret": 5,
+            "score_tick": 656,
+            "score_measure": 7,
+            "finger": 2,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 505.0,
+              "y": 735.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 85.9
+          },
+          {
+            "start": 11.606818181818177,
+            "pitch": 66,
+            "end": 11.718181818181813,
+            "string": 2,
+            "fret": 7,
+            "score_tick": 664,
+            "score_measure": 7,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 536.0,
+              "y": 747.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 113.7
+          },
+          {
+            "start": 11.736363636363631,
+            "pitch": 68,
+            "end": 11.849999999999994,
+            "string": 1,
+            "fret": 4,
+            "score_tick": 672,
+            "score_measure": 8,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 589.0,
+              "y": 741.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 132.4
+          },
+          {
+            "start": 11.870454545454539,
+            "pitch": 71,
+            "end": 11.972727272727266,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 680,
+            "score_measure": 8,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 625.0,
+              "y": 728.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "edition_slur": "hammer-on",
+            "velocity": 66.7,
+            "legato": "HO"
+          },
+          {
+            "start": 11.988636363636356,
+            "pitch": 64,
+            "end": 12.095454545454539,
+            "string": 2,
+            "fret": 5,
+            "score_tick": 688,
+            "score_measure": 8,
+            "finger": 2,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 661.0,
+              "y": 754.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 123.5
+          },
+          {
+            "start": 12.106818181818175,
+            "pitch": 66,
+            "end": 12.227272727272721,
+            "string": 2,
+            "fret": 7,
+            "score_tick": 696,
+            "score_measure": 8,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 697.0,
+              "y": 747.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 146.8
+          },
+          {
+            "start": 12.243181818181812,
+            "pitch": 68,
+            "end": 12.349999999999994,
+            "string": 1,
+            "fret": 4,
+            "score_tick": 704,
+            "score_measure": 8,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 731.0,
+              "y": 741.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 128.7
+          },
+          {
+            "start": 12.372727272727268,
+            "pitch": 69,
+            "end": 12.481818181818177,
+            "string": 1,
+            "fret": 5,
+            "score_tick": 712,
+            "score_measure": 8,
+            "finger": 2,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 768.0,
+              "y": 734.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 81.8
+          },
+          {
+            "start": 12.506818181818177,
+            "pitch": 71,
+            "end": 12.615909090909087,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 720,
+            "score_measure": 8,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 803.0,
+              "y": 728.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 125.8
+          },
+          {
+            "start": 12.62954545454545,
+            "pitch": 73,
+            "end": 12.74772727272727,
+            "string": 1,
+            "fret": 9,
+            "score_tick": 728,
+            "score_measure": 8,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 839.0,
+              "y": 721.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 198.8
+          },
+          {
+            "start": 12.761363636363633,
+            "pitch": 75,
+            "end": 12.879545454545452,
+            "string": 1,
+            "fret": 11,
+            "score_tick": 736,
+            "score_measure": 8,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 875.0,
+              "y": 715.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 209.5
+          },
+          {
+            "start": 12.904545454545453,
+            "pitch": 76,
+            "end": 13.002272727272725,
+            "string": 1,
+            "fret": 12,
+            "score_tick": 744,
+            "score_measure": 8,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 910.0,
+              "y": 708.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "edition_slur": "hammer-on",
+            "velocity": 148.2,
+            "legato": "HO"
+          },
+          {
+            "start": 13.024999999999999,
+            "pitch": 73,
+            "end": 13.145454545454545,
+            "string": 1,
+            "fret": 9,
+            "score_tick": 752,
+            "score_measure": 8,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 946.0,
+              "y": 721.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 178.5
+          },
+          {
+            "start": 13.16590909090909,
+            "pitch": 75,
+            "end": 13.30681818181818,
+            "string": 1,
+            "fret": 11,
+            "score_tick": 760,
+            "score_measure": 8,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 982.0,
+              "y": 715.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 155.3
+          },
+          {
+            "start": 13.329545454545453,
+            "pitch": 40,
+            "end": 13.974999999999996,
+            "string": 6,
+            "fret": 0,
+            "score_tick": 768,
+            "score_measure": 9,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 2,
+              "x": 1040.0,
+              "y": 845.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 114.0
+          },
+          {
+            "start": 13.329545454545453,
+            "pitch": 76,
+            "end": 13.559090909090907,
+            "string": 1,
+            "fret": 12,
+            "score_tick": 768,
+            "score_measure": 9,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 1039.0,
+              "y": 709.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 94.4
+          },
+          {
+            "start": 13.59772727272727,
+            "pitch": 71,
+            "end": 13.699999999999998,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 776,
+            "score_measure": 9,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 2,
+              "x": 1079.0,
+              "y": 728.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 84.2
+          },
+          {
+            "start": 13.743181818181816,
+            "pitch": 69,
+            "end": 13.843181818181817,
+            "string": 2,
+            "fret": 10,
+            "score_tick": 784,
+            "score_measure": 9,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 1116.0,
+              "y": 735.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 74.0
+          },
+          {
+            "start": 13.879545454545452,
+            "pitch": 71,
+            "end": 13.974999999999996,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 792,
+            "score_measure": 9,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 2,
+              "x": 1153.0,
+              "y": 728.0,
+              "w": 19.968000793457122,
+              "source": "ClefScan"
+            },
+            "velocity": 78.5
+          },
+          {
+            "start": 13.993181818181816,
+            "pitch": 68,
+            "end": 14.086363636363634,
+            "string": 2,
+            "fret": 9,
+            "score_tick": 800,
+            "score_measure": 9,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 1191.0,
+              "y": 741.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 106.7
+          },
+          {
+            "start": 14.111363636363633,
+            "pitch": 71,
+            "end": 14.227272727272725,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 808,
+            "score_measure": 9,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 2,
+              "x": 1228.0,
+              "y": 728.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 80.2
+          },
+          {
+            "start": 14.249999999999998,
+            "pitch": 69,
+            "end": 14.35,
+            "string": 2,
+            "fret": 10,
+            "score_tick": 816,
+            "score_measure": 9,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 1265.0,
+              "y": 735.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 98.6
+          },
+          {
+            "start": 14.374999999999998,
+            "pitch": 71,
+            "end": 14.49090909090909,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 824,
+            "score_measure": 9,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 2,
+              "x": 1302.0,
+              "y": 728.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 108.5
+          },
+          {
+            "start": 14.504545454545452,
+            "pitch": 68,
+            "end": 14.602272727272725,
+            "string": 2,
+            "fret": 9,
+            "score_tick": 832,
+            "score_measure": 9,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 2,
+              "x": 1339.0,
+              "y": 741.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 234.6
+          },
+          {
+            "start": 14.629545454545452,
+            "pitch": 71,
+            "end": 14.745454545454544,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 840,
+            "score_measure": 9,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 2,
+              "x": 1376.0,
+              "y": 728.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 95.3
+          },
+          {
+            "start": 14.754545454545452,
+            "pitch": 66,
+            "end": 14.86590909090909,
+            "string": 2,
+            "fret": 7,
+            "score_tick": 848,
+            "score_measure": 9,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 2,
+              "x": 1413.0,
+              "y": 748.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 204.0
+          },
+          {
+            "start": 14.879545454545452,
+            "pitch": 71,
+            "end": 15.006818181818181,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 856,
+            "score_measure": 9,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 2,
+              "x": 1451.0,
+              "y": 728.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 88.9
+          },
+          {
+            "start": 15.025,
+            "pitch": 64,
+            "end": 15.13409090909091,
+            "string": 3,
+            "fret": 9,
+            "score_tick": 864,
+            "score_measure": 10,
+            "finger": 1,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 207.0,
+              "y": 975.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 112.0
+          },
+          {
+            "start": 15.156818181818183,
+            "pitch": 76,
+            "end": 15.261363636363638,
+            "string": 1,
+            "fret": 12,
+            "score_tick": 872,
+            "score_measure": 10,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 240.0,
+              "y": 929.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 112.0
+          },
+          {
+            "start": 15.286363636363637,
+            "pitch": 75,
+            "end": 15.388636363636364,
+            "string": 1,
+            "fret": 11,
+            "score_tick": 880,
+            "score_measure": 10,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 272.0,
+              "y": 937.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "edition_slur": "pull-off",
+            "velocity": 92.9,
+            "legato": "PO"
+          },
+          {
+            "start": 15.411363636363637,
+            "pitch": 73,
+            "end": 15.525,
+            "string": 1,
+            "fret": 9,
+            "score_tick": 888,
+            "score_measure": 10,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 305.0,
+              "y": 942.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 127.6
+          },
+          {
+            "start": 15.538636363636362,
+            "pitch": 71,
+            "end": 15.661363636363633,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 896,
+            "score_measure": 10,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 344.0,
+              "y": 950.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 95.5
+          },
+          {
+            "start": 15.674999999999995,
+            "pitch": 64,
+            "end": 15.788636363636359,
+            "string": 3,
+            "fret": 9,
+            "score_tick": 904,
+            "score_measure": 10,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 377.0,
+              "y": 975.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 188.3
+          },
+          {
+            "start": 15.795454545454541,
+            "pitch": 73,
+            "end": 15.924999999999995,
+            "string": 1,
+            "fret": 9,
+            "score_tick": 912,
+            "score_measure": 10,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 409.0,
+              "y": 942.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 164.1
+          },
+          {
+            "start": 15.936363636363632,
+            "pitch": 64,
+            "end": 16.06136363636363,
+            "string": 3,
+            "fret": 9,
+            "score_tick": 920,
+            "score_measure": 10,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 442.0,
+              "y": 975.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 213.9
+          },
+          {
+            "start": 16.079545454545453,
+            "pitch": 71,
+            "end": 16.19772727272727,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 928,
+            "score_measure": 10,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 474.0,
+              "y": 950.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 140.7
+          },
+          {
+            "start": 16.20227272727272,
+            "pitch": 64,
+            "end": 16.345454545454544,
+            "string": 3,
+            "fret": 9,
+            "score_tick": 936,
+            "score_measure": 10,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 507.0,
+              "y": 975.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 164.1
+          },
+          {
+            "start": 16.361363636363635,
+            "pitch": 69,
+            "end": 16.5,
+            "string": 2,
+            "fret": 10,
+            "score_tick": 944,
+            "score_measure": 10,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 539.0,
+              "y": 955.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 152.0
+          },
+          {
+            "start": 16.438636363636363,
+            "pitch": 64,
+            "end": 16.647727272727273,
+            "string": 3,
+            "fret": 9,
+            "score_tick": 952,
+            "score_measure": 10,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 572.0,
+              "y": 975.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 140.7
+          },
+          {
+            "start": 16.659090909090907,
+            "pitch": 68,
+            "end": 16.799999999999997,
+            "string": 2,
+            "fret": 9,
+            "score_tick": 960,
+            "score_measure": 11,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 626.0,
+              "y": 963.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 75.2
+          },
+          {
+            "start": 16.68181818181818,
+            "pitch": 40,
+            "end": 17.197727272727278,
+            "string": 6,
+            "fret": 0,
+            "score_tick": 960,
+            "score_measure": 11,
+            "finger": 0,
+            "finger_source": "open string",
+            "ink": {
+              "system": 3,
+              "x": 627.0,
+              "y": 1066.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 75.2
+          },
+          {
+            "start": 16.815909090909088,
+            "pitch": 71,
+            "end": 16.93181818181818,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 968,
+            "score_measure": 11,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 662.0,
+              "y": 950.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 66.2
+          },
+          {
+            "start": 16.961363636363636,
+            "pitch": 66,
+            "end": 17.065909090909095,
+            "string": 2,
+            "fret": 7,
+            "score_tick": 976,
+            "score_measure": 11,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 697.0,
+              "y": 969.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 66.2
+          },
+          {
+            "start": 17.086363636363636,
+            "pitch": 71,
+            "end": 17.197727272727278,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 984,
+            "score_measure": 11,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 733.0,
+              "y": 950.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 58.1
+          },
+          {
+            "start": 17.21363636363637,
+            "pitch": 68,
+            "end": 17.32954545454546,
+            "string": 2,
+            "fret": 9,
+            "score_tick": 992,
+            "score_measure": 11,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 769.0,
+              "y": 962.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 115.2
+          },
+          {
+            "start": 17.35454545454546,
+            "pitch": 71,
+            "end": 17.46363636363637,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 1000,
+            "score_measure": 11,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 804.0,
+              "y": 950.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 58.2
+          },
+          {
+            "start": 17.48409090909091,
+            "pitch": 69,
+            "end": 17.58409090909091,
+            "string": 2,
+            "fret": 10,
+            "score_tick": 1008,
+            "score_measure": 11,
+            "finger": 4,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 840.0,
+              "y": 956.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 58.1
+          },
+          {
+            "start": 17.6,
+            "pitch": 71,
+            "end": 17.71818181818182,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 1016,
+            "score_measure": 11,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 875.0,
+              "y": 950.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 45.6
+          },
+          {
+            "start": 17.740909090909092,
+            "pitch": 68,
+            "end": 17.82954545454546,
+            "string": 2,
+            "fret": 9,
+            "score_tick": 1024,
+            "score_measure": 11,
+            "finger": 3,
+            "finger_source": "Apke edition",
+            "ink": {
+              "system": 3,
+              "x": 912.0,
+              "y": 962.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 97.5
+          },
+          {
+            "start": 17.859090909090916,
+            "pitch": 71,
+            "end": 17.96363636363637,
+            "string": 1,
+            "fret": 7,
+            "score_tick": 1032,
+            "score_measure": 11,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 946.0,
+              "y": 950.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 48.2
+          },
+          {
+            "start": 17.988636363636367,
+            "pitch": 66,
+            "end": 18,
+            "string": 2,
+            "fret": 7,
+            "score_tick": 1040,
+            "score_measure": 11,
+            "finger_source": "not marked in edition",
+            "ink": {
+              "system": 3,
+              "x": 982.0,
+              "y": 969.0,
+              "w": 18.304000396728497,
+              "source": "ClefScan"
+            },
+            "velocity": 47.6
+          }
+        ],
+        "engraving": {
+          "image": "scores/imslp-apke-prelude-page7@2x.png",
+          "imageWidth": 1556,
+          "imageHeight": 2200,
+          "space": 13.066,
+          "systems": [
+            {
+              "index": 0,
+              "image": "scores/imslp-apke-page7-system1@2x.png",
+              "crop": [
+                50.94,
+                253.88,
+                1444.85,
+                248.04
+              ],
+              "points": [
+                [
+                  0.0,
+                  300.0
+                ],
+                [
+                  0.4568,
+                  356.0
+                ],
+                [
+                  0.5818,
+                  392.0
+                ],
+                [
+                  0.7386,
+                  427.0
+                ],
+                [
+                  1.0477,
+                  484.0
+                ],
+                [
+                  1.3295,
+                  541.0
+                ],
+                [
+                  1.6023,
+                  598.0
+                ],
+                [
+                  1.8841,
+                  679.0
+                ],
+                [
+                  1.9909,
+                  712.0
+                ],
+                [
+                  2.1364,
+                  746.0
+                ],
+                [
+                  2.2386,
+                  780.0
+                ],
+                [
+                  2.3909,
+                  814.0
+                ],
+                [
+                  2.6705,
+                  868.0
+                ],
+                [
+                  2.9568,
+                  922.0
+                ],
+                [
+                  3.2432,
+                  976.0
+                ],
+                [
+                  3.4273,
+                  1052.5
+                ],
+                [
+                  3.8864,
+                  1088.0
+                ],
+                [
+                  4.0455,
+                  1125.0
+                ],
+                [
+                  4.1841,
+                  1161.0
+                ],
+                [
+                  4.3205,
+                  1198.0
+                ],
+                [
+                  4.4386,
+                  1234.0
+                ],
+                [
+                  4.5727,
+                  1270.0
+                ],
+                [
+                  4.7091,
+                  1306.0
+                ],
+                [
+                  4.8409,
+                  1343.0
+                ],
+                [
+                  4.9636,
+                  1379.0
+                ],
+                [
+                  5.1068,
+                  1415.0
+                ],
+                [
+                  5.225,
+                  1451.0
+                ],
+                [
+                  5.3682,
+                  1481.7
+                ]
+              ],
+              "lines": [
+                365.19,
+                378.26,
+                391.32,
+                404.39,
+                417.45
+              ],
+              "left": 139.78,
+              "barlines": [
+                648.41,
+                1022.88,
+                1481.7
+              ],
+              "barline": 1481.7,
+              "measures": [
+                1,
+                3
+              ],
+              "start": 0,
+              "end": 5.368181818181817
+            },
+            {
+              "index": 1,
+              "image": "scores/imslp-apke-page7-system2@2x.png",
+              "crop": [
+                50.94,
+                439.0,
+                1444.85,
+                248.04
+              ],
+              "points": [
+                [
+                  5.3682,
+                  206.0
+                ],
+                [
+                  5.5159,
+                  240.0
+                ],
+                [
+                  5.6477,
+                  273.0
+                ],
+                [
+                  5.7818,
+                  306.0
+                ],
+                [
+                  5.8932,
+                  341.0
+                ],
+                [
+                  6.0364,
+                  373.0
+                ],
+                [
+                  6.1841,
+                  408.0
+                ],
+                [
+                  6.2977,
+                  441.0
+                ],
+                [
+                  6.4295,
+                  473.0
+                ],
+                [
+                  6.5568,
+                  507.0
+                ],
+                [
+                  6.6727,
+                  541.0
+                ],
+                [
+                  6.8273,
+                  574.0
+                ],
+                [
+                  6.9636,
+                  630.5
+                ],
+                [
+                  7.0909,
+                  665.0
+                ],
+                [
+                  7.275,
+                  700.0
+                ],
+                [
+                  7.4023,
+                  735.0
+                ],
+                [
+                  7.5341,
+                  771.0
+                ],
+                [
+                  7.675,
+                  805.0
+                ],
+                [
+                  7.8091,
+                  840.0
+                ],
+                [
+                  7.9273,
+                  874.0
+                ],
+                [
+                  8.0727,
+                  910.0
+                ],
+                [
+                  8.1955,
+                  944.0
+                ],
+                [
+                  8.3273,
+                  979.0
+                ],
+                [
+                  8.45,
+                  1014.0
+                ],
+                [
+                  8.6,
+                  1072.0
+                ],
+                [
+                  8.6864,
+                  1106.0
+                ],
+                [
+                  8.8705,
+                  1141.0
+                ],
+                [
+                  8.9886,
+                  1176.0
+                ],
+                [
+                  9.1182,
+                  1211.0
+                ],
+                [
+                  9.2614,
+                  1245.0
+                ],
+                [
+                  9.4023,
+                  1281.0
+                ],
+                [
+                  9.5364,
+                  1315.0
+                ],
+                [
+                  9.65,
+                  1349.0
+                ],
+                [
+                  9.7818,
+                  1384.0
+                ],
+                [
+                  9.8841,
+                  1419.0
+                ],
+                [
+                  10.0455,
+                  1453.0
+                ],
+                [
+                  10.1864,
+                  1481.7
+                ]
+              ],
+              "lines": [
+                550.31,
+                563.37,
+                576.44,
+                589.5,
+                602.57
+              ],
+              "left": 74.43,
+              "barlines": [
+                601.15,
+                1042.64,
+                1481.7
+              ],
+              "barline": 1481.7,
+              "measures": [
+                4,
+                6
+              ],
+              "start": 5.368181818181817,
+              "end": 10.186363636363634
+            },
+            {
+              "index": 2,
+              "image": "scores/imslp-apke-page7-system3@2x.png",
+              "crop": [
+                50.94,
+                636.97,
+                1444.85,
+                248.07
+              ],
+              "points": [
+                [
+                  10.1864,
+                  207.0
+                ],
+                [
+                  10.3114,
+                  237.0
+                ],
+                [
+                  10.4477,
+                  265.0
+                ],
+                [
+                  10.5795,
+                  296.0
+                ],
+                [
+                  10.7136,
+                  327.0
+                ],
+                [
+                  10.8386,
+                  355.0
+                ],
+                [
+                  10.9705,
+                  386.0
+                ],
+                [
+                  11.0909,
+                  416.0
+                ],
+                [
+                  11.2205,
+                  446.0
+                ],
+                [
+                  11.3455,
+                  475.0
+                ],
+                [
+                  11.4818,
+                  505.0
+                ],
+                [
+                  11.6068,
+                  536.0
+                ],
+                [
+                  11.7364,
+                  589.0
+                ],
+                [
+                  11.8705,
+                  625.0
+                ],
+                [
+                  11.9886,
+                  661.0
+                ],
+                [
+                  12.1068,
+                  697.0
+                ],
+                [
+                  12.2432,
+                  731.0
+                ],
+                [
+                  12.3727,
+                  768.0
+                ],
+                [
+                  12.5068,
+                  803.0
+                ],
+                [
+                  12.6295,
+                  839.0
+                ],
+                [
+                  12.7614,
+                  875.0
+                ],
+                [
+                  12.9045,
+                  910.0
+                ],
+                [
+                  13.025,
+                  946.0
+                ],
+                [
+                  13.1659,
+                  982.0
+                ],
+                [
+                  13.3295,
+                  1039.5
+                ],
+                [
+                  13.5977,
+                  1079.0
+                ],
+                [
+                  13.7432,
+                  1116.0
+                ],
+                [
+                  13.8795,
+                  1153.0
+                ],
+                [
+                  13.9932,
+                  1191.0
+                ],
+                [
+                  14.1114,
+                  1228.0
+                ],
+                [
+                  14.25,
+                  1265.0
+                ],
+                [
+                  14.375,
+                  1302.0
+                ],
+                [
+                  14.5045,
+                  1339.0
+                ],
+                [
+                  14.6295,
+                  1376.0
+                ],
+                [
+                  14.7545,
+                  1413.0
+                ],
+                [
+                  14.8795,
+                  1451.0
+                ],
+                [
+                  15.025,
+                  1481.7
+                ]
+              ],
+              "lines": [
+                748.28,
+                761.37,
+                774.44,
+                787.5,
+                800.57
+              ],
+              "left": 74.43,
+              "barlines": [
+                559.3,
+                1010.25,
+                1481.7
+              ],
+              "barline": 1481.7,
+              "measures": [
+                7,
+                9
+              ],
+              "start": 10.186363636363634,
+              "end": 15.025
+            },
+            {
+              "index": 3,
+              "image": "scores/imslp-apke-page7-system4@2x.png",
+              "crop": [
+                50.94,
+                858.46,
+                1444.85,
+                248.05
+              ],
+              "points": [
+                [
+                  15.025,
+                  207.0
+                ],
+                [
+                  15.1568,
+                  240.0
+                ],
+                [
+                  15.2864,
+                  272.0
+                ],
+                [
+                  15.4114,
+                  305.0
+                ],
+                [
+                  15.5386,
+                  344.0
+                ],
+                [
+                  15.675,
+                  377.0
+                ],
+                [
+                  15.7955,
+                  409.0
+                ],
+                [
+                  15.9364,
+                  442.0
+                ],
+                [
+                  16.0795,
+                  474.0
+                ],
+                [
+                  16.2023,
+                  507.0
+                ],
+                [
+                  16.3614,
+                  539.0
+                ],
+                [
+                  16.4386,
+                  572.0
+                ],
+                [
+                  16.6591,
+                  626.5
+                ],
+                [
+                  16.8159,
+                  662.0
+                ],
+                [
+                  16.9614,
+                  697.0
+                ],
+                [
+                  17.0864,
+                  733.0
+                ],
+                [
+                  17.2136,
+                  769.0
+                ],
+                [
+                  17.3545,
+                  804.0
+                ],
+                [
+                  17.4841,
+                  840.0
+                ],
+                [
+                  17.6,
+                  875.0
+                ],
+                [
+                  17.7409,
+                  912.0
+                ],
+                [
+                  17.8591,
+                  946.0
+                ],
+                [
+                  17.9886,
+                  982.0
+                ],
+                [
+                  18.0,
+                  1000.47
+                ]
+              ],
+              "lines": [
+                969.77,
+                982.84,
+                995.9,
+                1008.97,
+                1022.04
+              ],
+              "left": 74.43,
+              "barlines": [
+                596.7,
+                1047.08,
+                1481.7
+              ],
+              "barline": 1481.7,
+              "measures": [
+                10,
+                11
+              ],
+              "start": 15.025,
+              "end": 18.0,
+              "excerpt_end_x": 1000.47
+            }
+          ],
+          "edition": "Stefan Apke \u00b7 2018 \u00b7 IMSLP #554880",
+          "source": "https://imslp.org/wiki/Suite_in_E_major,_BWV_1006a_(Bach,_Johann_Sebastian)",
+          "pdf": "scores/imslp-apke-bwv1006a.pdf",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "alignment": "Whole printed systems at natural proportions. Noteheads are recognized by ClefScan and identified against the MusicXML by measure, onset order and staff position; each tab number sits under its printed head. The edition PDF\u2019s vector glyphs confirm every position. The playhead interpolates between performed onsets, so it moves unevenly where Kowalski\u2019s timing departs from the engraved spacing.",
+          "check": {
+            "measures_matched": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "fingers_checked": 97,
+            "fingers_agree": 93,
+            "vector_check": {
+              "measures_matched": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+              ],
+              "notes_compared": 140,
+              "max_px": 2.16,
+              "median_px": 1.4
+            }
+          }
+        },
+        "fingering_source": "Apke edition; unmarked stopped fingers left blank"
+      },
+      "downloads": [
+        {
+          "label": "Fitted-velocity MIDI (loudest = 127)",
+          "url": "guitar-bach-dynamics.mid"
+        },
+        {
+          "label": "Fitted velocities / string assignments",
+          "url": "guitar-bach-dynamics-events.json"
+        },
+        {
+          "label": "Source tablature (MusicXML)",
+          "url": "gaps-bach-source-tab.musicxml"
+        },
+        {
+          "label": "IMSLP score PDF",
+          "url": "scores/imslp-apke-bwv1006a.pdf"
+        }
+      ],
+      "dynamics": {
+        "model": "nylon / Gil de Avalle body + loading",
+        "range_exponent": 1.0,
+        "room": {
+          "rt_low": 2.7,
+          "rt_high": 1.2,
+          "ratio": 1.0,
+          "loss": 0.6255626007587665
+        },
+        "envelope_error_db": {
+          "constant_with_room": 5.2646358158911175,
+          "fitted_with_room": 2.6215172688571244
+        },
+        "method": "room-aware band-power fit"
+      }
+    },
+    {
+      "id": "guitar-hammer-exposed",
+      "note": "Guitar \u00b7 exposed slurs",
+      "dynamic": "Bach slurs, slow \u00b7 pluck versus hammer-on / pull-off",
+      "split": "music",
+      "duration": 9.9,
+      "audio": {
+        "current": "audio/guitar-hammer-exposed-current.mp3",
+        "fitted": "audio/guitar-hammer-exposed-fitted.mp3",
+        "ref": "audio/guitar-hammer-exposed-ref.mp3"
+      },
+      "labels": {
+        "current": "Second note plucked",
+        "fitted": "Second note slurred: three hammer-ons, then two pull-offs",
+        "ref": "Earlier placeholder legato (diagnostic)"
+      },
+      "experiment": "Experiment 05 \u00b7 strings",
+      "description": "Five slow pairs on the Bach strings and frets. Hammer-ons: E\u2192F\u266f (2nd string, frets 5\u21927), G\u266f\u2192B (1st, 4\u21927), D\u266f\u2192E (1st, 11\u219212). Then pull-offs: E\u2192D\u266f on the 2nd string (frets 5\u21924, bars 4 and 6) and on the 1st (12\u219211, bar 10). A plucks both notes; B slurs to the second with fixed designed strengths (hammer-on: 0.7 mm fret clearance, 0.5 ms fingertip contact; pull-off: 0.6 mm sideways pull at the old fret), so its natural level differs from a pluck. The third button is the earlier legato placeholder (a small extra pluck-shaped kick), kept as a diagnostic. No real slur recording is available yet.",
+      "thirdLabel": "Placeholder",
+      "question": "Do the slurs sound like hammer-ons and pull-offs?",
+      "metrics": {
+        "current": {
+          "peak_dbfs": -3.3544921703899715,
+          "rms_dbfs": -21.28979742405825,
+          "sha256": "743be0b4a76125ad3b419a184359fdf258af80a66846fde0f0ac7611823df3cd"
+        },
+        "fitted": {
+          "peak_dbfs": -1.5574813258007887,
+          "rms_dbfs": -21.28979742405825,
+          "sha256": "2227dc6a5a03b750d61db7c8d92c52f76dbb0a6e016b666ccf717678f4ca55f3"
+        },
+        "ref": {
+          "peak_dbfs": -1.012199867091985,
+          "rms_dbfs": -21.28979742405825,
+          "sha256": "332cf30327c0c195ed5453b2b6164bb2826c8e2bca5037b0b50aec292fb69cac"
+        }
+      }
+    },
+    {
+      "id": "guitar-pulloff-exposed",
+      "note": "Guitar \u00b7 exposed pull-offs",
+      "dynamic": "Bars 4/6 and 10 slurs, slow \u00b7 pluck versus pull-off",
+      "split": "music",
+      "duration": 4.2,
+      "audio": {
+        "current": "audio/guitar-pulloff-exposed-current.mp3",
+        "fitted": "audio/guitar-pulloff-exposed-fitted.mp3",
+        "ref": "audio/guitar-pulloff-exposed-ref.mp3"
+      },
+      "labels": {
+        "current": "Second note plucked",
+        "fitted": "Second note pulled off (new legato physics)",
+        "ref": "Earlier placeholder legato (diagnostic)"
+      },
+      "experiment": "Experiment 05 \u00b7 strings",
+      "description": "Two slow pairs on the Bach strings and frets: E\u2192D\u266f on the 2nd string (frets 5\u21924, bars 4 and 6) and on the 1st string (frets 12\u219211, bar 10). A plucks both notes; B pulls off to the second with a fixed designed strength (0.6 mm sideways pull at the old fret), so its natural level differs from a pluck. The third button is the earlier legato placeholder, kept as a diagnostic. No real slur recording is available yet.",
+      "thirdLabel": "Placeholder",
+      "question": "Does the pull-off sound like a pull-off?",
+      "metrics": {
+        "current": {
+          "peak_dbfs": -4.47744420027592,
+          "rms_dbfs": -22.13854692082264,
+          "sha256": "fac0a9b00f94b19906f2a1e54b01f2af2914a59a3b4aac39309bb6448d39decf"
+        },
+        "fitted": {
+          "peak_dbfs": -2.2957591471882965,
+          "rms_dbfs": -22.13854692082264,
+          "sha256": "7327fdda4ed5568596583092da0c8fa015394898dcff5ecb9f92a4b8657847a1"
+        },
+        "ref": {
+          "peak_dbfs": -1.012199867091985,
+          "rms_dbfs": -22.13854692082264,
+          "sha256": "038839777bdd47acf659ea619a204302144ccfd3422bf50cc99c4a8cef10eb8e"
+        }
+      }
+    }
+  ],
+  "kernel_sha256": "ebbcc3f071e17000710fcf9f07226d281d9ab5b8936b93bf3aedf8330bcb0124"
+}

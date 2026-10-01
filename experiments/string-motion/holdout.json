@@ -1,0 +1,62 @@
+{
+  "notes": [
+    {
+      "note": "A1",
+      "velocity": 48,
+      "measured_cents": 0.6034237850629689,
+      "predicted_cents": 1.5558477582407013,
+      "accepted_partials": 3
+    },
+    {
+      "note": "A1",
+      "velocity": 100,
+      "measured_cents": 2.759981213966153,
+      "predicted_cents": 2.7616021590585786,
+      "accepted_partials": 4
+    },
+    {
+      "note": "A2",
+      "velocity": 48,
+      "measured_cents": 0.0,
+      "predicted_cents": 0.38896193956017533,
+      "accepted_partials": 0
+    },
+    {
+      "note": "A2",
+      "velocity": 100,
+      "measured_cents": 0.7473598511698722,
+      "predicted_cents": 2.8716819708713235,
+      "accepted_partials": 5
+    },
+    {
+      "note": "A3",
+      "velocity": 48,
+      "measured_cents": -1.3596755281458979,
+      "predicted_cents": 0.0,
+      "accepted_partials": 4
+    },
+    {
+      "note": "A3",
+      "velocity": 100,
+      "measured_cents": 1.573135161858265,
+      "predicted_cents": 1.266624023022011,
+      "accepted_partials": 6
+    },
+    {
+      "note": "A4",
+      "velocity": 48,
+      "measured_cents": 0.0,
+      "predicted_cents": 0.0,
+      "accepted_partials": 1
+    },
+    {
+      "note": "A4",
+      "velocity": 100,
+      "measured_cents": 1.2511141320351842,
+      "predicted_cents": 0.17984340421770603,
+      "accepted_partials": 4
+    }
+  ],
+  "qualified_mae_baseline_cents": 1.3824482787063903,
+  "qualified_mae_candidate_cents": 0.9693040721285399
+}

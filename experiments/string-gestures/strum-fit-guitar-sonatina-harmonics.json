@@ -1,0 +1,1449 @@
+{
+  "method": "Fit strums and rolls to the recording by analysis-by-synthesis.",
+  "groups": 119,
+  "changed": 77,
+  "validation_2_5_8khz": {
+    "gaps": 0.44107357170416966,
+    "fitted": 0.337244142962974,
+    "better_fraction": 0.3116883116883117
+  },
+  "results": [
+    {
+      "time": 0.184,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 30 ms, offset 0 ms",
+      "correlation": 0.249,
+      "gaps_correlation": 0.163,
+      "onsets": {
+        "4": 0.1841,
+        "5": 0.2141
+      }
+    },
+    {
+      "time": 2.661,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.651,
+      "gaps_correlation": 0.293,
+      "onsets": {
+        "16": 2.6714,
+        "15": 2.6714
+      }
+    },
+    {
+      "time": 3.593,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.618,
+      "gaps_correlation": 0.072,
+      "onsets": {
+        "22": 3.6032,
+        "23": 3.6032
+      }
+    },
+    {
+      "time": 4.534,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum down, 10 ms, offset 10 ms",
+      "correlation": 0.281,
+      "gaps_correlation": 0.022,
+      "onsets": {
+        "30": 4.5441,
+        "29": 4.5541
+      }
+    },
+    {
+      "time": 12.5,
+      "notes": 3,
+      "arpeggio": false,
+      "choice": "strum up, 10 ms, offset 10 ms",
+      "correlation": 0.595,
+      "gaps_correlation": 0.248,
+      "onsets": {
+        "77": 12.51,
+        "79": 12.515,
+        "78": 12.52
+      }
+    },
+    {
+      "time": 13.1,
+      "notes": 3,
+      "arpeggio": false,
+      "choice": "strum up, 10 ms, offset 0 ms",
+      "correlation": 0.616,
+      "gaps_correlation": 0.427,
+      "onsets": {
+        "81": 13.1,
+        "82": 13.105,
+        "80": 13.11
+      }
+    },
+    {
+      "time": 14.307,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 0 ms",
+      "correlation": 0.272,
+      "gaps_correlation": 0.089,
+      "onsets": {
+        "83": 14.3068,
+        "84": 14.3068
+      }
+    },
+    {
+      "time": 18.136,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.374,
+      "gaps_correlation": 0.234,
+      "onsets": {
+        "109": 18.1464,
+        "108": 18.1464
+      }
+    },
+    {
+      "time": 18.63,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.312,
+      "gaps_correlation": 0.082,
+      "onsets": {
+        "112": 18.6395,
+        "113": 18.6395
+      }
+    },
+    {
+      "time": 19.13,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.387,
+      "gaps_correlation": 0.236,
+      "onsets": {
+        "117": 19.1395,
+        "116": 19.1395
+      }
+    },
+    {
+      "time": 20.086,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.363,
+      "gaps_correlation": 0.115,
+      "onsets": {
+        "124": 20.0964,
+        "123": 20.0964
+      }
+    },
+    {
+      "time": 20.564,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.402,
+      "gaps_correlation": 0.402,
+      "onsets": {
+        "127": 20.5636,
+        "128": 20.5659
+      }
+    },
+    {
+      "time": 21.041,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.461,
+      "gaps_correlation": 0.225,
+      "onsets": {
+        "131": 21.0509,
+        "132": 21.0509
+      }
+    },
+    {
+      "time": 21.993,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 10 ms, offset 0 ms",
+      "correlation": 0.498,
+      "gaps_correlation": 0.386,
+      "onsets": {
+        "138": 21.9932,
+        "139": 22.0032
+      }
+    },
+    {
+      "time": 22.461,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 45 ms, offset -30 ms",
+      "correlation": 0.502,
+      "gaps_correlation": 0.174,
+      "onsets": {
+        "142": 22.4314,
+        "143": 22.4764
+      }
+    },
+    {
+      "time": 23.0,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.474,
+      "gaps_correlation": 0.195,
+      "onsets": {
+        "146": 23.01,
+        "147": 23.01
+      }
+    },
+    {
+      "time": 24.011,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.455,
+      "gaps_correlation": 0.455,
+      "onsets": {
+        "153": 24.0114,
+        "154": 24.0182
+      }
+    },
+    {
+      "time": 25.727,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.36,
+      "gaps_correlation": 0.36,
+      "onsets": {
+        "160": 25.7273,
+        "161": 25.7273
+      }
+    },
+    {
+      "time": 27.1,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.371,
+      "gaps_correlation": 0.176,
+      "onsets": {
+        "171": 27.11,
+        "170": 27.11
+      }
+    },
+    {
+      "time": 28.048,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.301,
+      "gaps_correlation": 0.301,
+      "onsets": {
+        "177": 28.0477,
+        "178": 28.0477
+      }
+    },
+    {
+      "time": 28.991,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.316,
+      "gaps_correlation": 0.316,
+      "onsets": {
+        "184": 28.9909,
+        "185": 28.9932
+      }
+    },
+    {
+      "time": 37.091,
+      "notes": 3,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.546,
+      "gaps_correlation": 0.546,
+      "onsets": {
+        "232": 37.0909,
+        "233": 37.0932,
+        "234": 37.0955
+      }
+    },
+    {
+      "time": 37.648,
+      "notes": 3,
+      "arpeggio": false,
+      "choice": "strum up, 10 ms, offset 0 ms",
+      "correlation": 0.452,
+      "gaps_correlation": 0.35,
+      "onsets": {
+        "237": 37.6477,
+        "236": 37.6527,
+        "235": 37.6577
+      }
+    },
+    {
+      "time": 38.65,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 0 ms",
+      "correlation": 0.688,
+      "gaps_correlation": 0.634,
+      "onsets": {
+        "239": 38.65,
+        "238": 38.65
+      }
+    },
+    {
+      "time": 39.125,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.437,
+      "gaps_correlation": 0.437,
+      "onsets": {
+        "242": 39.125,
+        "243": 39.1273
+      }
+    },
+    {
+      "time": 39.6,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 10 ms, offset 0 ms",
+      "correlation": 0.245,
+      "gaps_correlation": 0.191,
+      "onsets": {
+        "246": 39.6,
+        "247": 39.61
+      }
+    },
+    {
+      "time": 40.07,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.381,
+      "gaps_correlation": 0.381,
+      "onsets": {
+        "250": 40.0705,
+        "251": 40.0727
+      }
+    },
+    {
+      "time": 43.477,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.459,
+      "gaps_correlation": 0.459,
+      "onsets": {
+        "272": 43.4773,
+        "273": 43.4773
+      }
+    },
+    {
+      "time": 43.961,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.336,
+      "gaps_correlation": 0.336,
+      "onsets": {
+        "276": 43.9614,
+        "277": 43.9614
+      }
+    },
+    {
+      "time": 44.445,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.219,
+      "gaps_correlation": 0.164,
+      "onsets": {
+        "280": 44.4555,
+        "281": 44.4555
+      }
+    },
+    {
+      "time": 44.92,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.374,
+      "gaps_correlation": 0.129,
+      "onsets": {
+        "285": 44.9305,
+        "284": 44.9305
+      }
+    },
+    {
+      "time": 49.977,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.451,
+      "gaps_correlation": 0.451,
+      "onsets": {
+        "315": 49.9773,
+        "316": 49.9773
+      }
+    },
+    {
+      "time": 51.918,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 10 ms, offset 0 ms",
+      "correlation": 0.333,
+      "gaps_correlation": 0.244,
+      "onsets": {
+        "329": 51.9182,
+        "328": 51.9282
+      }
+    },
+    {
+      "time": 53.861,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum down, 10 ms, offset 0 ms",
+      "correlation": 0.41,
+      "gaps_correlation": 0.322,
+      "onsets": {
+        "341": 53.8614,
+        "342": 53.8714
+      }
+    },
+    {
+      "time": 54.348,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum down, 45 ms, offset -40 ms",
+      "correlation": 0.521,
+      "gaps_correlation": 0.412,
+      "onsets": {
+        "346": 54.3077,
+        "345": 54.3527
+      }
+    },
+    {
+      "time": 54.834,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.588,
+      "gaps_correlation": 0.588,
+      "onsets": {
+        "349": 54.8341,
+        "350": 54.8364
+      }
+    },
+    {
+      "time": 55.309,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum down, 45 ms, offset -40 ms",
+      "correlation": 0.377,
+      "gaps_correlation": 0.246,
+      "onsets": {
+        "354": 55.2691,
+        "353": 55.3141
+      }
+    },
+    {
+      "time": 55.798,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.528,
+      "gaps_correlation": 0.14,
+      "onsets": {
+        "357": 55.8077,
+        "358": 55.8077
+      }
+    },
+    {
+      "time": 56.286,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 45 ms, offset -40 ms",
+      "correlation": 0.369,
+      "gaps_correlation": 0.203,
+      "onsets": {
+        "361": 56.2464,
+        "362": 56.2914
+      }
+    },
+    {
+      "time": 57.275,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 10 ms, offset 0 ms",
+      "correlation": 0.296,
+      "gaps_correlation": 0.246,
+      "onsets": {
+        "368": 57.275,
+        "369": 57.285
+      }
+    },
+    {
+      "time": 58.239,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 0 ms",
+      "correlation": 0.299,
+      "gaps_correlation": 0.237,
+      "onsets": {
+        "376": 58.2386,
+        "375": 58.2386
+      }
+    },
+    {
+      "time": 62.17,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.648,
+      "gaps_correlation": 0.648,
+      "onsets": {
+        "400": 62.1705,
+        "401": 62.1727
+      }
+    },
+    {
+      "time": 62.641,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.302,
+      "gaps_correlation": 0.302,
+      "onsets": {
+        "404": 62.6409,
+        "405": 62.6432
+      }
+    },
+    {
+      "time": 63.123,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 10 ms, offset 0 ms",
+      "correlation": 0.316,
+      "gaps_correlation": 0.246,
+      "onsets": {
+        "408": 63.1227,
+        "409": 63.1327
+      }
+    },
+    {
+      "time": 63.605,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.303,
+      "gaps_correlation": 0.303,
+      "onsets": {
+        "412": 63.6045,
+        "413": 63.6068
+      }
+    },
+    {
+      "time": 67.023,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.564,
+      "gaps_correlation": 0.3,
+      "onsets": {
+        "434": 67.0327,
+        "435": 67.0327
+      }
+    },
+    {
+      "time": 67.491,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.383,
+      "gaps_correlation": 0.383,
+      "onsets": {
+        "438": 67.4909,
+        "439": 67.4932
+      }
+    },
+    {
+      "time": 67.907,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset -10 ms",
+      "correlation": 0.478,
+      "gaps_correlation": 0.138,
+      "onsets": {
+        "442": 67.8968,
+        "443": 67.8968
+      }
+    },
+    {
+      "time": 68.493,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.486,
+      "gaps_correlation": 0.347,
+      "onsets": {
+        "446": 68.5032,
+        "447": 68.5032
+      }
+    },
+    {
+      "time": 73.616,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.262,
+      "gaps_correlation": 0.262,
+      "onsets": {
+        "477": 73.6159,
+        "478": 73.6159
+      }
+    },
+    {
+      "time": 75.548,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.41,
+      "gaps_correlation": 0.22,
+      "onsets": {
+        "491": 75.5577,
+        "490": 75.5577
+      }
+    },
+    {
+      "time": 77.493,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 10 ms, offset -10 ms",
+      "correlation": 0.345,
+      "gaps_correlation": 0.285,
+      "onsets": {
+        "504": 77.4832,
+        "503": 77.4932
+      }
+    },
+    {
+      "time": 77.998,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.335,
+      "gaps_correlation": 0.335,
+      "onsets": {
+        "507": 77.9977,
+        "508": 78.0
+      }
+    },
+    {
+      "time": 78.491,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 10 ms, offset -10 ms",
+      "correlation": 0.507,
+      "gaps_correlation": 0.408,
+      "onsets": {
+        "511": 78.4809,
+        "512": 78.4909
+      }
+    },
+    {
+      "time": 78.973,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.474,
+      "gaps_correlation": 0.474,
+      "onsets": {
+        "515": 78.9727,
+        "516": 78.975
+      }
+    },
+    {
+      "time": 79.464,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.509,
+      "gaps_correlation": 0.509,
+      "onsets": {
+        "519": 79.4636,
+        "520": 79.4636
+      }
+    },
+    {
+      "time": 79.952,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.451,
+      "gaps_correlation": 0.168,
+      "onsets": {
+        "523": 79.9623,
+        "524": 79.9623
+      }
+    },
+    {
+      "time": 80.93,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.452,
+      "gaps_correlation": 0.452,
+      "onsets": {
+        "530": 80.9295,
+        "531": 80.9295
+      }
+    },
+    {
+      "time": 81.895,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.461,
+      "gaps_correlation": 0.461,
+      "onsets": {
+        "537": 81.8955,
+        "538": 81.8977
+      }
+    },
+    {
+      "time": 90.114,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum down, 45 ms, offset -40 ms",
+      "correlation": 0.261,
+      "gaps_correlation": 0.135,
+      "onsets": {
+        "583": 90.0736,
+        "582": 90.1186
+      }
+    },
+    {
+      "time": 91.555,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 20 ms",
+      "correlation": 0.307,
+      "gaps_correlation": 0.085,
+      "onsets": {
+        "592": 91.5745,
+        "593": 91.5745
+      }
+    },
+    {
+      "time": 93.186,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.596,
+      "gaps_correlation": 0.197,
+      "onsets": {
+        "603": 93.1964,
+        "602": 93.1964
+      }
+    },
+    {
+      "time": 93.891,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 20 ms",
+      "correlation": 0.479,
+      "gaps_correlation": 0.109,
+      "onsets": {
+        "606": 93.9109,
+        "607": 93.9109
+      }
+    },
+    {
+      "time": 94.505,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.464,
+      "gaps_correlation": 0.464,
+      "onsets": {
+        "610": 94.5045,
+        "611": 94.5091
+      }
+    },
+    {
+      "time": 94.989,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.381,
+      "gaps_correlation": -0.036,
+      "onsets": {
+        "615": 94.9986,
+        "614": 94.9986
+      }
+    },
+    {
+      "time": 95.489,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.385,
+      "gaps_correlation": 0.385,
+      "onsets": {
+        "618": 95.4886,
+        "619": 95.4932
+      }
+    },
+    {
+      "time": 95.986,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.424,
+      "gaps_correlation": 0.301,
+      "onsets": {
+        "623": 95.9964,
+        "622": 95.9964
+      }
+    },
+    {
+      "time": 96.489,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.404,
+      "gaps_correlation": 0.124,
+      "onsets": {
+        "626": 96.4986,
+        "627": 96.4986
+      }
+    },
+    {
+      "time": 97.048,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.484,
+      "gaps_correlation": 0.484,
+      "onsets": {
+        "630": 97.0477,
+        "631": 97.0477
+      }
+    },
+    {
+      "time": 107.948,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 20 ms, offset -20 ms",
+      "correlation": 0.371,
+      "gaps_correlation": 0.291,
+      "onsets": {
+        "684": 107.9277,
+        "685": 107.9477
+      }
+    },
+    {
+      "time": 108.436,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.337,
+      "gaps_correlation": 0.14,
+      "onsets": {
+        "688": 108.4464,
+        "689": 108.4464
+      }
+    },
+    {
+      "time": 108.936,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.421,
+      "gaps_correlation": 0.094,
+      "onsets": {
+        "692": 108.9464,
+        "693": 108.9464
+      }
+    },
+    {
+      "time": 109.45,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum down, 10 ms, offset 0 ms",
+      "correlation": 0.408,
+      "gaps_correlation": 0.355,
+      "onsets": {
+        "697": 109.45,
+        "696": 109.46
+      }
+    },
+    {
+      "time": 112.891,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.454,
+      "gaps_correlation": 0.1,
+      "onsets": {
+        "718": 112.9009,
+        "719": 112.9009
+      }
+    },
+    {
+      "time": 113.398,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.343,
+      "gaps_correlation": 0.343,
+      "onsets": {
+        "722": 113.3977,
+        "723": 113.4
+      }
+    },
+    {
+      "time": 113.895,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 10 ms, offset 10 ms",
+      "correlation": 0.33,
+      "gaps_correlation": 0.128,
+      "onsets": {
+        "726": 113.9055,
+        "727": 113.9155
+      }
+    },
+    {
+      "time": 114.42,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum down, 45 ms, offset -40 ms",
+      "correlation": 0.329,
+      "gaps_correlation": 0.188,
+      "onsets": {
+        "731": 114.3805,
+        "730": 114.4255
+      }
+    },
+    {
+      "time": 119.666,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.36,
+      "gaps_correlation": 0.36,
+      "onsets": {
+        "761": 119.6659,
+        "762": 119.6727
+      }
+    },
+    {
+      "time": 121.659,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.542,
+      "gaps_correlation": 0.153,
+      "onsets": {
+        "775": 121.6691,
+        "774": 121.6691
+      }
+    },
+    {
+      "time": 123.655,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.392,
+      "gaps_correlation": 0.255,
+      "onsets": {
+        "787": 123.6645,
+        "788": 123.6645
+      }
+    },
+    {
+      "time": 124.152,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.51,
+      "gaps_correlation": 0.51,
+      "onsets": {
+        "791": 124.1523,
+        "792": 124.1545
+      }
+    },
+    {
+      "time": 124.648,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.547,
+      "gaps_correlation": 0.547,
+      "onsets": {
+        "795": 124.6477,
+        "796": 124.65
+      }
+    },
+    {
+      "time": 125.139,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.6,
+      "gaps_correlation": 0.345,
+      "onsets": {
+        "799": 125.1486,
+        "800": 125.1486
+      }
+    },
+    {
+      "time": 125.634,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.433,
+      "gaps_correlation": 0.127,
+      "onsets": {
+        "803": 125.6441,
+        "804": 125.6441
+      }
+    },
+    {
+      "time": 126.12,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.447,
+      "gaps_correlation": 0.067,
+      "onsets": {
+        "807": 126.1305,
+        "808": 126.1305
+      }
+    },
+    {
+      "time": 127.098,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum down, 45 ms, offset -40 ms",
+      "correlation": 0.403,
+      "gaps_correlation": 0.155,
+      "onsets": {
+        "814": 127.0577,
+        "815": 127.1027
+      }
+    },
+    {
+      "time": 128.098,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.376,
+      "gaps_correlation": 0.376,
+      "onsets": {
+        "821": 128.0977,
+        "822": 128.1023
+      }
+    },
+    {
+      "time": 136.609,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.544,
+      "gaps_correlation": 0.143,
+      "onsets": {
+        "866": 136.6191,
+        "867": 136.6191
+      }
+    },
+    {
+      "time": 138.091,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 45 ms, offset -30 ms",
+      "correlation": 0.471,
+      "gaps_correlation": 0.094,
+      "onsets": {
+        "876": 138.0609,
+        "877": 138.1059
+      }
+    },
+    {
+      "time": 139.664,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum down, 60 ms, offset -50 ms",
+      "correlation": 0.377,
+      "gaps_correlation": 0.221,
+      "onsets": {
+        "886": 139.6136,
+        "887": 139.6736
+      }
+    },
+    {
+      "time": 140.305,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 45 ms, offset -30 ms",
+      "correlation": 0.468,
+      "gaps_correlation": 0.088,
+      "onsets": {
+        "890": 140.2745,
+        "891": 140.3195
+      }
+    },
+    {
+      "time": 140.907,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.301,
+      "gaps_correlation": 0.112,
+      "onsets": {
+        "894": 140.9168,
+        "895": 140.9168
+      }
+    },
+    {
+      "time": 141.393,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.222,
+      "gaps_correlation": 0.222,
+      "onsets": {
+        "898": 141.3932,
+        "899": 141.4
+      }
+    },
+    {
+      "time": 141.907,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.547,
+      "gaps_correlation": 0.547,
+      "onsets": {
+        "902": 141.9068,
+        "903": 141.9068
+      }
+    },
+    {
+      "time": 142.402,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 10 ms, offset 0 ms",
+      "correlation": 0.394,
+      "gaps_correlation": 0.316,
+      "onsets": {
+        "907": 142.4023,
+        "906": 142.4123
+      }
+    },
+    {
+      "time": 142.907,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.519,
+      "gaps_correlation": 0.519,
+      "onsets": {
+        "910": 142.9068,
+        "911": 142.9091
+      }
+    },
+    {
+      "time": 143.445,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.474,
+      "gaps_correlation": 0.474,
+      "onsets": {
+        "914": 143.4455,
+        "915": 143.4477
+      }
+    },
+    {
+      "time": 158.975,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.337,
+      "gaps_correlation": 0.337,
+      "onsets": {
+        "992": 158.975,
+        "993": 158.975
+      }
+    },
+    {
+      "time": 160.411,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.446,
+      "gaps_correlation": 0.446,
+      "onsets": {
+        "1002": 160.4114,
+        "1003": 160.4159
+      }
+    },
+    {
+      "time": 161.382,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.535,
+      "gaps_correlation": 0.535,
+      "onsets": {
+        "1009": 161.3818,
+        "1010": 161.3841
+      }
+    },
+    {
+      "time": 162.343,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.334,
+      "gaps_correlation": 0.101,
+      "onsets": {
+        "1016": 162.3532,
+        "1017": 162.3532
+      }
+    },
+    {
+      "time": 170.659,
+      "notes": 3,
+      "arpeggio": false,
+      "choice": "strum up, 10 ms, offset 0 ms",
+      "correlation": 0.483,
+      "gaps_correlation": 0.344,
+      "onsets": {
+        "1064": 170.6591,
+        "1066": 170.6641,
+        "1065": 170.6691
+      }
+    },
+    {
+      "time": 171.239,
+      "notes": 3,
+      "arpeggio": false,
+      "choice": "strum up, 10 ms, offset 0 ms",
+      "correlation": 0.657,
+      "gaps_correlation": 0.443,
+      "onsets": {
+        "1068": 171.2386,
+        "1069": 171.2436,
+        "1067": 171.2486
+      }
+    },
+    {
+      "time": 172.373,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 10 ms, offset 0 ms",
+      "correlation": 0.315,
+      "gaps_correlation": 0.226,
+      "onsets": {
+        "1070": 172.3727,
+        "1071": 172.3827
+      }
+    },
+    {
+      "time": 176.275,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.32,
+      "gaps_correlation": 0.034,
+      "onsets": {
+        "1095": 176.285,
+        "1096": 176.285
+      }
+    },
+    {
+      "time": 176.775,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.498,
+      "gaps_correlation": 0.007,
+      "onsets": {
+        "1099": 176.785,
+        "1100": 176.785
+      }
+    },
+    {
+      "time": 177.286,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.472,
+      "gaps_correlation": 0.472,
+      "onsets": {
+        "1103": 177.2864,
+        "1104": 177.2864
+      }
+    },
+    {
+      "time": 178.266,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 10 ms, offset 0 ms",
+      "correlation": 0.325,
+      "gaps_correlation": 0.257,
+      "onsets": {
+        "1110": 178.2659,
+        "1111": 178.2759
+      }
+    },
+    {
+      "time": 178.748,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.358,
+      "gaps_correlation": 0.358,
+      "onsets": {
+        "1114": 178.7477,
+        "1115": 178.75
+      }
+    },
+    {
+      "time": 179.243,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.508,
+      "gaps_correlation": 0.261,
+      "onsets": {
+        "1118": 179.2532,
+        "1119": 179.2532
+      }
+    },
+    {
+      "time": 180.23,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.433,
+      "gaps_correlation": 0.129,
+      "onsets": {
+        "1125": 180.2395,
+        "1126": 180.2395
+      }
+    },
+    {
+      "time": 180.716,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.468,
+      "gaps_correlation": 0.292,
+      "onsets": {
+        "1129": 180.7259,
+        "1130": 180.7259
+      }
+    },
+    {
+      "time": 181.255,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.456,
+      "gaps_correlation": 0.118,
+      "onsets": {
+        "1134": 181.2645,
+        "1133": 181.2645
+      }
+    },
+    {
+      "time": 182.391,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.406,
+      "gaps_correlation": 0.406,
+      "onsets": {
+        "1140": 182.3909,
+        "1141": 182.3932
+      }
+    },
+    {
+      "time": 184.673,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "GAPS timing",
+      "correlation": 0.376,
+      "gaps_correlation": 0.376,
+      "onsets": {
+        "1147": 184.6727,
+        "1148": 184.6773
+      }
+    },
+    {
+      "time": 186.055,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.518,
+      "gaps_correlation": 0.031,
+      "onsets": {
+        "1157": 186.0645,
+        "1158": 186.0645
+      }
+    },
+    {
+      "time": 187.032,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 45 ms, offset -40 ms",
+      "correlation": 0.427,
+      "gaps_correlation": 0.28,
+      "onsets": {
+        "1164": 186.9918,
+        "1165": 187.0368
+      }
+    },
+    {
+      "time": 187.991,
+      "notes": 2,
+      "arpeggio": false,
+      "choice": "strum up, 0 ms, offset 10 ms",
+      "correlation": 0.439,
+      "gaps_correlation": 0.105,
+      "onsets": {
+        "1172": 188.0009,
+        "1171": 188.0009
+      }
+    },
+    {
+      "time": 198.368,
+      "notes": 5,
+      "arpeggio": true,
+      "choice": "GAPS timing",
+      "correlation": 0.04,
+      "gaps_correlation": 0.04,
+      "onsets": {
+        "1226": 198.3682,
+        "1227": 198.3682,
+        "1228": 198.3682,
+        "1229": 198.3682,
+        "1230": 198.3682
+      }
+    }
+  ]
+}
