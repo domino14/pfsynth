@@ -1,0 +1,125 @@
+{
+ "pieces": [
+  {
+   "slug": "bach-bwv1006a-prelude",
+   "title": "Prelude from BWV 1006a",
+   "composer": "Johann Sebastian Bach",
+   "dates": "1685–1750",
+   "born": 1685,
+   "performer": "Mateusz Kowalski",
+   "duration": 243.5,
+   "notes": 1736,
+   "body": "g34"
+  },
+  {
+   "slug": "carulli-op241-5",
+   "title": "Andantino, Op. 241 No. 5",
+   "composer": "Ferdinando Carulli",
+   "dates": "1770–1841",
+   "born": 1770,
+   "performer": null,
+   "duration": 101.5,
+   "notes": 290,
+   "body": "g33"
+  },
+  {
+   "slug": "molino-romanza",
+   "title": "Romanza",
+   "composer": "Francesco Molino",
+   "dates": "1775–1847",
+   "born": 1775,
+   "performer": null,
+   "duration": 89.8,
+   "notes": 302,
+   "body": "g32"
+  },
+  {
+   "slug": "sor-op35-22",
+   "title": "Study in B minor, Op. 35 No. 22",
+   "composer": "Fernando Sor",
+   "dates": "1778–1839",
+   "born": 1778,
+   "performer": null,
+   "duration": 170.4,
+   "notes": 507,
+   "body": "g50"
+  },
+  {
+   "slug": "sor-op35-17",
+   "title": "Study in D, Op. 35 No. 17",
+   "composer": "Fernando Sor",
+   "dates": "1778–1839",
+   "born": 1778,
+   "performer": null,
+   "duration": 82.7,
+   "notes": 265,
+   "body": "g17"
+  },
+  {
+   "slug": "giuliani-op100-11",
+   "title": "Study, Op. 100 No. 11",
+   "composer": "Mauro Giuliani",
+   "dates": "1781–1829",
+   "born": 1781,
+   "performer": null,
+   "duration": 77.4,
+   "notes": 523,
+   "body": "g11"
+  },
+  {
+   "slug": "paganini-sonata-34",
+   "title": "Sonata No. 34",
+   "composer": "Niccolò Paganini",
+   "dates": "1782–1840",
+   "born": 1782,
+   "performer": null,
+   "duration": 92.2,
+   "notes": 539,
+   "body": "g19"
+  },
+  {
+   "slug": "legnani-caprice-7",
+   "title": "Caprice No. 7, Op. 20",
+   "composer": "Luigi Legnani",
+   "dates": "1790–1877",
+   "born": 1790,
+   "performer": null,
+   "duration": 114.0,
+   "notes": 934,
+   "body": "g20"
+  },
+  {
+   "slug": "carcassi-op60-7",
+   "title": "Study in A minor, Op. 60 No. 7",
+   "composer": "Matteo Carcassi",
+   "dates": "1792–1853",
+   "born": 1792,
+   "performer": null,
+   "duration": 111.6,
+   "notes": 751,
+   "body": "g17"
+  },
+  {
+   "slug": "mertz-gebeth",
+   "title": "Gebeth (Bardenklänge)",
+   "composer": "Johann Kaspar Mertz",
+   "dates": "1806–1856",
+   "born": 1806,
+   "performer": null,
+   "duration": 178.9,
+   "notes": 887,
+   "body": "g34"
+  },
+  {
+   "slug": "mertz-unruhe",
+   "title": "Unruhe (Bardenklänge)",
+   "composer": "Johann Kaspar Mertz",
+   "dates": "1806–1856",
+   "born": 1806,
+   "performer": null,
+   "duration": 102.9,
+   "notes": 691,
+   "body": "g50"
+  }
+ ]
+}
