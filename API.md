@@ -195,3 +195,8 @@ notes as above plus the ids of their notehead and tab number in the accompanying
 MusicXML, the tuning, and the fitted room and body. Guitar Pro files are read by the
 offline tools (PyGuitarPro, versions 3–5); newer ones via MusicXML export. TuxGuitar
 exports MusicXML and MIDI.
+
+The classical-guitar web JSON also supports optional **rubato maps**, regular tremolo
+subdivisions, explicit damping gates, and per-note **right-hand plucking fingers**
+with tone/position profiles. These are host-side inputs, separate from the C note
+ABI and its left-hand `finger`. See [Guitar performance JSON](docs/guitar/FORMAT.md).

@@ -1,0 +1,13 @@
+Recuerdos de la Alhambra — Francisco Tárrega (1852–1909)
+
+Score: Stewart Holmes, Mutopia #810 (2009), based on Orfeo Tracio.
+https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=810
+https://creativecommons.org/licenses/by-sa/3.0/
+
+Adaptation by pfsynth: MusicXML conversion and inferred tablature; source left-hand markings retained. Notated lengths remain on the staff; explicit gateBeat values model necessary hand releases. The adapted score and tab are distributed under CC BY-SA 3.0. No source recording, GAPS score, MIDI or raw syncpoints is included.
+
+Performance controls: pfsynth Recuerdos research (owner-selected rounds 2, 4, 5), transformed phrase timing/level curves and aggregate p–a–m–i gap ratios. These are modeling controls, not measured finger anatomy or universal human timing limits. The streaming tone port weights modal radiation rather than applying the offline minimum-phase FIR; it is not a bit-exact copy of that audition.
+
+Body loading/radiation: Robert Mores, CC BY 4.0, https://doi.org/10.5281/zenodo.4604577 . Passive diagonal string-loading approximation, limited to 0–10/s, derived from guitar 5.
+
+Tab audit: source finger/string marks constrain a beam search. 650 mm scale, 8 mm lateral string spacing, default pairwise reach bounds from tools/string_hand_geometry.py except middle/ring 45 mm (the edition needs ~44 mm); position-change cap 1800 mm/s plus 15 mm tolerance. Held notes may be released when a finger/position changes; all releases are explicit in gateBeat. This is a designed-hand audit, not a guarantee for every guitarist.

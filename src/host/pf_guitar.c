@@ -159,7 +159,7 @@ static void gset(void *self,int i,double v)
 }
 static void reset_strings(pf_guitar *g)
 {
-    for(int s=0;s<6;s++){g->owner[s]=-1;memset(&g->str[s],0,sizeof g->str[s]);}
+    for(int s=0;s<6;s++){g->owner[s]=-1;memset(&g->str[s],0,sizeof g->str[s]);g->tone_active[s]=0;}
     g->n_order=0;
 }
 static int gload(void *self,const pf_score *sc)
@@ -209,6 +209,25 @@ static double note_pitch(const pf_guitar *g,int i,double t)
     return pitch;
 }
 
+static void pluck_tone(pf_guitar *g,int s,double tilt)
+{
+    /* The accepted broad cycle-position spectral slope, evaluated at the actual
+     * partial frequencies. This streaming port has no FIR startup transient.
+     * Normalize predicted radiated modal energy, so tone is not a gain vote.
+     * It is not an anatomical model of finger size/angle. */
+    pf_pluck *st=&g->str[s];g->tone_active[s]=tilt!=0;
+    if(!tilt)return;
+    double before=0,after=0,f0=sqrt(st->w2[0]);
+    for(int j=0;j<st->count;j++){
+        double db=tilt*log2(fmax(1,sqrt(st->w2[j])/f0));
+        if(db>2)db=2;if(db< -2)db=-2;
+        double gain=pow(10,db/20),energy=st->rad[j]*st->rad[j]*(st->q[j]*st->q[j]+st->v[j]*st->v[j]/st->w2[j]);
+        before+=energy;after+=energy*gain*gain;g->tone_gain[s][j]=gain;
+    }
+    double norm=after>0?sqrt(before/after):1;
+    for(int j=0;j<st->count;j++){g->tone_gain[s][j]*=norm;st->rad[j]*=g->tone_gain[s][j];}
+}
+
 static void apply_event(pf_guitar *g,const pf_guitar_event *e)
 {
     const pf_note *N=&g->score->notes[e->note];int i=e->note,s=g->string[i];
@@ -223,8 +242,18 @@ static void apply_event(pf_guitar *g,const pf_guitar_event *e)
             double open=g->tuning[s-1],midi=harmonic?open:N->pitch,vel=N->velocity/127.;
             if(vel>g->p[PF_GUITAR_HEADROOM])vel=g->p[PF_GUITAR_HEADROOM];
             double pos=harmonic?g->p[PF_GUITAR_HARM_PLUCK]:g->p[PF_GUITAR_PLUCK];
+            const pf_guitar_note_input *input=g->note_inputs?&g->note_inputs[i]:0;
+            if(input&&isfinite(input->position)&&input->position>=.04&&input->position<=.45)pos=input->position;
             if(!harmonic&&g->p[PF_GUITAR_HAND_FIXED]>.5){pos*=pow(2,g->fret[i]/12.);if(pos>.45)pos=.45;}
             pf_pluck_material(st,g->sr,midi,vel,s,pos,(int)g->p[PF_GUITAR_TREBLES]);
+            if(input&&g->loading&&input->loading>0&&input->loading<=g->loading_count){
+                for(int j=0;j<PF_PLUCK_MODES;j++){
+                    double loss=g->loading[input->loading-1][j];st->body_loss[j]=isfinite(loss)?fmax(0,fmin(10,loss)):0;
+                }
+                st->pitch_ready=0;pf_pluck_pitch(st,midi,s,0);
+            }
+            pluck_tone(g,s-1,input&&isfinite(input->tilt_db_octave)?fmax(-2,fmin(2,input->tilt_db_octave)):0);
+
             if(harmonic){
                 int fret=N->art_param>0?(int)lrintf(N->art_param):12;
                 int node=fret==12?2:fret==7?3:fret==5?4:fret==4?5:(int)lrint(1/(1-pow(2,-fret/12.)));
@@ -236,6 +265,7 @@ static void apply_event(pf_guitar *g,const pf_guitar_event *e)
         }else if(art==PF_ART_HAMMER_ON||art==PF_ART_PULL_OFF){
             double amount=N->art_param>0?N->art_param:(art==PF_ART_HAMMER_ON?g->p[PF_GUITAR_HAMMER_MM]:g->p[PF_GUITAR_PULL_MM])/1000;
             pf_pluck_legato(st,N->pitch,s,amount,g->p[PF_GUITAR_SLUR_CONTACT]/1000);
+            if(g->tone_active[s-1])for(int j=0;j<st->count;j++)st->rad[j]*=g->tone_gain[s-1][j];
         }
         if(!used)g->order[g->n_order++]=s;
         g->owner[s-1]=i;return;
@@ -274,7 +304,10 @@ static int grender(void *self,float *left,float *right,int frames)
         for(int q=0;q<g->n_order;q++){
             int s=g->order[q],i=g->owner[s-1];if(i<0)continue;
             const pf_note *N=&g->score->notes[i];
-            pf_pluck_pitch(&g->str[s-1],note_pitch(g,i,t),s,N->articulation==PF_ART_MUTED?g->p[PF_GUITAR_MUTE_DAMP]:0);
+            double pitch=note_pitch(g,i,t),damping=N->articulation==PF_ART_MUTED?g->p[PF_GUITAR_MUTE_DAMP]:0;
+            int changed=!g->str[s-1].pitch_ready||g->str[s-1].last_midi!=pitch||g->str[s-1].last_damping!=damping||g->str[s-1].last_string!=s;
+            pf_pluck_pitch(&g->str[s-1],pitch,s,damping);
+            if(changed&&g->tone_active[s-1])for(int j=0;j<g->str[s-1].count;j++)g->str[s-1].rad[j]*=g->tone_gain[s-1][j];
             pf_pluck_process(&g->str[s-1],m,len);
         }
         float gain=g->p[PF_GUITAR_GAIN_DB]==0?1.f:(float)pow(10,g->p[PF_GUITAR_GAIN_DB]/20);

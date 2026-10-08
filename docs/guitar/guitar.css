@@ -44,6 +44,11 @@ details summary { cursor: pointer; color: var(--accent); margin-top: 8px; font-s
 .score g.note { cursor: pointer; }
 .score text.pluck { font-family: 'Source Serif 4', Georgia, serif; font-style: italic; fill: var(--ink); }
 .fretboard { width: 100%; height: auto; background: transparent; }
+.score-navigation { display:flex; align-items:center; justify-content:space-between; gap:12px; color:var(--muted); font-size:13px; }
+.score-navigation button { background:var(--card); border:1px solid var(--hair); border-radius:6px; padding:8px 14px; color:var(--accent); cursor:pointer; }
+.score-navigation button:disabled { opacity:.4; cursor:default; }
 footer { padding: 4px 28px 24px; font-size: 12.5px; color: var(--muted); }
 footer a { color: var(--accent); }
 @media (max-width: 900px) { main { grid-template-columns: 1fr; padding: 0 16px 16px; } header { padding: 16px; } }
+
+@media (max-width: 900px) { .stage { grid-row: 1; } .transport { flex-wrap: wrap; max-width: 100%; } .cpu { width: 100%; min-width: 0; } .score { overflow-x:auto; } .score svg { min-width: 640px; } .legend i { width: 100px; } }

@@ -1,8 +1,11 @@
-// pfsynth guitar demo: live physical-model guitar (docs/pfi.wasm in an AudioWorklet), score
+// pfsynth guitar demo: live physical-model guitar (pfguitar.wasm in an AudioWorklet), score
 // and tab (Verovio) following the performance, a fretboard showing the strings, measured
 // guitar bodies and the room fitted to each recording (WebAudio convolution).
-import { parseMIDI, parseMusicXML } from './import.js?v=20261001d';
+import { parseMIDI, parseMusicXML } from './import.js?v=20261007r';
+import { preparePerformance } from './performance.js?v=20261007r';
 const $ = (s) => document.querySelector(s);
+const escapeHTML = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const escapeFields = o => Object.fromEntries(Object.entries(o).map(([k,v])=>[k,typeof v === 'string' ? escapeHTML(v) : v]));
 const state = { ctx: null, node: null, ready: null, params: [], piece: null, notes: [], duration: 0, playing: false, tick: { t: 0, at: 0 }, sounding: [],
   lit: [], ptr: 0, elements: new Map(), vrv: null, token: 0, bodies: [], bodyBuffers: new Map(), roomBuffer: null };
 const fmt = (s) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
@@ -21,15 +24,16 @@ async function audio() {
   if (state.ready) return state.ready;
   state.ready = (async () => {
     const ctx = state.ctx = new AudioContext({ latencyHint: 'playback' });
-    await ctx.audioWorklet.addModule('guitar-worklet.js?v=20261001d');
+    await ctx.audioWorklet.addModule('guitar-worklet.js?v=20261007r');
     const node = state.node = new AudioWorkletNode(ctx, 'pfguitar', { numberOfInputs: 0, numberOfOutputs: 1, outputChannelCount: [2] });
     state.body = ctx.createConvolver(); state.body.normalize = false; state.bodyGain = ctx.createGain();
     state.room = ctx.createConvolver(); state.room.normalize = false; state.roomGain = ctx.createGain();
     state.master = ctx.createGain(); const limiter = ctx.createDynamicsCompressor();
     limiter.threshold.value = -3; limiter.knee.value = 0; limiter.ratio.value = 20; limiter.attack.value = .002; limiter.release.value = .1;
     state.master.connect(limiter).connect(ctx.destination);
-    const bytes = await (await fetch('../pfi.wasm?v=20261001d')).arrayBuffer();
-    const ready = new Promise((res) => { node.port.onmessage = (e) => { if (e.data.type === 'ready') res(e.data); }; });
+    const response = await fetch('pfguitar.wasm?v=20261007r'); if (!response.ok) throw new Error('Could not load the guitar engine.');
+    const bytes = await response.arrayBuffer();
+    const ready = new Promise((res, rej) => { node.port.onmessage = (e) => { if (e.data.type === 'ready') res(e.data); else if(e.data.type === 'error') rej(new Error(e.data.text)); }; });
     node.port.postMessage({ type: 'wasm', bytes }, [bytes]);
     const info = await ready; state.params = info.params; buildParams();
     node.port.onmessage = (e) => onWorklet(e.data);
@@ -49,7 +53,8 @@ function setVolume() { if (state.master) state.master.gain.value = 3.5 * 10 ** (
 function onWorklet(m) {
   if (m.type === 'tick') { state.tick = { t: m.t, at: state.ctx.currentTime }; state.sounding = m.sounding; state.load = m.load; }
   else if (m.type === 'end') { pause(); seek(0); }
-  else if (m.type === 'error') console.error(m.text);
+  else if (m.type === 'loaded' && !m.ok) { pause(); alertBox('The guitar could not load this score.'); }
+  else if (m.type === 'error') { pause(); alertBox(m.text); }
 }
 const now = () => state.playing ? state.tick.t + Math.max(0, state.ctx.currentTime - state.tick.at) : state.tick.t;
 // The worklet reports the time it has rendered; you hear it after the output latency.
@@ -66,9 +71,11 @@ async function setBody() {
   const id = $('#body').value; if (!state.ctx) return;
   if (id !== 'none') {
     if (!state.bodyBuffers.has(id)) state.bodyBuffers.set(id, await state.ctx.decodeAudioData(await (await fetch(`bodies/${id}.wav`)).arrayBuffer()));
+    if ($('#body').value !== id) return;
     const buf = state.bodyBuffers.get(id), x = buf.getChannelData(0); let e = 0; for (const v of x) e += v * v;
     state.body.buffer = buf; state.bodyGain.gain.value = 1 / Math.sqrt(e || 1);
   }
+  if (state.piece?.loadingProfiles) state.node.port.postMessage({type:'loading-enabled',count:id === state.piece.body ? state.piece.loadingProfiles.length : 0});
   route(); credits();
 }
 function roomImpulse(rtLow, rtHigh, ratio, sr) {   // statistical room (tools/guitar_room_fit.room_impulse), stereo
@@ -138,7 +145,7 @@ function vrvReady() {
 // page shows the system being played and switches when playback reaches the next one.
 async function renderScore(xml, token) {
   const box = $('#score'); state.pages = []; state.idPage = new Map(); state.page = -1;
-  if (!xml) { box.innerHTML = '<p class="placeholder">No notation for this file — the fretboard below shows the strings.</p>'; state.elements = new Map(); return; }
+  if (!xml) { box.innerHTML = '<p class="placeholder">No notation for this file — the fretboard below shows the strings.</p>'; state.elements = new Map(); $('#system-position').textContent = 'No notation'; $('#previous-system').disabled = $('#next-system').disabled = true; return; }
   box.innerHTML = '<p class="placeholder">Engraving the score…</p>';
   const tk = await vrvReady(); if (token !== state.token) return;
   tk.setOptions({ pageWidth: 2600, pageHeight: 100, scale: 40, adjustPageHeight: true, breaks: 'auto', header: 'none', footer: 'none', svgViewBox: true,
@@ -146,11 +153,13 @@ async function renderScore(xml, token) {
   tk.loadData(xml); if (token !== state.token) return;
   let ratio = 0;
   for (let p = 1; p <= tk.getPageCount(); p++) {
+    if (token !== state.token) return;
     const svg = tk.renderToSVG(p); state.pages.push(svg);
-    for (const m of svg.matchAll(/<g id="([nt]\d+)" class="note/g)) state.idPage.set(m[1], p - 1);
+    for (const m of svg.matchAll(/<g id="([^"]+)" class="note/g)) state.idPage.set(m[1], p - 1);
     const vb = svg.match(/viewBox="0 0 ([\d.]+) ([\d.]+)"/); if (vb) ratio = Math.max(ratio, +vb[2] / +vb[1]);
     if (p % 8 === 0) await new Promise(r => setTimeout(r, 0));
   }
+  if (token !== state.token) return;
   state.ratio = ratio; fitScore(); showPage(0);
 }
 // Right-hand fingers (p i m a): Verovio does not draw MusicXML <pluck>, so the page writes
@@ -158,8 +167,9 @@ async function renderScore(xml, token) {
 // below the others (usually the thumb's bass). Inside g.note, so they light with the note.
 function drawPlucks() {
   const top = new Map(); for (const n of state.notes) { const k = n.start.toFixed(3); top.set(k, Math.max(top.get(k) ?? -1, n.pitch)); }
+  const drawn = new Set();
   for (const n of state.notes) {
-    if (!n.pluck) continue; const g = state.elements.get(n.ids[0]); if (!g) continue;
+    if (!n.pluck || !n.ids?.length || drawn.has(n.ids[0])) continue; const g = state.elements.get(n.ids[0]); if (!g) continue; drawn.add(n.ids[0]);
     const head = g.querySelector('.notehead') || g; let b; try { b = head.getBBox(); } catch (e) { continue; }
     const size = b.height * 1.7, above = n.pitch >= top.get(n.start.toFixed(3));
     const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
@@ -168,21 +178,26 @@ function drawPlucks() {
     t.textContent = n.pluck; g.appendChild(t);
   }
 }
-function fitScore() { const box = $('#score'); if (state.ratio) box.style.height = Math.round(box.clientWidth * state.ratio + 24) + 'px'; }
+function fitScore() { const box = $('#score'); if (state.ratio) box.style.height = Math.round(Math.max(box.clientWidth, window.innerWidth <= 900 ? 640 : 0) * state.ratio + 24) + 'px'; }
 window.addEventListener('resize', fitScore);
 function showPage(k) {
   if (k === state.page || k < 0 || k >= state.pages.length) return;
   const box = $('#score'); box.innerHTML = state.pages[k]; state.page = k;
   state.elements = new Map(); for (const g of box.querySelectorAll('g.note')) state.elements.set(g.id, g);
   drawPlucks();
+  $('#system-position').textContent = `System ${k + 1} / ${state.pages.length}`;
+  $('#previous-system').disabled = k === 0; $('#next-system').disabled = k + 1 === state.pages.length;
   for (const l of state.lit) l.els = (l.ids || []).map(id => state.elements.get(id)).filter(Boolean);
   for (const l of state.lit) for (const el of l.els) { el.style.setProperty('--vc', l.color); el.classList.add('on'); }
 }
 $('#score').addEventListener('click', (e) => {
   const g = e.target.closest('g.note'); if (!g) return;
-  const k = state.notes.findIndex(n => n.ids?.includes(g.id)); if (k < 0) return;
-  seek(Math.max(0, state.notes[k].start - .05)); play();
+  const matches = state.notes.filter(n => n.ids?.includes(g.id)); if (!matches.length) return;
+  const n = matches.reduce((a,b) => Math.abs(b.start-heard()) < Math.abs(a.start-heard()) ? b : a);
+  seek(Math.max(0, n.start - .05)); play().catch(e => alertBox(e.message));
 });
+$('#previous-system').onclick = () => { pause(); showPage(state.page - 1); };
+$('#next-system').onclick = () => { pause(); showPage(state.page + 1); };
 
 // ---------- following ----------
 function unlightAll() { for (const l of state.lit) for (const el of l.els) el.classList.remove('on'); state.lit = []; }
@@ -235,6 +250,10 @@ function drawBoard() {
     g2.strokeStyle = s >= 4 ? '#8c7a62' : '#9a9ea4'; g2.lineWidth = width;
     g2.beginPath(); g2.moveTo(NUT, sy(s, NUT)); g2.lineTo(BRIDGE, sy(s, BRIDGE)); g2.stroke();
     if (!a || a.level < .01) continue;
+    if (n?.pluck && state.playing && t >= n.start && t - n.start < .13) {
+      const px = BRIDGE - (BRIDGE - xa) * (n.pluck_position || .19);
+      g2.fillStyle = col; g2.font = 'bold 22px Georgia'; g2.fillText(n.pluck, px, sy(s,px) - 12);
+    }
     const amp = 15 * Math.min(1, Math.sqrt(a.level)), phase = Math.cos(t * 2 * Math.PI * 3.7 + s * 1.3);
     const shape = (u) => harmonic ? Math.sin(2 * Math.PI * u) : Math.sin(Math.PI * u);
     g2.fillStyle = col; g2.globalAlpha = .2; g2.beginPath();
@@ -259,31 +278,42 @@ function frame() {
   if (!$('#seek').matches(':active')) $('#seek').value = t;
   drawBoard(); requestAnimationFrame(frame);
 }
-async function play() { await audio(); await state.ctx.resume(); if (!state.notes.length) return; state.node.port.postMessage({ type: 'play' }); state.tick.at = state.ctx.currentTime; state.playing = true; $('#play').textContent = 'Pause'; }
-function pause() { if (state.node) state.node.port.postMessage({ type: 'pause' }); state.tick.t = now(); state.playing = false; $('#play').textContent = 'Play'; }
+async function play() { await audio(); await state.ctx.resume(); if (!state.notes.length) return; state.node.port.postMessage({ type: 'play' }); state.tick.at = state.ctx.currentTime; state.playing = true; $('#play').textContent = 'Pause'; $('#play').setAttribute('aria-label','Pause'); }
+function pause() { if (state.node) state.node.port.postMessage({ type: 'pause' }); state.tick.t = now(); state.playing = false; $('#play').textContent = 'Play'; $('#play').setAttribute('aria-label','Play'); }
 function seek(t) { if (state.node) state.node.port.postMessage({ type: 'seek', t }); state.tick = { t, at: state.ctx ? state.ctx.currentTime : 0 }; resetFollow(t); }
-$('#play').onclick = () => state.playing ? pause() : play();
+$('#play').onclick = () => state.playing ? pause() : play().catch(e => alertBox(e.message));
 $('#seek').oninput = () => seek(+$('#seek').value);
 $('#volume').oninput = setVolume;
 
 // ---------- loading ----------
 function sendScore(at = 0) {
-  state.node.port.postMessage({ type: 'score', notes: state.notes, tuning: state.piece.tuning, duration: state.duration, seek: at });
-  state.playing = false; $('#play').textContent = 'Play'; state.tick = { t: at, at: state.ctx.currentTime }; resetFollow(at);
+  state.node.port.postMessage({ type: 'score', notes: state.notes, tuning: state.piece.tuning, duration: state.duration, seek: at, loadingProfiles: state.piece.loadingProfiles, loadingEnabled: $('#body').value === state.piece.body });
+  state.playing = false; $('#play').textContent = 'Play'; $('#play').setAttribute('aria-label','Play'); state.tick = { t: at, at: state.ctx.currentTime }; resetFollow(at);
 }
 async function loadScore(piece, notes, xml) {
   const token = ++state.token; pause();
+  piece = preparePerformance({...piece, notes}); notes = piece.notes;
   state.piece = piece; state.notes = notes.slice().sort((a, b) => a.start - b.start); state.duration = piece.duration;
-  $('#seek').max = state.duration; $('#seek').disabled = false; $('#play').disabled = false;
-  await audio(); sendScore(0); roomOptions(); setRoom();
+  $('#seek').max = state.duration; $('#seek').disabled = true; $('#play').disabled = true;
+  await audio(); if (token !== state.token) return;
+  for (const p of state.params) {
+    p.value = piece.instrumentSettings?.[p.name] ?? p.def;
+    state.node.port.postMessage({type:'param',index:p.index,value:p.value});
+  }
+  buildParams(); sendScore(0); roomOptions(); if(piece.defaultRoom) $('#room').value = piece.defaultRoom; setRoom();
   if (piece.body && state.bodies.some(b => b.id === piece.body)) $('#body').value = piece.body; await setBody();
   credits(); await renderScore(xml, token);
+  if (token === state.token) { $('#seek').disabled = false; $('#play').disabled = false; }
 }
 async function loadPiece(p, button) {
+  const request = state.request = (state.request || 0) + 1; pause(); $('#play').disabled = true;
   for (const b of document.querySelectorAll('.pieces button')) b.classList.toggle('active', b === button);
   const base = `pieces/${p.slug}/`, s = await (await fetch(base + 'score.json')).json();
   const gz = await fetch(base + 'score.musicxml.gz'); const xml = await new Response(gz.body.pipeThrough(new DecompressionStream('gzip'))).text();
+  if (request !== state.request) return;
+  state.downloadBase = base;
   await loadScore(s, s.notes, xml);
+  if (request === state.request) history.replaceState(null,'',`?piece=${encodeURIComponent(p.slug)}`);
 }
 $('#file').onchange = async (e) => {
   const f = e.target.files[0]; if (!f) return; const name = f.name.toLowerCase();
@@ -292,18 +322,19 @@ $('#file').onchange = async (e) => {
     if (name.endsWith('.json')) { piece = JSON.parse(await f.text()); }
     else if (name.endsWith('.mid') || name.endsWith('.midi')) { const r = parseMIDI(await f.arrayBuffer()); piece = { ...r, title: f.name }; }
     else { const r = parseMusicXML(await f.text()); xml = r.xml; piece = { ...r, title: r.title || f.name }; }
-    piece.performance = null; piece.room = null;
+    state.request = (state.request || 0) + 1; state.downloadBase = null;
     for (const b of document.querySelectorAll('.pieces button')) b.classList.remove('active');
     await loadScore(piece, piece.notes, xml);
   } catch (err) { alertBox(err.message); }
 };
-function alertBox(text) { $('#score').innerHTML = `<p class="placeholder">${text}</p>`; }
+function alertBox(text) { const p = document.createElement('p');p.className='placeholder';p.textContent=text;$('#score').replaceChildren(p); }
 function credits() {
-  const p = state.piece; if (!p) { $('#credits').innerHTML = ''; return; }
-  const b = state.bodies.find(x => x.id === $('#body').value), perf = p.performance;
+  const p = state.piece && escapeFields(state.piece); if (!p) { $('#credits').innerHTML = ''; return; }
+  const b = state.bodies.find(x => x.id === $('#body').value), perf = p.performance && escapeFields(p.performance);
   $('#credits').innerHTML = `<h2>About this performance</h2><p><strong>${p.title || ''}</strong>${p.composer ? ` — ${p.composer}${p.dates ? ` (${p.dates})` : ''}` : ''}${p.arranger ? `<br>Arranged by ${p.arranger}` : ''}</p>` +
-    (perf ? `<p>Timing from ${perf.performer ? perf.performer + '’s recording' : 'the recording'} <a href="https://www.youtube.com/watch?v=${perf.youtube}" target="_blank" rel="noopener">“${perf.video_title || 'on YouTube'}”</a>, aligned in GAPS; dynamics ${perf.dynamics}.</p>` : '<p>Your file, played by the model guitar.</p>') +
-    `<p>Body: ${b ? `${b.maker}${b.year ? ', ' + b.year : ''} (measured by R. Mores)` : 'none'}.${p.license ? ` Score data: ${p.license}.` : ''}</p>`;
+    (p.performanceNote ? `<p>${p.performanceNote}</p>` : perf ? `<p>Timing from ${perf.performer ? perf.performer + '’s recording' : 'the recording'} <a href="https://www.youtube.com/watch?v=${encodeURIComponent(perf.youtube)}" target="_blank" rel="noopener">“${perf.video_title || 'on YouTube'}”</a>, aligned in GAPS; dynamics ${perf.dynamics}.</p>` : '<p>Your file, played by the model guitar.</p>') +
+    `<p>Body: ${b ? `${b.maker}${b.year ? ', ' + b.year : ''} (measured by R. Mores)` : 'none'}.${p.license ? ` Score data: ${p.license}.` : ''}</p>` +
+    (state.downloadBase ? `<p><a href="${state.downloadBase}score.json" download>Performance JSON</a> · <a href="FORMAT.md">JSON controls</a> · <a href="${state.downloadBase}score.musicxml.gz" download>Score + tab (MusicXML, gzip)</a>${p.scoreSource ? ` · <a href="${state.downloadBase}score.musicxml" download>Uncompressed score</a> · <a href="${state.downloadBase}SOURCE.txt">Sources and tab audit</a>` : ''}</p>` : '');
 }
 async function init() {
   await loadBodies(); roomOptions();
@@ -311,9 +342,11 @@ async function init() {
   const box = $('#pieces');
   for (const p of pieces) {
     const b = document.createElement('button'); b.innerHTML = `${p.title}<small>${p.composer}${p.performer ? ' · ' + p.performer : ''} · ${fmt(p.duration)}</small>`;
-    b.onclick = () => loadPiece(p, b); box.append(b);
+    b.onclick = () => loadPiece(p, b).catch(e => alertBox(e.message)); box.append(b);
+    if (new URLSearchParams(location.search).get('piece') === p.slug) state.initialPiece = [p,b];
   }
   requestAnimationFrame(frame);
+  if (state.initialPiece) await loadPiece(...state.initialPiece);
 }
 window.__pfguitar = state;   // for debugging from the console
-init();
+init().catch(e => alertBox(e.message));

@@ -1,6 +1,16 @@
 {
  "pieces": [
   {
+   "slug": "tarrega-recuerdos",
+   "title": "Recuerdos de la Alhambra",
+   "composer": "Francisco Tárrega",
+   "dates": "1852–1909",
+   "born": 1852,
+   "duration": 341.8666190953674,
+   "notes": 3029,
+   "body": "g05"
+  },
+  {
    "slug": "bach-bwv1006a-prelude",
    "title": "Prelude from BWV 1006a",
    "composer": "Johann Sebastian Bach",
@@ -84,7 +94,7 @@
    "dates": "1790–1877",
    "born": 1790,
    "performer": null,
-   "duration": 114.0,
+   "duration": 114,
    "notes": 934,
    "body": "g20"
   },

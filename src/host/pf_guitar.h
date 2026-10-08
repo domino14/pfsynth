@@ -27,6 +27,11 @@ enum {                               /* parameter indices (pf_guitar_params) */
 
 typedef struct { long frame; int kind, note; } pf_guitar_event;  /* kind 0 off, 1 on, 2 lift */
 
+/* Optional host-owned sidecar, indexed like score->notes. Zero is the legacy
+ * behavior. Right-hand letters are resolved to these controls by the host;
+ * pf_note.finger remains the LEFT hand. Loading is a one-based profile index. */
+typedef struct { double position, tilt_db_octave; int loading, reserved; } pf_guitar_note_input;
+
 typedef struct {
     double sr, p[PF_GUITAR_NPARAM];
     const pf_score *score; int n;
@@ -37,6 +42,9 @@ typedef struct {
     long pos, total;
     pf_pluck str[6]; int owner[6], order[6], n_order;  /* order: strings in first-use order */
     float mono[PF_GUITAR_BLOCK];
+    const pf_guitar_note_input *note_inputs;
+    const float (*loading)[PF_PLUCK_MODES]; int loading_count;
+    double tone_gain[6][PF_PLUCK_MODES]; int tone_active[6];
 } pf_guitar;
 
 #endif

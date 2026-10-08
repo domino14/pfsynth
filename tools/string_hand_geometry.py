@@ -7,11 +7,12 @@ import itertools
 import math
 
 
-def finger_options(active,violin=False,fixed=None):
+def finger_options(active,violin=False,fixed=None,reach_limits=None):
     fixed=fixed or {};scale=328 if violin else 650;spacing=5.5 if violin else 8
     limits={(1,2):24 if violin else 45,(1,3):42 if violin else 75,
             (1,4):62 if violin else 105,(2,3):24 if violin else 35,
             (2,4):44 if violin else 65,(3,4):25 if violin else 40}
+    if reach_limits: limits.update(reach_limits)
     stopped=[(i,s,f) for i,s,f in active if f]
     if len({s for _,s,_ in active})!=len(active):return None
     if len(stopped)>4 and violin:return None
