@@ -6,7 +6,7 @@ import { preparePerformance } from './performance.js?v=20261007r';
 const $ = (s) => document.querySelector(s);
 const escapeHTML = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const escapeFields = o => Object.fromEntries(Object.entries(o).map(([k,v])=>[k,typeof v === 'string' ? escapeHTML(v) : v]));
-const state = { ctx: null, node: null, ready: null, params: [], piece: null, notes: [], duration: 0, playing: false, tick: { t: 0, at: 0 }, sounding: [],
+const state = { ctx: null, node: null, ready: null, params: [], piece: null, base: null, notes: [], duration: 0, playing: false, tick: { t: 0, at: 0 }, sounding: [],
   lit: [], ptr: 0, elements: new Map(), vrv: null, token: 0, bodies: [], bodyBuffers: new Map(), roomBuffer: null };
 const fmt = (s) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
 
@@ -24,6 +24,7 @@ async function audio() {
   if (state.ready) return state.ready;
   state.ready = (async () => {
     const ctx = state.ctx = new AudioContext({ latencyHint: 'playback' });
+    if (!ctx.audioWorklet) throw new Error(`The guitar engine needs a secure context (AudioWorklet): open this page over https, or locally from http://localhost:${location.port || 80}/ rather than ${location.host}.`);
     await ctx.audioWorklet.addModule('guitar-worklet.js?v=20261007r');
     const node = state.node = new AudioWorkletNode(ctx, 'pfguitar', { numberOfInputs: 0, numberOfOutputs: 1, outputChannelCount: [2] });
     state.body = ctx.createConvolver(); state.body.normalize = false; state.bodyGain = ctx.createGain();
@@ -38,7 +39,7 @@ async function audio() {
     const info = await ready; state.params = info.params; buildParams();
     node.port.onmessage = (e) => onWorklet(e.data);
     route(); setVolume();
-  })();
+  })().catch(e => { state.ready = null; if (state.ctx) state.ctx.close().catch(() => {}); state.ctx = state.node = null; throw e; });   // let Play retry
   return state.ready;
 }
 function route() {   // worklet -> [body] -> [room] -> master
@@ -284,6 +285,23 @@ function seek(t) { if (state.node) state.node.port.postMessage({ type: 'seek', t
 $('#play').onclick = () => state.playing ? pause() : play().catch(e => alertBox(e.message));
 $('#seek').oninput = () => seek(+$('#seek').value);
 $('#volume').oninput = setVolume;
+// Practice tempo: the event stream is stretched in time and reloaded into the guitar; the
+// strings themselves are untouched, so a slow pass has the full-speed tone and decay (no
+// pitch shift, no smearing) - the model simply plays the piece slower, as a player would.
+const tempo = () => +$('#tempo').value / 100;
+function stretch() {
+  $('#tempov').textContent = `${$('#tempo').value}%`; if (!state.base) return;
+  const k = 1 / tempo();
+  state.notes = state.base.notes.map(n => ({ ...n, start: n.start * k, end: n.end * k }));
+  state.duration = state.base.duration * k; $('#seek').max = state.duration;
+}
+$('#tempo').oninput = () => { $('#tempov').textContent = `${$('#tempo').value}%`; };
+$('#tempo').onchange = () => {
+  if (!state.base || !state.node) { stretch(); return; }
+  const was = state.playing, at = now() / state.duration;   // keep the place in the piece
+  pause(); stretch(); sendScore(Math.min(at * state.duration, state.duration));
+  if (was) play().catch(e => alertBox(e.message));
+};
 
 // ---------- loading ----------
 function sendScore(at = 0) {
@@ -293,8 +311,8 @@ function sendScore(at = 0) {
 async function loadScore(piece, notes, xml) {
   const token = ++state.token; pause();
   piece = preparePerformance({...piece, notes}); notes = piece.notes;
-  state.piece = piece; state.notes = notes.slice().sort((a, b) => a.start - b.start); state.duration = piece.duration;
-  $('#seek').max = state.duration; $('#seek').disabled = true; $('#play').disabled = true;
+  state.piece = piece; state.base = { notes: notes.slice().sort((a, b) => a.start - b.start), duration: piece.duration }; stretch();
+  $('#seek').disabled = true; $('#play').disabled = true;
   await audio(); if (token !== state.token) return;
   for (const p of state.params) {
     p.value = piece.instrumentSettings?.[p.name] ?? p.def;

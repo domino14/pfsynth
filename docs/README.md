@@ -56,7 +56,9 @@ output latency so they light when heard; right-hand fingers (p i m a) are drawn 
 `guitar/import.js` reads MusicXML (tab staff or `<technical>` strings/frets, repeats, ties,
 slurs as hammer-ons/pull-offs, harmonics, dynamics, arpeggios, tempo; the guitar's octave
 convention) and MIDI (strings from one channel per string, else chosen by the instrument).
-The header shows the audio thread's CPU share. Source and license information is in each
+The header shows the audio thread's CPU share and a practice **Tempo** slider (25–100 %): the
+compiled event stream is stretched in time and reloaded, the strings are untouched, so a slow
+pass keeps the full-speed tone and decay (no pitch shift or smearing). Source and license information is in each
 piece's credits; body responses are CC BY 4.0 (R. Mores). Recordings are not included.
 
 Recuerdos de la Alhambra uses an independent conversion of Stewart Holmes's Mutopia #810
