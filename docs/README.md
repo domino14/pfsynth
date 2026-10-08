@@ -43,8 +43,8 @@ measurement reference while fitting; nothing from it is included.
 
 ## Classical guitar (`guitar/`)
 
-A second page, `guitar/index.html`, plays the physically modelled guitar live: `pfi.wasm` (the
-instrument API, `pfiw_*` exports; built by `tools/build_wasm.sh` with `pfsynth.wasm`) runs in
+A second page, `guitar/index.html`, plays the physically modelled guitar live: `guitar/pfguitar.wasm`
+(the instrument API, `pfiw_*` exports; built by `tools/build_guitar_wasm.sh`) runs in
 `guitar-worklet.js`; the page applies the measured guitar body and a room as WebAudio
 convolutions. Performances (`guitar/pieces/<slug>/score.json` + `score.musicxml.gz`, listed in
 `guitar/pieces.json`) come from `tools/guitar_piece_build.py` and `tools/guitar_web_export.py`:
@@ -56,5 +56,13 @@ output latency so they light when heard; right-hand fingers (p i m a) are drawn 
 `guitar/import.js` reads MusicXML (tab staff or `<technical>` strings/frets, repeats, ties,
 slurs as hammer-ons/pull-offs, harmonics, dynamics, arpeggios, tempo; the guitar's octave
 convention) and MIDI (strings from one channel per string, else chosen by the instrument).
-The header shows the audio thread's CPU share. Licences: GAPS-derived data CC BY-NC-SA 4.0;
-body responses CC BY 4.0 (R. Mores); no recordings.
+The header shows the audio thread's CPU share. Source and license information is in each
+piece's credits; body responses are CC BY 4.0 (R. Mores). Recordings are not included.
+
+Recuerdos de la Alhambra uses an independent conversion of Stewart Holmes's Mutopia #810
+edition (CC BY-SA 3.0), inferred tablature, and the accepted Recuerdos phrasing studies.
+Its full performance includes repeats, regular p–a–m–i subdivisions and phrase rubato.
+The optional JSON timing/finger controls and their streaming synthesis behavior are
+explained in [Guitar performance JSON](guitar/FORMAT.md). The shared piano/fiddle
+`pfi.wasm` is unchanged. See `guitar/pieces/tarrega-recuerdos/SOURCE.txt` for the
+score adaptation, hand-audit assumptions, body-loading source and tone-port limits.
