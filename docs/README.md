@@ -99,8 +99,12 @@ python3 tools/test_guitar_reference.py
 The output directory must be new and under ignored `build/`. The fit writes local
 candidate audio and JSON; it does not replace the public score. Optional `--events`
 accepts the original unrounded local events for research reproduction. No reference
-recordings or raw GAPS assets belong in a PR. The current velocity-floor change
-remains a stopgap pending a blind comparison with the corrected fit.
+recordings or raw GAPS assets belong in a PR. The corrected Carulli fit was
+preferred in all four owner blind comparisons on 2026-10-08; its pluck strengths
+and drier room now replace the temporary velocity floor in the bundled score.
+See `experiments/string-gestures/pieces/carulli-op241-5-accepted-2026-10-08.json`
+for the verdicts and audio checksum. This is a piece-specific acceptance, not
+approval of future automatically generated fits or a global guitar retune.
 
 If another download decodes to a different audio hash, verify its timing instead
 of reusing the correction blindly. `--alignment-manifest local-offsets.json` accepts
