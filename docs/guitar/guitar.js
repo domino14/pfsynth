@@ -6,7 +6,7 @@ import { preparePerformance } from './performance.js?v=20261007r';
 const $ = (s) => document.querySelector(s);
 const escapeHTML = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const escapeFields = o => Object.fromEntries(Object.entries(o).map(([k,v])=>[k,typeof v === 'string' ? escapeHTML(v) : v]));
-const state = { ctx: null, node: null, ready: null, params: [], piece: null, base: null, notes: [], duration: 0, playing: false, tick: { t: 0, at: 0 }, sounding: [],
+const state = { ctx: null, node: null, ready: null, params: [], piece: null, base: null, rate: 1, notes: [], duration: 0, playing: false, tick: { t: 0, at: 0 }, sounding: [],
   lit: [], ptr: 0, elements: new Map(), vrv: null, token: 0, bodies: [], bodyBuffers: new Map(), roomBuffer: null };
 const fmt = (s) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
 
@@ -25,14 +25,14 @@ async function audio() {
   state.ready = (async () => {
     const ctx = state.ctx = new AudioContext({ latencyHint: 'playback' });
     if (!ctx.audioWorklet) throw new Error(`The guitar engine needs a secure context (AudioWorklet): open this page over https, or locally from http://localhost:${location.port || 80}/ rather than ${location.host}.`);
-    await ctx.audioWorklet.addModule('guitar-worklet.js?v=20261007r');
+    await ctx.audioWorklet.addModule('guitar-worklet.js?v=20261008t2');
     const node = state.node = new AudioWorkletNode(ctx, 'pfguitar', { numberOfInputs: 0, numberOfOutputs: 1, outputChannelCount: [2] });
     state.body = ctx.createConvolver(); state.body.normalize = false; state.bodyGain = ctx.createGain();
     state.room = ctx.createConvolver(); state.room.normalize = false; state.roomGain = ctx.createGain();
     state.master = ctx.createGain(); const limiter = ctx.createDynamicsCompressor();
     limiter.threshold.value = -3; limiter.knee.value = 0; limiter.ratio.value = 20; limiter.attack.value = .002; limiter.release.value = .1;
     state.master.connect(limiter).connect(ctx.destination);
-    const response = await fetch('pfguitar.wasm?v=20261007r'); if (!response.ok) throw new Error('Could not load the guitar engine.');
+    const response = await fetch('pfguitar.wasm?v=20261008t2'); if (!response.ok) throw new Error('Could not load the guitar engine.');
     const bytes = await response.arrayBuffer();
     const ready = new Promise((res, rej) => { node.port.onmessage = (e) => { if (e.data.type === 'ready') res(e.data); else if(e.data.type === 'error') rej(new Error(e.data.text)); }; });
     node.port.postMessage({ type: 'wasm', bytes }, [bytes]);
@@ -52,7 +52,8 @@ function route() {   // worklet -> [body] -> [room] -> master
 }
 function setVolume() { if (state.master) state.master.gain.value = 3.5 * 10 ** (+$('#volume').value / 20); }
 function onWorklet(m) {
-  if (m.type === 'tick') { state.tick = { t: m.t, at: state.ctx.currentTime }; state.sounding = m.sounding; state.load = m.load; }
+  if (m.type === 'tick') { if (m.tempo !== state.rate) return; state.tick = { t: m.t, at: state.ctx.currentTime }; state.sounding = m.sounding; state.load = m.load; }
+  else if (m.type === 'tempo') { if (m.tempo !== state.rate) return; state.tick = {t:m.t,at:state.ctx.currentTime}; resetFollow(m.t); }
   else if (m.type === 'end') { pause(); seek(0); }
   else if (m.type === 'loaded' && !m.ok) { pause(); alertBox('The guitar could not load this score.'); }
   else if (m.type === 'error') { pause(); alertBox(m.text); }
@@ -285,27 +286,26 @@ function seek(t) { if (state.node) state.node.port.postMessage({ type: 'seek', t
 $('#play').onclick = () => state.playing ? pause() : play().catch(e => alertBox(e.message));
 $('#seek').oninput = () => seek(+$('#seek').value);
 $('#volume').oninput = setVolume;
-// Practice tempo: the event stream is stretched in time and reloaded into the guitar; the
-// strings themselves are untouched, so a slow pass has the full-speed tone and decay (no
-// pitch shift, no smearing) - the model simply plays the piece slower, as a player would.
+// Practice tempo changes the score clock without reloading or re-plucking strings.
+// The worklet applies it at its next block and acknowledges the actual position.
 const tempo = () => +$('#tempo').value / 100;
 function stretch() {
   $('#tempov').textContent = `${$('#tempo').value}%`; if (!state.base) return;
-  const k = 1 / tempo();
+  state.rate = tempo(); const k = 1 / state.rate;
   state.notes = state.base.notes.map(n => ({ ...n, start: n.start * k, end: n.end * k }));
   state.duration = state.base.duration * k; $('#seek').max = state.duration;
 }
 $('#tempo').oninput = () => { $('#tempov').textContent = `${$('#tempo').value}%`; };
 $('#tempo').onchange = () => {
   if (!state.base || !state.node) { stretch(); return; }
-  const was = state.playing, at = now() / state.duration;   // keep the place in the piece
-  pause(); stretch(); sendScore(Math.min(at * state.duration, state.duration));
-  if (was) play().catch(e => alertBox(e.message));
+  const at = now() / state.duration;
+  stretch(); state.tick = {t:Math.min(at * state.duration,state.duration),at:state.ctx.currentTime};
+  resetFollow(state.tick.t); state.node.port.postMessage({type:'tempo',rate:state.rate});
 };
 
 // ---------- loading ----------
 function sendScore(at = 0) {
-  state.node.port.postMessage({ type: 'score', notes: state.notes, tuning: state.piece.tuning, duration: state.duration, seek: at, loadingProfiles: state.piece.loadingProfiles, loadingEnabled: $('#body').value === state.piece.body });
+  state.node.port.postMessage({ type: 'score', notes: state.base.notes, tuning: state.piece.tuning, duration: state.base.duration, tempo: state.rate, seek: at, loadingProfiles: state.piece.loadingProfiles, loadingEnabled: $('#body').value === state.piece.body });
   state.playing = false; $('#play').textContent = 'Play'; $('#play').setAttribute('aria-label','Play'); state.tick = { t: at, at: state.ctx.currentTime }; resetFollow(at);
 }
 async function loadScore(piece, notes, xml) {
